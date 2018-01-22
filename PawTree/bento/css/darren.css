@@ -1,0 +1,67 @@
+/** MOBILE FIRST **/
+
+/* main nav */
+###nav-wrap .logo { width: 210px; margin: 10px 50px; }
+#nav-wrap .navbar-toggle { margin-top: 26px; }
+.utility .petpro-util-img { width: 38px; height: 38px; margin-left: 12px; }
+.utility .account-links { margin-top: 7px; }
+body.loggedin .utility a.shopping-cart { margin-top: 0px; }
+.fa { margin: 0px 6px 0px 6px }
+
+
+/* homepage */
+.slide-container .slidetemplate-generic .slide-text h4 { font-size: 1.5rem; margin: 0px 0px 8px 0px; }
+.slide-container .slidetemplate-generic .slide-text h3 { font-size: 28px; font-size: 1.25rem; margin-bottom: 10px; padding: 0px 56px 0px 56px; line-height: 110%; }
+h2 { font-size: 1.8rem; }
+h4 { font-size: 1.25rem; margin: 0px 0px 20px 0px; padding: 0px 0px 0px 0px; }
+h3 { margin-bottom: 22px; }
+.btn { margin: 10px 0px 0px 0px}
+.flag {  margin: 0px 0px 12px 0px; }
+.left-cta .row .col-sm-8 p { margin-bottom: 26px; }
+.right-cta .row .col-sm-8 p { margin-bottom: 26px; }
+.top-sellers h2{ text-align: center; }
+
+
+/* pawBox */
+h1 { color: #603813; font-size: 2em; margin: 15px 0px 0px 16px ; }
+.pawbox-overview h3 { font-size: 1.5rem; }
+.pawbox-overview { margin-top: 32px; }
+.pawbox-overview p { max-width: 90%; margin: 15px auto; }
+
+
+/** RESPONSIVE **/
+
+@media (min-width: 768px) {
+    /* homepage */
+    .slide-container .slidetemplate-generic .slide-text h4 { font-size: 2rem; margin: 0px 0px 8px 0px; }
+    .slide-container .slidetemplate-generic .slide-text h3 { font-size: 1.5rem; margin-bottom: 0px; padding: 0px 0px 0px 0px; line-height: 110%; }
+    .slide-container .slidetemplate-generic .slide-text { position: absolute; left: auto; right: 5%; bottom: 22%; width: 50%; }
+    .flag {  margin: 0px 0px 0px 40px; }
+    .left-cta .row .col-sm-8 p { margin-bottom: 12px; margin-right: 18%; }
+    .right-cta .row .col-sm-8 p { margin-bottom: 12px; margin-right: 20%; }
+    h2 { font-size: 2.4rem; }
+    .btn { margin: 28px 0px 20px 0px}
+    .top-sellers h2{ text-align: left; }
+    
+    footer .petProShare { right: 32px; }
+    footer .petProShare { position: right: 33px; }
+    footer .petProShare ul { margin: -3px 12px 0px 6px; }
+    footer .petProShare ul li { margin: -2px -10px 0px 0px; }
+
+    /* pawBox */
+    h1 { font-size: 2.1em; margin: 10px 0px 0px 0px ; }
+    .pawbox-overview h3 { font-size: 1.75rem; }
+    .pawbox-hero .pawbox-intro { top: 12%; left: 8%; }
+    .pawbox-overview { margin-top: 60px; }
+    .pawbox-overview p { max-width: 70%; margin: 15px auto; }
+}
+     
+
+@media (min-width: 992px) {
+    /* homepage */
+    .slide-container .slidetemplate-generic .slide-text h4 { font-size: 2.75rem; margin: 0px 0px 8px 0px; }
+    .slide-container .slidetemplate-generic .slide-text h3 { font-size: 2.4rem; margin-bottom: 0px; line-height: 110%; }
+    .slide-container .slidetemplate-generic .slide-text { position: absolute; left: auto; right: 8%; bottom: 28%; width: 50%; }
+    h4 { margin: 0px 0px 22px 0px; padding: 0px 30px 0px 30px; }
+    
+}

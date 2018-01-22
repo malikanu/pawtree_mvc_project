@@ -1,0 +1,920 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F97D6CF3-E1F7-4409-90F3-435B9F3D98A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PawTree</RootNamespace>
+    <AssemblyName>PawTree</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bento\bg\back.png" />
+    <Content Include="bento\bg\bg-abstract-blue.jpg" />
+    <Content Include="bento\bg\bg-footer.jpg" />
+    <Content Include="bento\bg\bg-gradient-blue-r.jpg" />
+    <Content Include="bento\bg\bg-h1.png" />
+    <Content Include="bento\bg\bg-home.gif" />
+    <Content Include="bento\bg\bg-service.gif" />
+    <Content Include="bento\bg\bg-shadow.jpg" />
+    <Content Include="bento\bg\bg-tab.gif" />
+    <Content Include="bento\bg\pattern.png" />
+    <Content Include="bento\bg\site_content.png" />
+    <Content Include="bento\bg\site_content_bottom.png" />
+    <Content Include="bento\bg\tabs.png" />
+    <Content Include="bento\css\animate.css" />
+    <Content Include="bento\css\bootstrap-theme.css" />
+    <Content Include="bento\css\bootstrap.css" />
+    <Content Include="bento\css\bootstrap.min.css" />
+    <Content Include="bento\css\border-anim-h.gif" />
+    <Content Include="bento\css\border-anim-v.gif" />
+    <Content Include="bento\css\border-h.gif" />
+    <Content Include="bento\css\border-v.gif" />
+    <Content Include="bento\css\cropper.css" />
+    <Content Include="bento\css\darren.css" />
+    <Content Include="bento\css\default.css" />
+    <Content Include="bento\css\delete\animate.css" />
+    <Content Include="bento\css\delete\border-anim-h.gif" />
+    <Content Include="bento\css\delete\border-anim-v.gif" />
+    <Content Include="bento\css\delete\border-h.gif" />
+    <Content Include="bento\css\delete\border-v.gif" />
+    <Content Include="bento\css\delete\cropper.css" />
+    <Content Include="bento\css\delete\flexslider.css" />
+    <Content Include="bento\css\delete\generatedSlideshow.css" />
+    <Content Include="bento\css\delete\imgareaselect-animated.css" />
+    <Content Include="bento\css\delete\imgareaselect-default.css" />
+    <Content Include="bento\css\delete\imgareaselect-deprecated.css" />
+    <Content Include="bento\css\delete\jquery.share.css" />
+    <Content Include="bento\css\delete\print.css" />
+    <Content Include="bento\css\delete\responsive.css" />
+    <Content Include="bento\css\delete\ui.css" />
+    <Content Include="bento\css\flexslider.css" />
+    <Content Include="bento\css\font-awesome.min.css" />
+    <Content Include="bento\css\fonts\clarendonltstd-light-webfont.svg" />
+    <Content Include="bento\css\fonts\clarendonltstd-webfont.svg" />
+    <Content Include="bento\css\fonts\flexslider-icon.svg" />
+    <Content Include="bento\css\fonts\itcavantgardestd-bk-webfont.svg" />
+    <Content Include="bento\css\fonts\itcavantgardestd-md-webfont.svg" />
+    <Content Include="bento\css\fonts\roemiste_mod-webfont.svg" />
+    <Content Include="bento\css\generatedSlideshow.css" />
+    <Content Include="bento\css\images\90-day-hero.png" />
+    <Content Include="bento\css\images\90-day-testimonial-circle.png" />
+    <Content Include="bento\css\images\arrow-up.png" />
+    <Content Include="bento\css\images\arrow.png" />
+    <Content Include="bento\css\images\ez-ship.png" />
+    <Content Include="bento\css\images\fading-dots.png" />
+    <Content Include="bento\css\images\icon-sprite.png" />
+    <Content Include="bento\css\images\newTestimonialbg.png" />
+    <Content Include="bento\css\images\paw1.jpg" />
+    <Content Include="bento\css\images\paw2.jpg" />
+    <Content Include="bento\css\images\paw3.jpg" />
+    <Content Include="bento\css\images\shop-dog.png" />
+    <Content Include="bento\css\images\social-icons-sprite.png" />
+    <Content Include="bento\css\images\social-icons.png" />
+    <Content Include="bento\css\images\sprite.png" />
+    <Content Include="bento\css\images\yes-dog.png" />
+    <Content Include="bento\css\imgareaselect-animated.css" />
+    <Content Include="bento\css\imgareaselect-default.css" />
+    <Content Include="bento\css\imgareaselect-deprecated.css" />
+    <Content Include="bento\css\jonathan.css" />
+    <Content Include="bento\css\jonathan.smallheader.css" />
+    <Content Include="bento\css\jquery.share.css" />
+    <Content Include="bento\css\nathan.css" />
+    <Content Include="bento\css\nathan.mine.css" />
+    <Content Include="bento\css\print.css" />
+    <Content Include="bento\css\reset.css" />
+    <Content Include="bento\css\responsive.css" />
+    <Content Include="bento\css\robert.css" />
+    <Content Include="bento\css\style.css" />
+    <Content Include="bento\css\style2.css" />
+    <Content Include="bento\css\typography.css" />
+    <Content Include="bento\css\ui.css" />
+    <Content Include="bento\file\paw1.jpg" />
+    <Content Include="bento\fonts\fontawesome-webfont.svg" />
+    <Content Include="bento\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bento\img\1000value.png" />
+    <Content Include="bento\img\123numbers.png" />
+    <Content Include="bento\img\1number.png" />
+    <Content Include="bento\img\2 dogs with ipad_goes with sponsoring %281%29.png" />
+    <Content Include="bento\img\217 shutterstock_130962188.jpg" />
+    <Content Include="bento\img\227 shutterstock_21719650 dog in office.jpg" />
+    <Content Include="bento\img\2number.png" />
+    <Content Include="bento\img\3nfree.png" />
+    <Content Include="bento\img\3NFreeBlock.jpg" />
+    <Content Include="bento\img\3NFree_infograph.png" />
+    <Content Include="bento\img\3number.png" />
+    <Content Include="bento\img\404dog.jpg" />
+    <Content Include="bento\img\700value.png" />
+    <Content Include="bento\img\90-day-roger.jpg" />
+    <Content Include="bento\img\about-petpro.png" />
+    <Content Include="bento\img\addtocart.png" />
+    <Content Include="bento\img\ajax-loader.gif" />
+    <Content Include="bento\img\amber-testimonial.png" />
+    <Content Include="bento\img\amber_sanders.jpg" />
+    <Content Include="bento\img\background.jpg" />
+    <Content Include="bento\img\begging-you.jpg" />
+    <Content Include="bento\img\benefits-img.jpg" />
+    <Content Include="bento\img\bggreenborders.gif" />
+    <Content Include="bento\img\bg\back.png" />
+    <Content Include="bento\img\bg\bg-abstract-blue.jpg" />
+    <Content Include="bento\img\bg\bg-footer.jpg" />
+    <Content Include="bento\img\bg\bg-gradient-blue-r.jpg" />
+    <Content Include="bento\img\bg\bg-h1.png" />
+    <Content Include="bento\img\bg\bg-home.gif" />
+    <Content Include="bento\img\bg\bg-service.gif" />
+    <Content Include="bento\img\bg\bg-shadow.jpg" />
+    <Content Include="bento\img\bg\bg-tab.gif" />
+    <Content Include="bento\img\bg\pattern.png" />
+    <Content Include="bento\img\bg\site_content.png" />
+    <Content Include="bento\img\bg\site_content_bottom.png" />
+    <Content Include="bento\img\bg\tabs.png" />
+    <Content Include="bento\img\bonelabel.png" />
+    <Content Include="bento\img\btn\btn-blue.png" />
+    <Content Include="bento\img\btn\btn-curltab.png" />
+    <Content Include="bento\img\btn\btn-premier-next.gif" />
+    <Content Include="bento\img\btn\btn-premier-prev.gif" />
+    <Content Include="bento\img\btn\btn.png" />
+    <Content Include="bento\img\btn\rss-btn.gif" />
+    <Content Include="bento\img\build-flag.png" />
+    <Content Include="bento\img\buynow.png" />
+    <Content Include="bento\img\Cat-Food-Social-Badge.png" />
+    <Content Include="bento\img\cat-icon.jpg" />
+    <Content Include="bento\img\cat-weightChart.png" />
+    <Content Include="bento\img\catalog.png" />
+    <Content Include="bento\img\catSizeSprite.png" />
+    <Content Include="bento\img\cat_email_image.jpg" />
+    <Content Include="bento\img\check.png" />
+    <Content Include="bento\img\claudia-testimonial.png" />
+    <Content Include="bento\img\closex.png" />
+    <Content Include="bento\img\CoEParticipant2016 %282%29.jpg" />
+    <Content Include="bento\img\comparison-thumb.jpg" />
+    <Content Include="bento\img\comparison.png" />
+    <Content Include="bento\img\ComparisonChartContent.gif" />
+    <Content Include="bento\img\ComparisonChartHeader.gif" />
+    <Content Include="bento\img\comparisondetails.gif" />
+    <Content Include="bento\img\compChartIcon_07.png" />
+    <Content Include="bento\img\contentheader.jpg" />
+    <Content Include="bento\img\couple by couch with dog.jpg" />
+    <Content Include="bento\img\couple with laptop and terrier.jpg" />
+    <Content Include="bento\img\createpetprofile.png" />
+    <Content Include="bento\img\cupicon.png" />
+    <Content Include="bento\img\darkgreencheck.png" />
+    <Content Include="bento\img\DETAILS BANNER -- REVISED.png" />
+    <Content Include="bento\img\diff-ask.jpg" />
+    <Content Include="bento\img\diff-share.jpg" />
+    <Content Include="bento\img\diff-talk.jpg" />
+    <Content Include="bento\img\differenceInLife.png" />
+    <Content Include="bento\img\disable.png" />
+    <Content Include="bento\img\dog with clock_goes with current campaigns %281%29.png" />
+    <Content Include="bento\img\dog with phone_goes with sharing asking calling %281%29.png" />
+    <Content Include="bento\img\dog working out_goes with success activities.png" />
+    <Content Include="bento\img\dog-cat-icon.jpg" />
+    <Content Include="bento\img\dog-icon.jpg" />
+    <Content Include="bento\img\dog-weightChart.png" />
+    <Content Include="bento\img\dogavatar.jpg" />
+    <Content Include="bento\img\dogcelebration.png" />
+    <Content Include="bento\img\dogs with food_goes with product knowledge %281%29.png" />
+    <Content Include="bento\img\dogsDifferentBowl.png" />
+    <Content Include="bento\img\dogSizeSprite.png" />
+    <Content Include="bento\img\dogsSameBowl.png" />
+    <Content Include="bento\img\dwn-arrow.png" />
+    <Content Include="bento\img\elka-testimonial.png" />
+    <Content Include="bento\img\elka_bostwick.jpg" />
+    <Content Include="bento\img\enrollmentKit-basic.png" />
+    <Content Include="bento\img\enrollmentKit-complete.png" />
+    <Content Include="bento\img\enrollmentKit-ultimate.png" />
+    <Content Include="bento\img\enrollmentOffer-GreenVersion2.png" />
+    <Content Include="bento\img\enrollmentPets.jpg" />
+    <Content Include="bento\img\eps-member.jpg" />
+    <Content Include="bento\img\error.png" />
+    <Content Include="bento\img\evenwborders.gif" />
+    <Content Include="bento\img\ez-ship.png" />
+    <Content Include="bento\img\ezshipTruck.png" />
+    <Content Include="bento\img\featured-in.jpg" />
+    <Content Include="bento\img\flexibility-img.png" />
+    <Content Include="bento\img\freeship-caravan.png" />
+    <Content Include="bento\img\g-dot.png" />
+    <Content Include="bento\img\glyphicons-halflings-white.png" />
+    <Content Include="bento\img\glyphicons-halflings.png" />
+    <Content Include="bento\img\grainfreebadge.png" />
+    <Content Include="bento\img\greencheck.png" />
+    <Content Include="bento\img\happy couple outdoors with dog.jpg" />
+    <Content Include="bento\img\headers\about.jpg" />
+    <Content Include="bento\img\headers\host.jpg" />
+    <Content Include="bento\img\headers\join.jpg" />
+    <Content Include="bento\img\headers\learn.jpg" />
+    <Content Include="bento\img\headers\shop.jpg" />
+    <Content Include="bento\img\healthy rewards graphic.png" />
+    <Content Include="bento\img\hear-from-pet-active.png" />
+    <Content Include="bento\img\hear-from-pet.png" />
+    <Content Include="bento\img\hear-from-vet-active.png" />
+    <Content Include="bento\img\hear-from-vet.png" />
+    <Content Include="bento\img\home-learn.png" />
+    <Content Include="bento\img\home-look.png" />
+    <Content Include="bento\img\host.jpg" />
+    <Content Include="bento\img\icon\error.png" />
+    <Content Include="bento\img\icon\ezshiptruck-green.png" />
+    <Content Include="bento\img\icon\icon-bullet.gif" />
+    <Content Include="bento\img\icon\icon-chevron.gif" />
+    <Content Include="bento\img\icon\icon-trash.gif" />
+    <Content Include="bento\img\icon\img-sep.gif" />
+    <Content Include="bento\img\icon\info.png" />
+    <Content Include="bento\img\icon\success.png" />
+    <Content Include="bento\img\icon\warning.png" />
+    <Content Include="bento\img\join us page - enrollment image - ext.jpg" />
+    <Content Include="bento\img\join us page - enrollment image - extended through 3_31.jpg" />
+    <Content Include="bento\img\join us page - enrollment image.jpg" />
+    <Content Include="bento\img\joinpawclub-hero.jpg" />
+    <Content Include="bento\img\jonathan-testimonial.png" />
+    <Content Include="bento\img\july enrollment offerings-2.jpg" />
+    <Content Include="bento\img\kaitlin-testimonial.png" />
+    <Content Include="bento\img\kathleen-testimonial.png" />
+    <Content Include="bento\img\label-cat-faded.png" />
+    <Content Include="bento\img\label-cat.png" />
+    <Content Include="bento\img\label-dog-faded.png" />
+    <Content Include="bento\img\label-dog.png" />
+    <Content Include="bento\img\labeltemplates\cat1.png" />
+    <Content Include="bento\img\labeltemplates\cat2.png" />
+    <Content Include="bento\img\labeltemplates\cat3.png" />
+    <Content Include="bento\img\labeltemplates\dog1.png" />
+    <Content Include="bento\img\labeltemplates\dog2.png" />
+    <Content Include="bento\img\labeltemplates\dog3.png" />
+    <Content Include="bento\img\lead-flag.png" />
+    <Content Include="bento\img\learn-more-button.png" />
+    <Content Include="bento\img\learnmore.png" />
+    <Content Include="bento\img\leopardcollars.png" />
+    <Content Include="bento\img\logo.png" />
+    <Content Include="bento\img\look-button.png" />
+    <Content Include="bento\img\LoveOurCats.png" />
+    <Content Include="bento\img\madewithlove.png" />
+    <Content Include="bento\img\mainSubfeat_03.jpg" />
+    <Content Include="bento\img\mainSubfeat_03WITHTYPE.jpg" />
+    <Content Include="bento\img\make-money-img.jpg" />
+    <Content Include="bento\img\man with laptop and dog.jpg" />
+    <Content Include="bento\img\man-silhouette.png" />
+    <Content Include="bento\img\minipro-back.png" />
+    <Content Include="bento\img\mobile-menu.png" />
+    <Content Include="bento\img\moneyBackGuarantee.png" />
+    <Content Include="bento\img\myezship.png" />
+    <Content Include="bento\img\myprooffice.png" />
+    <Content Include="bento\img\myvirtualoffice.png" />
+    <Content Include="bento\img\nancy_lewis.jpg" />
+    <Content Include="bento\img\nav-arrow.png" />
+    <Content Include="bento\img\new-petpro-large.jpg" />
+    <Content Include="bento\img\new-product-family.jpg" />
+    <Content Include="bento\img\newpetdefault.png" />
+    <Content Include="bento\img\newphoto.png" />
+    <Content Include="bento\img\news\directsellingnews.gif" />
+    <Content Include="bento\img\news\dogfoodadvisor.gif" />
+    <Content Include="bento\img\news\harvard.gif" />
+    <Content Include="bento\img\news\petfoodindustry.gif" />
+    <Content Include="bento\img\news\petguide.gif" />
+    <Content Include="bento\img\news\sheknows.gif" />
+    <Content Include="bento\img\news\usatoday.gif" />
+    <Content Include="bento\img\nutrition.jpg" />
+    <Content Include="bento\img\OCT.jpg" />
+    <Content Include="bento\img\October_Enrollment_Background.jpg" />
+    <Content Include="bento\img\oddwborders.gif" />
+    <Content Include="bento\img\one-paw.jpg" />
+    <Content Include="bento\img\onlabelbg.png" />
+    <Content Include="bento\img\ourvision.png" />
+    <Content Include="bento\img\page-slide-nav.png" />
+    <Content Include="bento\img\pamela-testimonial.png" />
+    <Content Include="bento\img\pam_schuler.jpeg" />
+    <Content Include="bento\img\paw-bg.png" />
+    <Content Include="bento\img\paw1.jpg" />
+    <Content Include="bento\img\paw2.jpg" />
+    <Content Include="bento\img\paw3.jpg" />
+    <Content Include="bento\img\pawbox-hero.jpg" />
+    <Content Include="bento\img\pawbox-icon.png" />
+    <Content Include="bento\img\pawbox-items.png" />
+    <Content Include="bento\img\pawbox-lockup.png" />
+    <Content Include="bento\img\pawbox-plan.png" />
+    <Content Include="bento\img\pawbox-schedule.png" />
+    <Content Include="bento\img\pawbox-video-icon.png" />
+    <Content Include="bento\img\pawclub-lifestyle.jpg" />
+    <Content Include="bento\img\pawclub.png" />
+    <Content Include="bento\img\pawclub_dontqualify.png" />
+    <Content Include="bento\img\pawclub_qualify.png" />
+    <Content Include="bento\img\pawcursor.png" />
+    <Content Include="bento\img\pawloozachart2%281%29.gif" />
+    <Content Include="bento\img\pawloozachart2.gif" />
+    <Content Include="bento\img\pawloozachart3.gif" />
+    <Content Include="bento\img\pawlooza_chart.gif" />
+    <Content Include="bento\img\pawPairings.jpg" />
+    <Content Include="bento\img\pawPairingsfebpromo.png" />
+    <Content Include="bento\img\pawtree-logo-web.png" />
+    <Content Include="bento\img\pawtree-promise.png" />
+    <Content Include="bento\img\pawtree-story-circle.png" />
+    <Content Include="bento\img\pawtreeLogoR_03[2].png" />
+    <Content Include="bento\img\pawtreepromise.png" />
+    <Content Include="bento\img\pawTree_Logo.png" />
+    <Content Include="bento\img\paw_bullet.png" />
+    <Content Include="bento\img\pdf-icon.png" />
+    <Content Include="bento\img\pdf\3nfree.jpg" />
+    <Content Include="bento\img\pdf\buddyImage.png" />
+    <Content Include="bento\img\pdf\cupicon.png" />
+    <Content Include="bento\img\pdf\ezship.jpg" />
+    <Content Include="bento\img\pdf\feedingpdf_offer.png" />
+    <Content Include="bento\img\pdf\finickyeater.png" />
+    <Content Include="bento\img\pdf\foodtransition.png" />
+    <Content Include="bento\img\pdf\footer.png" />
+    <Content Include="bento\img\pdf\greendots.png" />
+    <Content Include="bento\img\pdf\headerbg.png" />
+    <Content Include="bento\img\pdf\lifestyle.png" />
+    <Content Include="bento\img\pdf\offerimage.png" />
+    <Content Include="bento\img\pdf\pagebackground.png" />
+    <Content Include="bento\img\pdf\petframe.png" />
+    <Content Include="bento\img\pdf\pettable_bottom.png" />
+    <Content Include="bento\img\pdf\pettable_middle.png" />
+    <Content Include="bento\img\pdf\pettable_separator.png" />
+    <Content Include="bento\img\pdf\pettable_top.png" />
+    <Content Include="bento\img\pdf\pickyeater.jpg" />
+    <Content Include="bento\img\pdf\ui.png" />
+    <Content Include="bento\img\People on Couch at Party.jpg" />
+    <Content Include="bento\img\people with laptop and dog.jpg" />
+    <Content Include="bento\img\People-on-Couch-at-Party.jpg" />
+    <Content Include="bento\img\person hugging dog_goes with customer care %281%29.png" />
+    <Content Include="bento\img\pet-profile.png" />
+    <Content Include="bento\img\petpro-circle.png" />
+    <Content Include="bento\img\petpro-img.jpg" />
+    <Content Include="bento\img\petpro-lifestyle.jpg" />
+    <Content Include="bento\img\petpro-options Sale.jpg" />
+    <Content Include="bento\img\petpro-options.jpg" />
+    <Content Include="bento\img\petpro-optionsOct2015.jpg" />
+    <Content Include="bento\img\petPro-promos.jpg" />
+    <Content Include="bento\img\petpro.png" />
+    <Content Include="bento\img\petprofile_badge.png" />
+    <Content Include="bento\img\petproIcon.png" />
+    <Content Include="bento\img\PetproLogin.png" />
+    <Content Include="bento\img\petprowithoutstartnow.png" />
+    <Content Include="bento\img\play.png" />
+    <Content Include="bento\img\products\customBagFood.png" />
+    <Content Include="bento\img\products\dentalSticks.png" />
+    <Content Include="bento\img\products\dogBeds.png" />
+    <Content Include="bento\img\products\dogBowls.png" />
+    <Content Include="bento\img\products\dogCollars.png" />
+    <Content Include="bento\img\products\dogToys.png" />
+    <Content Include="bento\img\products\earWashDry.png" />
+    <Content Include="bento\img\products\fleaTickSpray.png" />
+    <Content Include="bento\img\products\foodBags.png" />
+    <Content Include="bento\img\products\gastroPlus.png" />
+    <Content Include="bento\img\products\healthyGroup.png" />
+    <Content Include="bento\img\products\jointSupport.png" />
+    <Content Include="bento\img\products\New_Landing_Page_Grouping.png" />
+    <Content Include="bento\img\products\nutrition-group.jpg" />
+    <Content Include="bento\img\products\OXY SHOT.png" />
+    <Content Include="bento\img\products\quoteNewToy.png" />
+    <Content Include="bento\img\products\quoteTailWagging.png" />
+    <Content Include="bento\img\products\quoteTreatoftheMonth.png" />
+    <Content Include="bento\img\products\salmonOil.png" />
+    <Content Include="bento\img\products\skinSupport.png" />
+    <Content Include="bento\img\products\superFood.png" />
+    <Content Include="bento\img\products\treats.png" />
+    <Content Include="bento\img\products\Urine_Eliminator.png" />
+    <Content Include="bento\img\products\WM_Comp.png" />
+    <Content Include="bento\img\promo-items.png" />
+    <Content Include="bento\img\promoarrow.png" />
+    <Content Include="bento\img\propacks.jpg" />
+    <Content Include="bento\img\propacks_basic.jpg" />
+    <Content Include="bento\img\PT_LandingPage.jpg" />
+    <Content Include="bento\img\PT_LandingPage.png" />
+    <Content Include="bento\img\pug with laptop_goes with BeSocial %281%29.png" />
+    <Content Include="bento\img\reading dog_header image for library.png" />
+    <Content Include="bento\img\revealBackground.png" />
+    <Content Include="bento\img\Roger &amp; Bella.png" />
+    <Content Include="bento\img\roger-90-day.jpg" />
+    <Content Include="bento\img\roger-story.jpg" />
+    <Content Include="bento\img\Roger_0085.jpg" />
+    <Content Include="bento\img\satisfactionguarantee.png" />
+    <Content Include="bento\img\Screen Shot 2014-08-01 at 10_09_57 AM.png" />
+    <Content Include="bento\img\september enrollment offer.png" />
+    <Content Include="bento\img\share-flag.png" />
+    <Content Include="bento\img\share-img.png" />
+    <Content Include="bento\img\shop-page-circle.png" />
+    <Content Include="bento\img\shopbuttons.png" />
+    <Content Include="bento\img\shopbuttons_old.png" />
+    <Content Include="bento\img\shopnow.png" />
+    <Content Include="bento\img\show-img.png" />
+    <Content Include="bento\img\shutterstock_105076709_200x300.jpg" />
+    <Content Include="bento\img\shutterstock_98348780.png" />
+    <Content Include="bento\img\sidebarLifestyle2.jpg" />
+    <Content Include="bento\img\slider-minipro-back.png" />
+    <Content Include="bento\img\slide\19780_1290928147638_1063278849_30888747_1238360_n.jpg" />
+    <Content Include="bento\img\slide\2010-01-13 00.55.14.jpg" />
+    <Content Include="bento\img\slide\her_mountain_man.jpg" />
+    <Content Include="bento\img\slide\invitation.jpg" />
+    <Content Include="bento\img\slide\navajo_sky.jpg" />
+    <Content Include="bento\img\slide\our_hearts_are_happy.jpg" />
+    <Content Include="bento\img\slide\pervading_spirit.jpg" />
+    <Content Include="bento\img\slide\plenty_trouble.jpg" />
+    <Content Include="bento\img\slide\slide.jpg" />
+    <Content Include="bento\img\slide\the_rabbit_hunters.jpg" />
+    <Content Include="bento\img\slide\warrior_s_aura.jpg" />
+    <Content Include="bento\img\slide\ya_1_1955.jpg" />
+    <Content Include="bento\img\sm-circle.png" />
+    <Content Include="bento\img\Sponsoring Spectacular! w_ few streamers.jpg" />
+    <Content Include="bento\img\sprite.png" />
+    <Content Include="bento\img\story-feel.jpg" />
+    <Content Include="bento\img\story-make.jpg" />
+    <Content Include="bento\img\story-see.jpg" />
+    <Content Include="bento\img\story-top.jpg" />
+    <Content Include="bento\img\subnav-bg.png" />
+    <Content Include="bento\img\suzy-grace.jpg" />
+    <Content Include="bento\img\take-a-look-hero-bg.jpg" />
+    <Content Include="bento\img\take-a-look-hero.jpg" />
+    <Content Include="bento\img\talk-img.png" />
+    <Content Include="bento\img\tan-dwn-arrow.png" />
+    <Content Include="bento\img\team\angela-on.png" />
+    <Content Include="bento\img\team\angela.jpg" />
+    <Content Include="bento\img\team\angela.png" />
+    <Content Include="bento\img\team\bernadine-on.png" />
+    <Content Include="bento\img\team\bernadine.png" />
+    <Content Include="bento\img\team\bernadinecruz.jpg" />
+    <Content Include="bento\img\team\brooke-on.png" />
+    <Content Include="bento\img\team\brooke.jpg" />
+    <Content Include="bento\img\team\brooke.png" />
+    <Content Include="bento\img\team\chrisbessent.jpg" />
+    <Content Include="bento\img\team\dani-on.png" />
+    <Content Include="bento\img\team\dani.png" />
+    <Content Include="bento\img\team\danimcvety.jpg" />
+    <Content Include="bento\img\team\danimcvety.png" />
+    <Content Include="bento\img\team\eric-on.png" />
+    <Content Include="bento\img\team\eric.jpg" />
+    <Content Include="bento\img\team\eric.png" />
+    <Content Include="bento\img\team\jessicavogelsang.jpg" />
+    <Content Include="bento\img\team\katie-on.png" />
+    <Content Include="bento\img\team\katie.jpg" />
+    <Content Include="bento\img\team\katie.png" />
+    <Content Include="bento\img\team\melissa-on.png" />
+    <Content Include="bento\img\team\melissa.jpg" />
+    <Content Include="bento\img\team\melissa.png" />
+    <Content Include="bento\img\team\Roger 143.jpeg" />
+    <Content Include="bento\img\team\Roger Bella JoJo.jpg" />
+    <Content Include="bento\img\team\roger-on.png" />
+    <Content Include="bento\img\team\roger.jpg" />
+    <Content Include="bento\img\team\roger.png" />
+    <Content Include="bento\img\team\Roger_0084.jpg" />
+    <Content Include="bento\img\team\sandy-on.png" />
+    <Content Include="bento\img\team\sandy.png" />
+    <Content Include="bento\img\team\sandywillis.jpg" />
+    <Content Include="bento\img\team\tami-on.png" />
+    <Content Include="bento\img\team\tami.jpg" />
+    <Content Include="bento\img\team\tami.png" />
+    <Content Include="bento\img\team\tony-on.png" />
+    <Content Include="bento\img\team\tony.png" />
+    <Content Include="bento\img\team\tonykremer.jpg" />
+    <Content Include="bento\img\team\unknown.jpg" />
+    <Content Include="bento\img\testimonial-jack.jpg" />
+    <Content Include="bento\img\testimonial-maggie.jpg" />
+    <Content Include="bento\img\Testimonial_page_default_image.jpg" />
+    <Content Include="bento\img\tvpr2010-460.gif" />
+    <Content Include="bento\img\ui.old.png" />
+    <Content Include="bento\img\ui.png" />
+    <Content Include="bento\img\value_icons_575[1].png" />
+    <Content Include="bento\img\value_icons_865[1].png" />
+    <Content Include="bento\img\vetclinicbuttons.png" />
+    <Content Include="bento\img\vetsclinicsidebar.jpg" />
+    <Content Include="bento\img\video.png" />
+    <Content Include="bento\img\watch-video.jpg" />
+    <Content Include="bento\img\watchOurVideoIcon.png" />
+    <Content Include="bento\img\weightdiagram.gif" />
+    <Content Include="bento\img\welcome-bg.png" />
+    <Content Include="bento\img\white poodles_goes with Leadership resources %281%29.png" />
+    <Content Include="bento\img\white-dwn-arrow.png" />
+    <Content Include="bento\img\whitedownarrow.png" />
+    <Content Include="bento\img\why-cat-dog.jpg" />
+    <Content Include="bento\img\WM_Comp.jpg" />
+    <Content Include="bento\img\x.gif" />
+    <Content Include="bento\img\your-profile.png" />
+    <Content Include="bento\img\yourpetsname.png" />
+    <Content Include="bento\js\813472_1469580065.xml" />
+    <Content Include="bento\js\animate.js" />
+    <Content Include="bento\js\bootstrap.min.js" />
+    <Content Include="bento\js\clipboard.min.js" />
+    <Content Include="bento\js\cropper.js" />
+    <Content Include="bento\js\delete\animate.js" />
+    <Content Include="bento\js\delete\cropper.js" />
+    <Content Include="bento\js\delete\initiate.js" />
+    <Content Include="bento\js\delete\jonathan.js" />
+    <Content Include="bento\js\delete\jquery-1.10.1.min.js" />
+    <Content Include="bento\js\delete\jquery-ui.js" />
+    <Content Include="bento\js\delete\jquery.cycle.min.js" />
+    <Content Include="bento\js\delete\jquery.imgareaselect.min.js" />
+    <Content Include="bento\js\delete\jquery.js" />
+    <Content Include="bento\js\delete\jquery.prettyPhoto.js" />
+    <Content Include="bento\js\delete\jquery.share.js" />
+    <Content Include="bento\js\delete\jquery.tabby.js" />
+    <Content Include="bento\js\delete\jquery.ui.js" />
+    <Content Include="bento\js\delete\jquery.ui.touch-punch.min.js" />
+    <Content Include="bento\js\delete\jquery.validate.min.js" />
+    <Content Include="bento\js\delete\nathan.js" />
+    <Content Include="bento\js\delete\petprotools.js" />
+    <Content Include="bento\js\delete\prettyPhoto\css\prettyPhoto.css" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="bento\js\delete\prettyPhoto\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="bento\js\delete\swfobject.js" />
+    <Content Include="bento\js\initiate.js" />
+    <Content Include="bento\js\jquery-1.10.1.min.js" />
+    <Content Include="bento\js\jquery-ui.js" />
+    <Content Include="bento\js\jquery.cycle.min.js" />
+    <Content Include="bento\js\jquery.imgareaselect.min.js" />
+    <Content Include="bento\js\jquery.js" />
+    <Content Include="bento\js\jquery.prettyPhoto.js" />
+    <Content Include="bento\js\jquery.share.js" />
+    <Content Include="bento\js\jquery.tabby.js" />
+    <Content Include="bento\js\jquery.ui.js" />
+    <Content Include="bento\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="bento\js\jquery.validate.min.js" />
+    <Content Include="bento\js\petprotools.js" />
+    <Content Include="bento\js\prettyPhoto\css\prettyPhoto.css" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="bento\js\prettyPhoto\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="bento\js\swfobject.js" />
+    <Content Include="bento\open-flash-chart.swf" />
+    <Content Include="bento\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="bento\ui\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="bento\ui\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="bento\ui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="bento\ui\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="bento\ui\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="bento\ui\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="bento\ui\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="bento\ui\ui-icons_222222_256x240.png" />
+    <Content Include="bento\ui\ui-icons_2e83ff_256x240.png" />
+    <Content Include="bento\ui\ui-icons_454545_256x240.png" />
+    <Content Include="bento\ui\ui-icons_888888_256x240.png" />
+    <Content Include="bento\ui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frontend\views\css\bootstrap-datepicker3.css" />
+    <Content Include="frontend\views\css\cropper.min.css" />
+    <Content Include="frontend\views\css\flexslider.css" />
+    <Content Include="frontend\views\css\font-awesome.min.css" />
+    <Content Include="frontend\views\css\fonts\flexslider-icon.svg" />
+    <Content Include="frontend\views\css\grabbing.png" />
+    <Content Include="frontend\views\css\nouislider.css" />
+    <Content Include="frontend\views\css\owl.carousel.css" />
+    <Content Include="frontend\views\css\petPhotoUpload.css" />
+    <Content Include="frontend\views\css\select2.min.css" />
+    <Content Include="frontend\views\css\south-street\images\animated-overlay.gif" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="frontend\views\css\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="frontend\views\css\south-street\jquery-ui-1.10.3.custom.css" />
+    <Content Include="frontend\views\css\south-street\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="frontend\views\css\video-js.css" />
+    <Content Include="frontend\views\fonts\fontawesome-webfont.svg" />
+    <Content Include="frontend\views\js\bootstrap-datepicker.min.js" />
+    <Content Include="frontend\views\js\cropper.js" />
+    <Content Include="frontend\views\js\cropper.old.js" />
+    <Content Include="frontend\views\js\delete\generatedSlideshow.js" />
+    <Content Include="frontend\views\js\delete\homepage.js" />
+    <Content Include="frontend\views\js\delete\pawtree.js" />
+    <Content Include="frontend\views\js\delete\pawtree2.js" />
+    <Content Include="frontend\views\js\delete\userProfile.js" />
+    <Content Include="frontend\views\js\delete\userRegister.js" />
+    <Content Include="frontend\views\js\generatedSlideshow.js" />
+    <Content Include="frontend\views\js\homepage.js" />
+    <Content Include="frontend\views\js\jonathan.js" />
+    <Content Include="frontend\views\js\jquery.flexslider-min.js" />
+    <Content Include="frontend\views\js\nathan.js" />
+    <Content Include="frontend\views\js\nouislider.min.js" />
+    <Content Include="frontend\views\js\owl.carousel.min.js" />
+    <Content Include="frontend\views\js\pawtree.js" />
+    <Content Include="frontend\views\js\pawtree2.js" />
+    <Content Include="frontend\views\js\petPhotoUpload.js" />
+    <Content Include="frontend\views\js\select2.min.js" />
+    <Content Include="frontend\views\js\testimonialPetproPopup.js" />
+    <Content Include="frontend\views\js\testimonialPopup.js" />
+    <Content Include="frontend\views\js\userProfile.js" />
+    <Content Include="frontend\views\js\userRegister.js" />
+    <Content Include="frontend\views\js\video.js" />
+    <Content Include="frontend\views\tpl\community\community.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="bento\catfoodrecommend-v3.csv" />
+    <Content Include="bento\catfoodrecommend.csv" />
+    <Content Include="bento\css\fonts\clarendonltstd-light-webfont.eot" />
+    <Content Include="bento\css\fonts\clarendonltstd-light-webfont.ttf" />
+    <Content Include="bento\css\fonts\clarendonltstd-light-webfont.woff" />
+    <Content Include="bento\css\fonts\clarendonltstd-webfont.eot" />
+    <Content Include="bento\css\fonts\clarendonltstd-webfont.ttf" />
+    <Content Include="bento\css\fonts\clarendonltstd-webfont.woff" />
+    <Content Include="bento\css\fonts\flexslider-icon.eot" />
+    <Content Include="bento\css\fonts\flexslider-icon.ttf" />
+    <Content Include="bento\css\fonts\flexslider-icon.woff" />
+    <Content Include="bento\css\fonts\itcavantgardestd-bk-webfont.eot" />
+    <Content Include="bento\css\fonts\itcavantgardestd-bk-webfont.ttf" />
+    <Content Include="bento\css\fonts\itcavantgardestd-bk-webfont.woff" />
+    <Content Include="bento\css\fonts\itcavantgardestd-md-webfont.eot" />
+    <Content Include="bento\css\fonts\itcavantgardestd-md-webfont.ttf" />
+    <Content Include="bento\css\fonts\itcavantgardestd-md-webfont.woff" />
+    <Content Include="bento\css\fonts\roemiste_mod-webfont.eot" />
+    <Content Include="bento\css\fonts\roemiste_mod-webfont.ttf" />
+    <Content Include="bento\css\fonts\roemiste_mod-webfont.woff" />
+    <Content Include="bento\file\2015_Pawtree_Catalog.pdf" />
+    <Content Include="bento\file\Chicken-SweetPotato.pdf" />
+    <Content Include="bento\file\comp_plan.pdf" />
+    <Content Include="bento\file\Duck&amp;ChickPeas.pdf" />
+    <Content Include="bento\file\FireUpForFall-EnrollmentOfferDetails.pdf" />
+    <Content Include="bento\file\Free-pawTreats-Program-Details.pdf" />
+    <Content Include="bento\file\October_Enrollment_Offer_PDF.pdf" />
+    <Content Include="bento\file\Salmon-Peas-SweetPotato.pdf" />
+    <Content Include="bento\file\Turkey&amp;GarbonzoBeans.pdf" />
+    <Content Include="bento\file\Turkey-SweetPotato.pdf" />
+    <Content Include="bento\fonts\fontawesome-webfont.eot" />
+    <Content Include="bento\fonts\fontawesome-webfont.ttf" />
+    <Content Include="bento\fonts\fontawesome-webfont.woff" />
+    <Content Include="bento\fonts\fontawesome-webfont.woff2" />
+    <Content Include="bento\fonts\FontAwesome.otf" />
+    <Content Include="bento\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bento\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bento\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bento\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bento\img\labeltemplates\RoemischStehend-fixed.ttf" />
+    <Content Include="bento\img\labeltemplates\RoemischStehend.ttf" />
+    <Content Include="bento\img\pdf\itcavantgardestd-bk-webfont.ttf" />
+    <Content Include="bento\img\pdf\ITCAvantGardeStd-Bk.otf" />
+    <Content Include="bento\img\pdf\ITCAvantGardeStd-Bk.ttf" />
+    <Content Include="bento\img\pdf\itcavantgardestd-md-webfont.ttf" />
+    <Content Include="bento\img\pdf\texgyreadventor-regular-webfont.ttf" />
+    <Content Include="bento\img\pdf\texgyreadventor-regular.otf" />
+    <Content Include="frontend\views\blog.tpl" />
+    <Content Include="frontend\views\cms.tpl" />
+    <Content Include="frontend\views\css\fonts\flexslider-icon.eot" />
+    <Content Include="frontend\views\css\fonts\flexslider-icon.ttf" />
+    <Content Include="frontend\views\css\fonts\flexslider-icon.woff" />
+    <Content Include="frontend\views\fonts\fontawesome-webfont.eot" />
+    <Content Include="frontend\views\fonts\fontawesome-webfont.ttf" />
+    <Content Include="frontend\views\fonts\fontawesome-webfont.woff" />
+    <Content Include="frontend\views\fonts\fontawesome-webfont.woff2" />
+    <Content Include="frontend\views\fonts\FontAwesome.otf" />
+    <Content Include="frontend\views\layout.tpl" />
+    <Content Include="frontend\views\search.tpl" />
+    <Content Include="frontend\views\tpl\community\account.tpl" />
+    <Content Include="frontend\views\tpl\community\header.tpl" />
+    <Content Include="frontend\views\tpl\community\index.tpl" />
+    <Content Include="frontend\views\tpl\community\latest.tpl" />
+    <Content Include="frontend\views\tpl\community\login.tpl" />
+    <Content Include="frontend\views\tpl\community\newpost.tpl" />
+    <Content Include="frontend\views\tpl\community\pagination.tpl" />
+    <Content Include="frontend\views\tpl\community\search.tpl" />
+    <Content Include="frontend\views\tpl\community\viewcategory.tpl" />
+    <Content Include="frontend\views\tpl\community\viewthread.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\generic.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\imageonly.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\imagesrcset.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\media.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\petpro_homepage.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\petpro_interior.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\promo.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\promo2.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\promo3.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\showcase.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\testimonial_homepage.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\testimonial_interior.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\video.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\y2017_greenbox.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\y2017_tanbox.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\slidetemplates\y2017_tanimagebox.tpl" />
+    <Content Include="frontend\views\tpl\slideshows\view.tpl" />
+    <Content Include="frontend\views\user.tpl" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\PawtreeStory\WhyPawtree.cshtml" />
+    <Content Include="Views\PawtreeStory\PawClub.cshtml" />
+    <Content Include="Views\PawtreeStory\MeetTheTeam.cshtml" />
+    <Content Include="Views\PawtreeStory\AdvisoryCouncil.cshtml" />
+    <Content Include="Views\PawtreeStory\Testimonial.cshtml" />
+    <Content Include="Views\PawtreeStory\ProductVideos.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\PawtreeStoryController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\PawtreeStory\Pawtree.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57459</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57459/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

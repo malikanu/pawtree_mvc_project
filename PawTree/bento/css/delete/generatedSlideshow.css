@@ -1,0 +1,219 @@
+/* Generated Slideshow  */
+.generatedSlideshow .pad20 { padding: 20px !important; }
+.generatedSlideshow.flexslider { border: 0; clear: both; }
+.generatedSlideshow .slides, .generatedSlideshow .flex-control-nav, .generatedSlideshow .flex-direction-nav { margin: 0 !important; }
+.generatedSlideshow .flex-control-nav { bottom: 20px; z-index: 100; }
+.generatedSlideshow .flex-control-nav li { margin: 0 6px !important; }
+.generatedSlideshow .flex-control-paging li a { background: #7c6a31; }
+.generatedSlideshow .flex-control-paging li a.flex-active { background: #bd4b39; }
+.generatedSlideshow .flex-direction-nav li { list-style: none !important; margin-left: 0 !important; padding-bottom: 0 !important; }
+.generatedSlideshow .flex-direction-nav a { color: #7ea000; text-shadow: 0px 0px 2px #ffffff; line-height: 1; }
+.generatedSlideshow .slides { line-height: 1.2; }
+.generatedSlideshow .slides li { width: 1200px; list-style: none !important; margin-left: 0 !important; padding: 0 !important; line-height: 1.2 !important; }
+
+/* generic template */
+.generatedSlideshow .slides .slidetemplate-generic {  }
+.generatedSlideshow .slides .slidetemplate-generic .background { padding: 20px 50px; background-size: cover !important; background-position: center center !important; min-height: 350px; }
+.generatedSlideshow .slides .slidetemplate-generic .text1 { font-family: avant_garde_med, sans-serif; font-size: 46px; color: #3c9f50; margin: 20px 10px; text-align: center; text-shadow: 1px 2px 3px #222; }
+.generatedSlideshow .slides .slidetemplate-generic .text2 { font-family: avant_garde_std, sans-serif; font-size: 28px; color: #603813; margin: 20px 10px; text-align: center; text-shadow: 1px 2px 3px #aaa; }
+.generatedSlideshow .slides .slidetemplate-generic .ctaButton { background: #99ca3f; padding: 10px 20px; border-radius: 8px; margin: 15px auto; width: 120px; text-align: center; }
+.generatedSlideshow .slides .slidetemplate-generic .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-generic .ctaButton a { text-decoration: none; color: #fff; font-size: 18px; font-family: avant_garde_std, sans-serif; }
+
+/* petpro_homepage template */
+.generatedSlideshow .slides .slidetemplate-petpro_homepage { background-color: #609000; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .background { padding: 20px 50px; background-size: 100% 100% !important; background-position: center center !important; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .whiteframe { background-color: rgba(255,255,255,0.95); overflow: hidden; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .photoframe { -ms-transform: rotate(-12deg); -webkit-transform: rotate(-12deg); transform: rotate(-12deg); width: 230px; height: 240px; margin: auto; padding: 57px 51px; display: block; background: url('../img/slideshowTemplateAssets/petpro-photoframe.png') center center no-repeat; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .photoframe .image1 { width: 230px; height: 240px; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .makingadifference { font-family: avant_garde_std, sans-serif; font-size: 30px; color: #3c9f50; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .text1 { font-family: avant_garde_med, sans-serif; font-size: 48px; color: #603813; font-weight: 700; margin-bottom: 20px; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .text2 { font-family: avant_garde_std, sans-serif; font-size: 18px; color: #000000; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .text3 { font-family: avant_garde_std, sans-serif; font-size: 26px; color: #99ca3f; margin: 5px 0 30px 0; }
+.generatedSlideshow .slides .slidetemplate-petpro_homepage .text4 { font-family: avant_garde_std, sans-serif; font-size: 14px; color: #000000; }
+
+/* petpro_interior template */
+.generatedSlideshow .slides .slidetemplate-petpro_interior { background-color: #99CA2B; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .whiteframe { background-color: #ffffff; overflow: hidden; margin: 0 40px; padding: 20px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .photocontainer { margin: 40px auto; width: 320px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .photocontainer img { max-height: 320px; max-width: 320px; width: auto; margin: auto; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .howdifference { color: #00a144; font-family: avant_garde_std, sans-serif; font-size: 20px; margin: 15px 0; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .text1 { font-size: 36px; margin: 15px 0; color: #00a144; font-family: avant_garde_std, sans-serif; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .text2 { margin: 10px 0 15px 0; font-size: 18px; text-transform: uppercase; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .text3 { margin: 5px 0; font-size: 14px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .text4 { margin: 5px 0; font-size: 14px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .text5 { margin: 5px 0; font-size: 14px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .text6 { margin: 5px 0; font-size: 14px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .ctaButton { float: right; background: #99ca3f; padding: 10px 20px; border-radius: 8px; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-petpro_interior .ctaButton a { text-decoration: none; color: #fff; font-size: 16px; font-family: avant_garde_std, sans-serif; }
+
+/* testimonial_homepage template */
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage { background-color: #609000; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .background { padding: 20px 50px; background-size: 100% 100% !important; background-position: center center !important; height: 348px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .whiteframe { background-color: rgba(255,255,255,0.95); overflow: hidden; padding: 20px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .photocontainer { width: 212px; height: 292px; margin: auto; max-width: 100%; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .photocontainer .image1 { border-radius: 10px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .text1 { font-family: avant_garde_med, sans-serif; font-size: 46px; color: #3c9f50; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .featuredtestimonial { font-family: avant_garde_std, sans-serif; font-size: 20px; color: #99ca3f; margin-bottom: 20px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .text2 { font-family: avant_garde_std, sans-serif; font-size: 26px; color: #000000; margin-bottom: 10px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .text3 { font-family: avant_garde_std, sans-serif; font-size: 14px; color: #000000; margin-bottom: 10px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .text4 { font-family: avant_garde_std, sans-serif; font-size: 14px; color: #000000; margin-bottom: 10px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .ctaButton { float: right; background: #99ca3f; padding: 10px 20px; border-radius: 8px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-testimonial_homepage .ctaButton a { text-decoration: none; color: #fff; font-size: 16px; font-family: avant_garde_std, sans-serif; }
+
+/* testimonial_interior template */
+.generatedSlideshow .slides .slidetemplate-testimonial_interior { background-color: #99CA2B; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .whiteframe { background-color: #ffffff; overflow: hidden; margin: 0 40px; padding: 20px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .photocontainer { margin: 40px auto; width: 320px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .photocontainer img { max-height: 320px; max-width: 320px; width: auto; margin: auto; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .testimonials { font-family: avant_garde_std, sans-serif; color: #99CA3F; font-size: 20px; padding: 10px 0; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .seedifference { color: #00a144; font-family: avant_garde_std, sans-serif; font-size: 32px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .text1 { font-size: 26px; margin: 15px 0; color: #000; font-family: avant_garde_std, sans-serif; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .text2 { margin: 10px 0; font-size: 14px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .text3 { margin: 10px 0; font-size: 14px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .ctaButton { float: right; background: #99ca3f; padding: 10px 20px; border-radius: 8px; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-testimonial_interior .ctaButton a { text-decoration: none; color: #fff; font-size: 16px; font-family: avant_garde_std, sans-serif; }
+
+/* media template */
+.generatedSlideshow .slides .slidetemplate-media { background-color: #f6f0e5; }
+.generatedSlideshow .slides .slidetemplate-media .background { padding: 20px 50px; background-size: 100% 100% !important; background-position: center center !important; border-bottom: 3px solid #3c9f50; height: 345px; }
+.generatedSlideshow .slides .slidetemplate-media .text1 { font-family: avant_garde_med, sans-serif; font-size: 40px; color: #3c9f50; margin-bottom: 20px; }
+.generatedSlideshow .slides .slidetemplate-media .text2 { font-family: avant_garde_std, sans-serif; font-size: 18px; color: #000000; line-height: 1.4; }
+.generatedSlideshow .slides .slidetemplate-media .videoEmbedContainer { height: 240px; border-radius: 10px; overflow: hidden; margin: 10px 0; } 
+.generatedSlideshow .slides .slidetemplate-media .logoBar { margin-left: -50px; margin-right: -50px; }
+.generatedSlideshow .slides .slidetemplate-media .ctaButton { background: #99ca3f; padding: 10px 20px; border-radius: 8px; margin: 15px auto; width: 100px; text-align: center; }
+.generatedSlideshow .slides .slidetemplate-media .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-media .ctaButton a { text-decoration: none; color: #fff; font-size: 16px; font-family: avant_garde_std, sans-serif; }
+
+/* showcase template */
+.generatedSlideshow .slides .slidetemplate-showcase {  }
+.generatedSlideshow .slides .slidetemplate-showcase .background { padding: 20px 0px; background-size: cover !important; background-position: center center !important; min-height: 348px; position: relative; }
+.generatedSlideshow .slides .slidetemplate-showcase .background > .row { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+.generatedSlideshow .slides .slidetemplate-showcase .blackframe { background-color: rgba(0,0,0,0.7); margin: 20px 0; padding: 0 20px 0 0; }
+.generatedSlideshow .slides .slidetemplate-showcase .photocontainer { float: left; max-width: 40%; }
+.generatedSlideshow .slides .slidetemplate-showcase .photocontainer img {  }
+.generatedSlideshow .slides .slidetemplate-showcase .contentcontainer { float: left; max-width: 60%; }
+.generatedSlideshow .slides .slidetemplate-showcase .text1 { font-family: avant_garde_std, sans-serif; font-size: 32px; color: #fff; margin: 20px 10px; line-height: 1; }
+.generatedSlideshow .slides .slidetemplate-showcase .text2 { font-family: avant_garde_std, sans-serif; font-size: 16px; color: #fff; margin: 10px 10px; line-height: 1; }
+.generatedSlideshow .slides .slidetemplate-showcase .ctaButton { background: #99ca3f; padding: 10px 20px; border-radius: 8px; margin: 15px auto; width: 120px; text-align: center; }
+.generatedSlideshow .slides .slidetemplate-showcase .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-showcase .ctaButton a { text-decoration: none; color: #fff; font-size: 18px; font-family: avant_garde_std, sans-serif; }
+
+/* imageonly template */
+.generatedSlideshow .slides .slidetemplate-imageonly { position: relative; height: 388px; background-color: #f6f0e5; }
+.generatedSlideshow .slides .slidetemplate-imageonly .image1 { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+
+/* video template */
+.generatedSlideshow .slides .slidetemplate-video { position: relative; height: 388px; }
+.generatedSlideshow .slides .slidetemplate-video .background { background-size: cover !important; position: relative; background-position: center center !important; height: 388px; }
+.generatedSlideshow .slides .slidetemplate-video .background .verticle-center { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+.generatedSlideshow .slides .slidetemplate-video .text1 { font-family: avant_garde_std, sans-serif; font-size: 32px; color: #fff; margin: 20px 0 20px 20px; }
+.generatedSlideshow .slides .slidetemplate-video .text2 { font-family: avant_garde_std, sans-serif; font-size: 16px; color: #fff; margin: 10px 0 10px 20px; }
+.generatedSlideshow .slides .slidetemplate-video .text3 { width: 400px; height: 300px; }
+
+/* promo template */
+.generatedSlideshow .slides .slidetemplate-promo { height: 388px; }
+.generatedSlideshow .slides .slidetemplate-promo .background { padding: 43px 140px 44px 180px; background-size: cover !important; background-position: center center !important; height: 100%; position: relative; }
+.generatedSlideshow .slides .slidetemplate-promo .text1 { font-family: avant_garde_std, sans-serif; font-size: 44px; color: #3c9f50; padding-left: 75px; font-weight: 700; }
+.generatedSlideshow .slides .slidetemplate-promo .text2 { font-family: avant_garde_med, sans-serif; font-size: 16px; color: #6C5648; margin: 10px 20px 0 0; text-align: right; float: right; max-width: 380px; }
+.generatedSlideshow .slides .slidetemplate-promo .image1 {  }
+.generatedSlideshow .slides .slidetemplate-promo .image2 { position: absolute; bottom: 20px; left: 30px; width: 21%; }
+.generatedSlideshow .slides .slidetemplate-promo .ctaButton { background: #3c9f50; padding: 10px 20px; border-radius: 8px; margin: 10px 0 0 0; width: 120px; text-align: center; float: right; }
+.generatedSlideshow .slides .slidetemplate-promo .ctaButton:hover { cursor: pointer; }
+.generatedSlideshow .slides .slidetemplate-promo .ctaButton a { text-decoration: none; color: #fff; font-size: 18px; font-family: avant_garde_std, sans-serif; }
+
+/* promo2 template */
+.generatedSlideshow .slides .slidetemplate-promo2 { height: 388px; }
+.generatedSlideshow .slides .slidetemplate-promo2 .background { padding: 40px 20px 2px 20px; background-size: cover !important; background-position: center center !important; height: 100%; position: relative; }
+.generatedSlideshow .slides .slidetemplate-promo2 .text2 { font-family: avant_garde_std, sans-serif; font-size: 17px; color: #fff; text-align: center; font-weight: 700; }
+.generatedSlideshow .slides .slidetemplate-promo2 .text3 { font-family: avant_garde_std, sans-serif; font-size: 12px; color: #fff; text-align: center; }
+.generatedSlideshow .slides .slidetemplate-promo2 .offerArea { padding: 0 20px; margin: auto; }
+.generatedSlideshow .slides .slidetemplate-promo2 .offerArea .image1 { margin: 0 auto 10px auto; max-width: 504px; }
+
+/* promo3 template */
+.generatedSlideshow .slides .slidetemplate-promo3 { height: 388px; }
+.generatedSlideshow .slides .slidetemplate-promo3 .generatedSlideshowSlide { height: 100%; }
+.generatedSlideshow .slides .slidetemplate-promo3 .background { padding: 0px; background-size: cover !important; background-position: center center !important; height: 100%; position: relative; }
+.generatedSlideshow .slides .slidetemplate-promo3 .text1 { font-family: avant_garde_med, sans-serif; font-size: 80px; color: #38B8DD; font-weight: 700; text-align: center; line-height: 1; margin: 60px 0 20px 0; }
+.generatedSlideshow .slides .slidetemplate-promo3 .text2 { font-family: avant_garde_std, sans-serif; font-size: 48px; color: #97CA3D; text-align: center; }
+.generatedSlideshow .slides .slidetemplate-promo3 .bottomTexts { margin: 20px auto; text-align: center; }
+.generatedSlideshow .slides .slidetemplate-promo3 .text3 { font-family: avant_garde_std, sans-serif; font-size: 17px; color: #666666; }
+.generatedSlideshow .slides .slidetemplate-promo3 .text3 b { font-family: avant_garde_med, sans-serif; }
+.generatedSlideshow .slides .slidetemplate-promo3 .ctaButton { font-family: avant_garde_med, sans-serif; font-weight: 700; color: #97CA3D; text-decoration: none; }
+.generatedSlideshow .slides .slidetemplate-promo3 .image1 { margin: 30px auto; max-width: 90%; display: block; }
+
+/*** mobile ***/
+@media screen and (max-width:1200px) {
+    
+    .generatedSlideshow .slides .slidetemplate-promo3 .text1 { font-size: 60px; }
+    
+}
+
+@media screen and (max-width:910px) {
+    
+    .generatedSlideshow .slides .slidetemplate-generic .text1 { font-size: 38px; margin: 10px;}
+    .generatedSlideshow .slides .slidetemplate-generic .text2 { font-size: 20px; margin: 10px; }
+    
+    .generatedSlideshow .slides .slidetemplate-testimonial_homepage .text1 { font-size: 30px; }
+    .generatedSlideshow .slides .slidetemplate-testimonial_homepage .photocontainer {  }
+    
+    .generatedSlideshow .slides .slidetemplate-petpro_homepage .photoframe { width: 161px; height: 168px; padding: 40px 35px; background-size: 100%; }
+    .generatedSlideshow .slides .slidetemplate-petpro_homepage .photoframe .image1 { width: 161px; height: 168px; }
+    .generatedSlideshow .slides .slidetemplate-petpro_homepage .makingadifference { font-size: 25px; }
+    .generatedSlideshow .slides .slidetemplate-petpro_homepage .text1 { font-size: 32px; margin-bottom: 10px; }
+    
+    .generatedSlideshow .slides .slidetemplate-promo .text1 { padding-left: 0px; text-align: center; line-height: 1; margin-bottom: 20px;}
+    .generatedSlideshow .slides .slidetemplate-promo .ctaButton { margin-left: 10px; }
+    
+    .generatedSlideshow .slides .slidetemplate-promo3 .text1 { font-size: 40px; }
+    .generatedSlideshow .slides .slidetemplate-promo3 .text2 { font-size: 28px; }
+    .generatedSlideshow .slides .slidetemplate-promo3 .background { padding-top: 30px; }
+    
+}
+
+@media screen and (max-width: 435px) {
+    
+    .generatedSlideshow .slides .slidetemplate-generic .background { padding: 4px; }
+    .generatedSlideshow .slides .slidetemplate-testimonial_interior .whiteframe { padding: 4px; margin: 4px; }
+    .generatedSlideshow .slides .slidetemplate-testimonial_interior .photocontainer { width: 100%; margin: 0; }
+    .generatedSlideshow .slides .slidetemplate-testimonial_interior .photocontainer img { max-height: none; max-width: 100%; }
+    .generatedSlideshow .slides .slidetemplate-testimonial_homepage .background { padding: 4px; height: auto; }
+    .generatedSlideshow .slides .slidetemplate-media .background { padding: 4px; height: auto; }
+    .generatedSlideshow .slides .slidetemplate-media .logoBar { margin-left: -4px; margin-right: -4px; }
+    .generatedSlideshow .slides .slidetemplate-petpro_homepage .background { padding: 4px; }
+    .generatedSlideshow .slides .slidetemplate-petpro_interior .whiteframe { margin: 4px; padding: 0; }
+    .generatedSlideshow .slides .slidetemplate-petpro_interior .photocontainer { width: 100%; margin: 0; }
+    .generatedSlideshow .slides .slidetemplate-petpro_interior .photocontainer img { max-width: 100%; max-height: none; }
+    .generatedSlideshow .slides .slidetemplate-showcase .desktop-only { display: none; }
+    .generatedSlideshow .slides .slidetemplate-showcase .background { padding: 0; }
+    .generatedSlideshow .slides .slidetemplate-showcase .background > .row { position: relative; top: auto; transform: none; }
+    .generatedSlideshow .slides .slidetemplate-showcase .blackframe { margin: 4px; padding: 0; }
+    .generatedSlideshow .slides .slidetemplate-showcase .photocontainer { float: none; width: 100%; max-width: none; }
+    .generatedSlideshow .slides .slidetemplate-showcase .contentcontainer { float: none; width: 100%; max-width: none; }
+    .generatedSlideshow .slides .slidetemplate-showcase .text1 { margin: 20px; }
+    .generatedSlideshow .slides .slidetemplate-showcase .text2 { margin: 20px; }
+    .generatedSlideshow .slides .slidetemplate-imageonly { height: auto; }
+    .generatedSlideshow .slides .slidetemplate-imageonly .image1 { position: relative; top: auto; transform: none; }
+    .generatedSlideshow .slides .slidetemplate-video .background { height: auto; }
+    .generatedSlideshow .slides .slidetemplate-video .background .verticle-center { position: relative; top: auto; transform: none; }
+    
+    .generatedSlideshow .slides .slidetemplate-promo .background { padding: 10px 4px 30px 4px; }
+    .generatedSlideshow .slides .slidetemplate-promo .text1 { font-size: 30px; line-height: 1; margin: 20px 0;}
+    .generatedSlideshow .slides .slidetemplate-promo .text2 { margin-top: 0px; text-align: center; }
+    .generatedSlideshow .slides .slidetemplate-promo .image2 { display: none; }
+    .generatedSlideshow .slides .slidetemplate-promo .ctaButton { float: none; margin: 10px auto; }
+    
+    .generatedSlideshow .slides .slidetemplate-promo2 .leftside { display: none; }
+    .generatedSlideshow .slides .slidetemplate-promo2 .rightside { display: none; }
+    
+    .generatedSlideshow .slides .slidetemplate-promo3 .text1 { margin: 10px auto; }
+    .generatedSlideshow .slides .slidetemplate-promo3 .generatedSlideshowSlide { height: auto; }
+    .generatedSlideshow .slides .slidetemplate-promo3 .bottomTexts { margin: 20px 10px; }
+    .generatedSlideshow .slides .slidetemplate-promo3 .image1 { display: none; }
+    
+    .generatedSlideshow .flex-direction-nav a:before { font-size: 20px !important; }
+    
+}

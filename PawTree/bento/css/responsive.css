@@ -1,0 +1,519 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+#container { max-width: 100%; }
+@media screen and (max-width:1165px) {
+    .petprofileForm .field.dogsize { max-width: 290px; margin: auto; }
+}
+@media screen and (max-width:1100px) {
+	#container #header .petproHeader p{ margin-bottom: 4px; }
+	div.pet-welcome{ margin-top: 0; }
+	#container #header .nav > li{ background-position: 0; }
+	#container #header .nav > li > a{ font-size: 20px; font-size: 2.0rem; padding-bottom: 20px; }
+	#container #header .nav > li > ul li a{ font-size: 14px; font-size: 1.4rem; }
+	body.condensed #container #header .nav > li > a{ padding-bottom: 16px; }
+	#container #header .signupnav li a{ font-size: 12px; }
+	.petgroup .row .col6 { width: 70%; }
+	.petgroup .row .col6.labelsContainer { width: 30%; }
+	/*New Homepage*/
+	#feature-container #main-feature .background{ height: 88%; }
+	#feature-container #main-feature #mini-profile-wrapper .mini-profile .age label, #feature-container #main-feature #mini-profile-wrapper .mini-profile .image label{ font-size: 10px; width: 42%; }
+	#feature-container #main-feature #mini-profile-wrapper .mini-profile label .desc{ font-size: 8px; }
+	#feature-container #main-feature #mini-profile-wrapper .mini-profile .image .file-upload{ width: 62px; height: 22px; line-height: 22px; }
+	#container #content.content-page .ninety-section.split .perk h3{ font-size: 26px; font-size: 2.6rem; }
+}
+@media screen and (max-width:1050px){
+	div.pet-welcome{ padding-bottom: 10px; }
+	body.condensed div.pet-welcome{ padding-bottom: 0; }
+	div.pet-welcome .pets-wrap{ width: 400px; min-width: 400px; }
+	div.pet-welcome .pets{ right: 55px; }
+	div.pet-welcome .pet-thumb{ margin-left: 2px; width: 40px; height: 40px; padding-bottom: 5px; }
+	#all-pets-button #more-pets-count{ width: 40px; height: 40px; line-height: 38px; }
+	#all-pets-button #more-pets-count .plus{ font-size: 20px; }
+	#all-pets-button #more-pets-count .number{ font-size: 25px; }
+}
+@media screen and (max-width:1024px){
+	div.pet-welcome{ height: 115px; }
+	#container #header .nav > li > a{ padding-bottom: 26px; }
+	#container #header .nav > li > ul{ padding: 35px 0; }
+	div.slide-contents{ top: 22%; }
+	div.slide-contents div.slider.mini-profile{ margin-top: -70px; margin-left: -25px; }
+	div.slide-welcome-contents h2{ font-size: 18px; font-size: 1.8rem; }
+	div.slide-welcome-contents h5{ font-size: 16px; font-size: 1.6rem; }
+	div.slide-welcome-contents a.big-call-to-action{ background-position: 120px -175px; }
+	div.slide-welcome-contents a.big-call-to-action h5{ font-size: 15px; font-size: 1.5rem; }
+	div.slide-welcome-contents a.big-call-to-action h4{ font-size: 28px; font-size: 2.4rem; }
+	div.slide-welcome-contents p{ width: 74%; margin-left: 19%; }
+	#feature-container #main-feature .text h5{ font-size: 16px; font-size: 1.6rem; }
+	#feature-container #main-feature .text p{ font-size: 12px; font-size: 1.2rem; }
+	ul.productsnav{ width: 190px; }
+	body .ui-dialog .ui-dialog-content{ height: 360px!important; }
+	.comparisonChart{ width: 800px; }
+	.petgroup .grouplist{ min-height: 150px; }
+	.sidebar-image.yourpetsname{ width: 100%; }
+	.petgroup .foodLabelContainer .foodLabelInput{ width: 250px; left: 35px; font-size: 16px; }
+	div.changeFood{ padding: 20px 6px; }
+	.orderItem .changeFoodButton{ padding: 5px 0px; background: transparent; }
+	input.btnForward{ height: 40px; background-position: right -136px!important; }
+	.petprofileForm label{ display: block; float: none; }
+	#imageUpload{ top: 90px; }
+	.button{ padding: 6px 6px 4px 6px; width: 150px; }
+	.petprofileForm .field.dogbreed select{ margin-left: 0; }
+	#story-iframe { width: 340px; height: 190px; }
+	img.tour-madewithlove, img.tour-ourvision { display: none; }
+	.rootpage-90daydiff .how-it-works, .rootpage-90daydiff .roger-section{ padding: 0 40px; }
+	.rootpage-90daydiff .ninety-hero{ background-size: contain; }
+}
+@media screen and (max-width:1000px){
+	#container #header{ margin: 0 40px; }
+	body.condensed #container #header{ padding-bottom: 6px; }
+	#container #header #logo{ width: 26%; margin: 20px 0; }
+	body.condensed #container #header #logo{ width: 215px; }
+	#container #header #customermenu{ width: 72%; }
+	body.condensed #container #header #customermenu{ width: auto; }
+	#container #header p, #container #header a{ font-size: 12px; font-size: 1.2rem; }
+	#container #header .nav > li{ margin-left: 10px; background-position: 7px 0; }
+	#container #header .nav > li > ul li a{ font-size: 12px; font-size: 1.2rem; padding: 6px 20px; }
+	#container #header .signupnav li{ margin: 0 2px; padding: 3px 5px; }
+	#container #header .signupnav li a{ font-size: 11px; }
+	#container #content{ padding: 0 40px; }
+	.content-header{ margin-left: -40px; }
+	.content-header h1{ padding-left: 40px; }
+	div.pet-welcome .text { font-size: 16px; }
+	body.condensed div.pet-welcome .text { margin-top: 50px; }
+	.pawclubnotice.ineligible{ height: 62px; }
+	.pawclubnotice.ineligible .text{ width: 73%; }
+	.divider-intro{ margin-left: -40px!important; }
+	/*New Homepage*/
+	#home-testimonials #testimonials-submit{ right: 15px; }
+	#feature-container #main-feature h2{ font-size: 17px; line-height: 21px; }
+	#feature-container #main-feature #mini-profile-wrapper{ display: none; }
+	#feature-container #main-feature #profile-cta{ width: 80%; float: none; margin: 0 auto; }
+	#feature-container #main-feature .text{ width: 47%; top: 9%; right: -5%; }
+	#container #content.rootpage-90daydiff .ninety-buttons p.legal{ margin-left: 25%; }
+	.cta-container .cta h2{ font-size: 30px; font-size: 3.0rem; }
+}
+@media screen and (max-width:900px){
+	.rootpage-90daydiff .ninety-hero{ height: 325px; }
+	.ninety-hero #story-iframe{ width: 300px; height: 170px; overflow: hidden; }
+	.rootpage-90daydiff .yes-button .content{ margin-left: 48px; }
+	.petpro-story .contact .col6{ width: 100%; float: none; }
+	.ninety-section .videos .video iframe{ height: 222px; }
+	#container #content.content-page .ninety-section.split p.go-shop{ margin-top: 25px; }
+}
+@media screen and (max-width:800px) {
+	.petgroup .row .col6 { width: 100% !important; }
+	.petgroup .labelSuggestions .suggestionItem{ min-width: 0; width: 47%; margin-bottom: 6px; }
+	#container #header #logo{ margin-top: 48px; }
+	body.condensed #container #header #logo{ margin-top: 30px; margin-bottom: 15px; }
+	#container #header #customermenu{ width: 100%; position: absolute; top: 0; left: 0; max-height: 45px; }
+	#container #header #customermenu div.links{ float: left; }
+	#container #header .petproHeader{ position: absolute; top: 38px; right: 0; }
+	div.pet-welcome{ position: absolute; top: 60px; right: 0; }
+	body.condensed div.pet-welcome{ top: 40px; }
+	#container #header .signupnav{ display: none; }
+	#container #header .nav{ position: relative; }
+	#container #header .nav > li{ position: static; }
+	#container #header .nav > li  ul{ left: 0; }
+	#container #header .nav > li > a{ padding-bottom: 18px; }
+	#container #header .nav > li > ul{ padding: 26px; 0; }
+	div.slide-contents div.slider.mini-profile{ background-image: none; background: rgba(255,255,255,0.7); margin-left: -25px; width: 280px; }
+	div.slide-contents div.slider.mini-profile h6{ padding-top: 20px; font-size: 13px; font-size: 1.3rem; }
+	div.slide-contents div.slider.mini-profile p{ font-size: 11px; font-size: 1.1rem; margin: 6px 15px; }
+	div.slide-contents div.slider.mini-profile label{ width: 100px; font-size: 12px; font-size: 1.2rem; }
+	div.slide-contents div.slider.mini-profile #mini-profile div.mini-field:first-child{ margin-top: 12px; }
+	div.slide-contents div.slider.mini-profile #mini-profile div.mini-field{ margin: 6px auto; }
+	div.slide-contents div.slider.mini-profile div.file-upload{ top: 0; right: 10px; }
+	div.slide-contents div.slider.mini-profile input.bone-button{ margin-top: 20px; }
+	.content-header{ height: 40px; background-image: none; }
+	.content-header h1{ padding-top: 0; line-height: 42px; font-size: 22px; font-size: 2.2rem; }
+	#container footer .footnav{ width: 400px; }
+	.petprofile-login-register { background: none; }
+	.petprofile-login-register.row div[class^="col"] { width: 100%; }
+	div.slideshow div.slide-contents{ top: 21%; right: 1%; width: 33%; }
+	div.slideshow div.slide-contents h2{ font-size: 20px; font-size: 2.0rem; line-height: 24px; padding-bottom: 4px; }
+	div.slideshow div.slide-contents h2 br{ display: none; }
+	div.slideshow div.slide-contents h5{ font-size: 12px; font-size: 1.2rem; line-height: 14px; }
+	div.slide-welcome-contents{ top: 2%; right: 8%; width: 51%; height: 69%; }
+	div.slide-welcome-contents h2{ font-size: 18px; font-size: 1.8rem; padding: 5px 0 10px; }
+	div.slide-welcome-contents h5{ font-size: 12px; font-size: 1.2rem; line-height: 18px; }
+	div.slide-welcome-contents a.big-call-to-action{ padding: 7px 2px; background-position: right -130px; }
+	div.slide-welcome-contents a.big-call-to-action h4{ font-size: 24px; font-size: 2.4rem; }
+	div.slide-welcome-contents a.big-call-to-action h5, div.slide-welcome-contents a.big-call-to-action h4{ padding-right: 30px; }
+	div.slide-welcome-contents p{ margin-left: 0; width: 92%; }
+	#feature-container #main-feature .text{ position: static; width: 100%; padding-top: 20px; }
+	.mini-profile h6, #feature-container div.feature-right .feature h6{ font-size: 13px; font-size: 1.3rem; }
+	#feature-container div.feature-right .feature p{ font-size: 12px; }
+	.sidebar-image.cat-newsletter img{ padding-top: 25px; }
+	#feature-container div.feature-right .feature img{ padding-top: 25px; }
+	div.icons-menu{ margin-top: -160px; }
+	#container #content .ui-tabs ul li{ width: 100%; float: none; clear: both; }
+	#container #content .ui-tabs ul li .ui-tabs-anchor{ width: 70%; }
+	#container #content .ui-tabs ul li .teampic{ margin-left: 7%; float: left; margin-right: 20px; }
+	#container #content .ui-tabs ul li .name{ text-align: left; padding-top: 20px; }
+	#container #content .ui-tabs ul li .title{ text-align: left; }
+	#container #content .ui-tabs.shoptabs ul li{ float: left; clear: none; padding: 4px; }
+	ul.productsnav{ width: 100%; }
+	ul.productsnav li a{ font-size: 12px; font-size: 1.2rem; }
+	#story-iframe{ width: 300px; height: 170px; }
+	div.story-intro img.with-love{ position: absolute; top: -125px; right: 0; }
+	#container #content.content-page .story-intro p{ margin-left: 135px; }
+	div.story-icons{ width: 70%; }
+	div.comparisonChart{ display: none; }
+	div.compare-mobile{ display: block; }
+	#nutrition-iframe{ width: 500px; height: 280px; }
+	.petprofileForm #dogAvatar { display: block; margin-bottom: 50px; }
+	.petprofileForm .pad40 { padding: 0; }
+	.petprofileForm .row div[class^="col"] { width: 100%; clear: both; float: none; }
+	.petprofileForm .field{ padding: 8px 0; }
+	.petprofileForm .field input, .petprofileForm .field select { width: 95%; }
+	.petprofileForm .field.spayedneutered{ float: none; }
+	.petprofileForm .small{ display: block; float: none; clear: both; }
+	.petprofileForm .btnForward, .petprofileForm .btnAdd{ float: none; display: block; margin: 50px auto; }
+	body.body-petprofile .allergylist .checkbox { width: 45%; }
+	body.body-petprofile .issuelist .checkbox { width: 95%; }
+	.profileButtons .btnAddAnotherPet { margin-bottom: 20px; }
+	div.tagline h1{ line-height: 18px; padding: 8px 5%; }
+	#petpro-iframe{ width: 420px; height: 238px; }
+	#container footer .footnav{ width: 85%; }
+	#container footer .footnav li{ width: 50%; }
+	#container footer .footnav li a{ padding-left: 10px; }
+	.row.profile-pet-profile.even{ border: 1px solid #F2EBDF; }
+	.row.profile-pet-profile.odd{ border: 1px solid #603813; }
+	.row.profile-pet-profile div.pet-thumb{ display: block; margin: 10px auto; }
+	.row.profile-pet-profile .col4{ width: 42%; }
+	.row.profile-pet-profile div.col2:last-child{ width: 16%; }
+	.row.profile-pet-profile div.col2:first-child{ display: block; width: 100%; float: none; clear: both; }
+	div.share-noshare a.btnForward{ font-size: 12px!important; font-size: 1.2rem!important; }
+	div.petgroup-container.even{ border: 1px solid #F2EBDF; }
+	div.petgroup-container.odd{ border: 1px solid #603813; }
+	.petgroup .foodLabelContainer{ float: none; margin: 20px auto; }
+	.petgroup-container ul.grouplist{ text-align: center; }
+	#container #content.content-page .petgroup-container ul.grouplist li{ display: inline-block; margin-left: 0; margin-right: 20px; float: none; }
+	#container #content.content-page .petgroup-container ul.grouplist li:last-child{ margin-right: 0; }
+	.petgroup .approveLabel{ top: 6px; right: 36%; }
+	.btnForward.gotorecommend{ margin: 45px 0; }
+	#firestormOrderForm input.btnForward{ margin-top: 50px; }
+	#container #content.content-page p.columnHeader{ font-size: 12px; font-size: 1.2rem; margin: 10px; }
+	.totals{ font-size: 20px; font-size: 2.0rem; line-height: 21px; }
+	.row.recommend-totals div.col4{ display: none; }
+	.row.recommend-totals div.col8{ width: 100%; }
+	.petprofile-login-register .col6:first-child{ padding-bottom: 30px; margin-bottom: 30px; background: transparent url(../img/g-dot.png) repeat-x left bottom; }
+	.revealFullRecommend .text{ font-size: 16px; margin-left: 46%; }
+	#container #content .vertical-tabs.ui-tabs > ul { width: 100%; border-right: none !important; }
+	#container #content .vertical-tabs.ui-tabs > ul li { float: left; width:29%; clear: none; }
+	#container #content .vertical-tabs.ui-tabs > ul li .desktop-only { display: none; }
+	/*New Homepage*/
+	#top-feature-container .feature h5{ font-size: 16px; font-size: 1.6rem; }
+	#home-testimonials{ height: 100px; margin: 60px 0 20px 0; }
+	#home-testimonials #testimonials-text{ width: 165px; }
+	#home-testimonials #testimonials-text h4 a{ font-size: 16px; font-size: 1.6rem; }
+	#home-testimonials #testimonials-images{ max-height: 100px; }
+	#home-testimonials #testimonials-images img{ max-height: 100px; }
+	#home-testimonials #testimonials-submit{ width: 170px; height: 170px; top: -30px; }
+	#home-testimonials #testimonials-submit .inner{ width: 115px; margin-top: 30px; }
+	#home-testimonials #testimonials-submit p, #home-testimonials #testimonials-submit p a{ font-size: 18px; font-size: 1.8rem; margin-bottom: 5px; }
+	#home-testimonials #testimonials-submit hr{ width: 110px; margin-bottom: 5px; }
+	#home-testimonials #testimonials-submit p span.arrow{ width: 6px; height: 10px; background-size: 100% 100%; }
+	#feature-container #main-feature .background{ width: 100%; left: 0; top: 21%; height: 85%; }
+	div.icons-menu{ width: 68%; }
+	body.condensed .footer-tagline h3{ 18px; font-size: 1.8rem; }
+	.rootpage-90daydiff .ninety-cta{ padding-left: 60px; padding-right: 60px; }
+	.rootpage-90daydiff .how-it-works, .rootpage-90daydiff .roger-section{ padding: 0 20px; }
+	.rootpage-90daydiff .ninety-hero{ height: 300px; }
+	.ninety-hero #story-iframe{ width: 275px; height: 155px; }
+	.rootpage-90daydiff .how-it-works .col3, .rootpage-90daydiff .how-it-works .col8{ width: 100%; float: none; clear: both; }
+	.rootpage-90daydiff .how-it-works .grand-prize{ float: none; margin: 0 auto; }
+	.rootpage-90daydiff .how-it-works .grand-prize .inner{ position: relative; top: 44px; }
+}
+@media screen and (max-width: 750px){
+	.ninety-section .videos .video iframe{ height: 182px; }
+	#container #content.content-page .ninety-section.split .perk h3{ font-size: 20px; font-size: 2.0rem; }
+}
+@media screen and (max-width:700px){
+	#container #header #logo{ margin-bottom: 30px; width: 180px; }
+	#container #header ul.nav.mobile{ display: block; width: 85px; height: 37px; background: transparent url(../img/mobile-menu.png) no-repeat 0 0; background-size: contain; cursor: pointer; float: none; padding-top: 38px; position: absolute; top: 135px; left: 15px; z-index: 9999; }
+	body.condensed #container #header ul.nav.mobile{ top: 120px; }
+	#container #header ul.nav.mobile > li, #container #header ul.nav.mobile > li:first-child{ display: none; float: none; clear: both; background-image: none; background-color: #fff; background-color: rgba(255,255,255,0.9); margin-left: 0; padding-left: 8px; font-size: 18px; font-size: 1.8rem; width: 180px; padding-bottom: 8px; }
+	#container #header ul.nav.mobile > li:first-child{ padding-top: 4px; }
+	#container #header ul.nav.mobile > li > a{ color: #3C9F50; padding-bottom: 4px; border-bottom: 1px solid #603813; display: block; width: 90%; }
+	#container #header ul.nav.mobile > li:hover a, #container #header ul.nav.mobile > li.active > a, #container #header ul.nav.mobile > li.active-parent > a{ background: none; }
+	#container #header ul.nav.mobile > li > ul{ display: block; position: static; background: none!important; padding: 5px 0 0 0; }
+	#container #header ul.nav.mobile > li > ul > li{ display: block; background: none!important; padding-bottom: 6px; }
+	#container #header ul.nav.mobile > li > ul > li a{ color: #603813; font-size: 14px; font-size: 1.4rem; background: none!important; padding-left: 6px; padding-bottom: 5px; }
+	#container #header ul.nav.mobile > li > ul > li a:hover{ color: #99ca3f; }
+	div.slideshow div.slide-contents{ width: 34%; right: 0; }
+	div.slideshow div.slide-contents h2{ font-size: 15px; font-size: 1.5rem; line-height: 17px; padding-bottom: 2px; }
+	div.slideshow div.slide-contents h5{ font-size: 11px; font-size: 1.1rem }
+	div.slide-contents div.slider.mini-profile{ margin-left: -55px; }
+	div.slide-contents div.slider.mini-profile input.bone-button{ margin-top: 15px; }
+	div.slide-welcome-contents{ padding: 15px; 18px; }
+	div.slide-welcome-contents h2{ font-size: 13px; font-size: 1.3rem;  }
+	div.slide-welcome-contents a.big-call-to-action h4{ font-size: 16px; font-size: 1.6rem; }
+	div.slide-welcome-contents h5{ font-size: 11px; font-size: 1.1rem; }
+	div.slide-welcome-contents a.big-call-to-action h5{ font-size: 10px; font-size: 1.0rem; }
+	div.slide-welcome-contents p{ font-size: 10px; font-size: 1.0rem; }
+	#feature-container #main-feature .text h5{ font-size: 16px; font-size: 1.6rem; }
+	#story-iframe{ width: 250px; height: 135px; }
+	#container #content.content-page .story-intro p{ line-height: 19px; }
+	div.story-intro hr{ margin: 10px auto; }
+	div.story-intro img.roger{ padding-top: 15px; }
+	div.story-icons{ width: 80%; }
+	#nutrition-iframe{ width: 340px; height: 190px; }
+	#petpro-iframe{ width: 370px; height: 210px; }
+	.myvirtualoffice, .myezship { left: 0; width: auto; top: 0; }
+	.row.profile-pet-profile .profile-pet-profile-details{ font-size: 11px; font-size: 1.1rem; }
+	div.pet-welcome .text .discover { display: none; }
+	.revealFullRecommend .text{ width: 95%; margin: 0; position: relative; top: -8px }
+	.pawclubnotice.ineligible{ height: 84px; }
+	.pawclubnotice.ineligible .text{ width: 67%; }
+	body.condensed .footer-tagline h3{ font-size: 16px; font-size: 1.6rem; }
+	.rootpage-90daydiff .ninety-cta{ padding-left: 40px; padding-right: 40px; }
+	.rootpage-90daydiff .ninety-hero{ height: 265px; }
+	.ninety-hero #story-iframe{ width: 225px; height: 125px; }
+	.rootpage-90daydiff .shop-dog{ right: -50px; }
+	.rootpage-90daydiff .ninety-buttons{ margin-top: -50px; }
+	.rootpage-90daydiff .yes-button, .rootpage-90daydiff .shop-button{ width:300px; float: none; clear: both; margin: 50px auto; }
+	#container #content.rootpage-90daydiff .ninety-buttons p.legal{ margin-left: 0; display: block; text-align: center; }
+}
+@media screen and (max-width:650px){
+	.cta-container .cta{ width: 100%; float: none; clear: both; }
+	.cta-container .cta.left{ margin-bottom: 25px; }
+	.cta-container .cta h2{ font-size: 26px; font-size: 2.6rem; }
+	.cta-container .cta h2 br{ display: none; }
+}
+@media screen and (max-width:600px){
+	#container #header{ margin: 0 4px; }
+	div.slideshow div.slide-contents h2{ font-size: 13px; font-size: 1.3rem; }
+	div.slideshow div.slide-contents h5{ font-size: 10px; font-size: 1.0rem; }
+	div.slide-contents div.slider.mini-profile{ margin-left: 0; position: relative; top: 0; left: -335px; width: 480px; }
+	div.slide-contents div.slider.mini-profile h6{ position: absolute; top: 25px; left: 30px; }
+	div.slide-contents div.slider.mini-profile p{ position: absolute; top: 75px; left: 15px; width: 25%; text-align: left; }
+	div.slide-contents div.slider.mini-profile form#mini-profile{ width: 52%; margin: 33px 5% 0 0; float: right; }
+	div.icons-menu ul li h3{ font-size: 16px; font-size: 1.6rem; }
+	div.icons-menu ul li img{ width: 60%; }
+	#feature-container div.feature-left .feature{ width: 70%; float: none; clear: both; margin: 25px auto; }
+	.row div[class^="col"] { width: 100%; }
+	.row div[class^="col"] > .pad20{ padding-left: 0; }
+	#container #content div.centerbar p:first-child{ clear: both; }
+	#container #content .sidebarright, #container #content .sidebarleft { background: none; padding: 10px 4px 10px 4px; }
+	#container #content .sidebarright > img, #container #content .sidebarleft > img{ display: block; margin: 15px auto; }
+	#container #header .nav > li { background: none; margin: 0; padding: 0 0 0 1rem; padding: 0 0 0 10px; }
+	div.slide-welcome-contents{ background-image: none; background-color: rgba(255,255,255,0.7); width: 80%; height: 80%; left: 7%; top: 0; }
+	div.slide-welcome-contents h2{ text-align: left  }
+	div.slide-welcome-contents a.big-call-to-action{ padding-top: 0; }
+	div.slide-welcome-contents p{ width: 100%; text-align: left; }
+	.flexslider .flex-control-nav{ bottom: 0; }
+	div.pet-welcome .text{ padding-top: 4px; }
+	#feature-container{ background-image: none; }
+	#feature-container #main-feature{ width: 100%; }
+	#feature-container div.feature-right, #feature-container div.feature-left{ width: 100%; float: none; clear: both; }
+	div.icons-menu{ margin: 25px auto; width: 80%; float: none; clear: both; }
+	img.product-image{ display: block; clear: both; float: none; max-width: 90%; margin: 0 auto; }
+	.petpro-thumb.contact{ display: none; }
+	ul.vetsclinicparts{ display: none; }
+	img.center-image-mobile{ display: block; margin: 15px auto; float: none; }
+	#story-iframe{ width: 400px; height: 226px; }
+	#container #content.content-page .story-intro p{ width: 72%; }
+	div.tagline h1{ font-size: 14px; font-size: 1.4rem; }
+	#petpro-iframe{ width: 420px; height: 238px; }
+	div.share-noshare div img, div.share-noshare div a, div.share-noshare div+div img, div.share-noshare div+div a{ float: none; margin: 4px auto; text-align: center; }
+	div.share-noshare div a.btnForward:after{ content: none; }
+	.row.header .columnHeader{ display: none; }
+	.orderDetails .row.odd{ background: #F2EBDF; border: 1px solid #603813; }
+	.orderDetails .row.even{ background: #FFF; border: 1px solid #F2EBDF; }
+	.orderItem .productImage img{ display: block; margin: 5px auto !important; }
+	.orderItem .ppd.price{ text-align: left; margin: 5px 10px; }
+	.orderItem .ppd.price:before{ content: "Price per day: "; }
+	.row.recommend-totals .greenBorder .col3{ width: 25%; float: left; }
+	.row.recommend-totals .greenBorder .col6{ width: 50%; float: left; }
+	ul.vetclinicButtons li{ width: 100%; float: none; clear: both; text-align: center; height: auto; }
+	ul.vetclinicButtons li a{ background-image: none!important; text-indent: 0; width: 150px; height: auto; line-height: 25px; text-transform: uppercase; background-color: #F2EBDF; padding: 0 8px; border: 1px solid #603813; border-radius: 5px; }
+	ul.vetclinicButtons li a.active{ color: #603813; background-color: #99CA3F }
+	.rightbrownborder{ border-right: none; }
+	p.push-bottom-mobile{ position: absolute; bottom: 0px; }
+	img.pad-bottom-mobile{ margin-bottom: 200px; }
+	div.basic-pack{ margin: -50px 0 40px 0; }
+	.pawclubnotice.ineligible{ height: 66px; }
+	.pawclubnotice.ineligible .text{ width: 73%; }
+	.pawtree-story .story-leftcol{ padding-right: 0; }
+	.pawtree-story .story-center{ padding: 0; }
+	/*New Homepage*/
+	body.condensed .footer-tagline h3{ font-size: 14px; font-size: 1.4rem; -webkit-font-smoothing: antialiased; }
+	#write-testimonial .field input { width: 100%; }
+	.rootpage-90daydiff .ninety-cta{ margin-top: 65px; padding-top: 15px; }
+	.rootpage-90daydiff .ninety-hero{ height: 210px; padding-top: 70px; }
+	.ninety-hero #story-iframe{ position: relative; top: -15px; }
+	body.page .petpro-section h2, body.page .become-petpro-bottom h2, body.page .become-petpro-faq h2, body.page .page-slideshow h2, #content .petpro-story h2{ font-size: 28px; font-size: 2.8rem; text-align: center; }
+	body.page .petpro-section h3{ font-size: 24px; font-size: 2.4rem; }
+	#container #content .petpro-section .do-cols h4{ font-size: 18px; font-size: 1.8rem; }
+	.petpro-section .do-cols .col4{ margin-bottom: 20px; }
+	.petpro-section .checklist{ margin-top: 25px; }
+	.petpro-section .make-money .flags{ width: 95%; margin: 0 auto; }
+	.petpro-story .image{ max-height: none; margin-bottom: 15px; }
+	.ninety-section .videos .video, .ninety-section .videos .video.right{ width: 100%; float: none; clear: both; max-width: 320px; margin: 0 auto; }
+	.ninety-section .videos .or{ display: none; }
+	.ninety-section .videos .video iframe{ height: 180px; }
+	.ninety-section.split .col-left, .ninety-section.split .col-right{ width: auto; float: none; clear: both; height: auto; margin-bottom: 25px; }
+	.page-slideshow .petpro .slide-content h2{ font-size: 28px; font-size: 2.8rem; }
+	.ninety-section .videos .video iframe{ height: 142px; }
+	.page-slideshow .slide .slide-image{ width: 100%; float: none; clear: both; margin-bottom: 25px; }
+	.page-slideshow .slide .slide-content{ width: 100%; float: none; clear: both; }
+	.page-slideshow .petpro .slide-content .details{ margin: 10px 0; }
+	#container #content .page-slideshow .testimonial .slide-content .title{ display: none; }
+}
+/*iPhone5 landscape*/
+@media screen and (max-width:568px){
+	#container #header p, #container #header a{ font-size: 11px; font-size: 1.1rem; }
+	#container #content{ padding: 0 12px; }
+	div.pet-welcome{ max-width: 320px; }
+	#container #header div.pet-welcome p{ font-size: 10px; font-size: 1.0rem; }
+	.flexslider{ z-index: 500; }
+	.mobile-slider-contents{ display: block; height: 70px; background: #444; }
+	.flex-viewport{ overflow: visible!important; }
+	div.slideshow div.slide-contents{ top: 95%; width: 90%; right: 5%; text-align: center; }
+	div.slideshow div.slide-contents h2 br, div.slideshow div.slide-contents h5 br{ display: none; }
+	div.slide-contents div.slider.mini-profile{ margin-left: 0; top: 0; left: 1%; width: 98%; margin-top: -175px; height: 185px; }
+	div.slide-contents div.slider.mini-profile h6{ top: 10px; }
+	div.slide-contents div.slider.mini-profile p{ top: 45px; }
+	div.slide-contents div.slider.mini-profile form#mini-profile{ width: 56%; margin-right: 2%; margin-top: 17px; }
+	.content-header{ margin-left: -12px; }
+	.content-header h1{ padding-left: 12px;  }
+	.breadcrumbs{ display: none; }
+	.product-table{ width: 90%; margin-left: 5%; }
+	.content-header h1{ font-size: 15px; font-size: 1.5rem; }
+	#container #content.content-page h3{ font-size: 18px; font-size: 1.8rem; }
+	#container #content .ui-tabs.shoptabs ul.ui-tabs-nav{ width: 360px; margin: 0 auto; }
+	.vetButtonBackground{ width: 490px; margin: 0 auto; }
+	div.story-intro img.with-love{ width: 90px; top: -45px; }
+	div.story-icons{ width: 96%; }
+	.petprofileForm .view-weight-diagram.small{ display: none; }
+	div.tagline h1{ font-size: 12px; font-size: 1.2rem; line-height: 15px; }
+	#firestormOrderForm input.btnForward{ padding-bottom: 10px; }
+	.revealFullRecommend .text{ font-size: 14px; }
+	.rootpage-90daydiff .ninety-hero{ height: 205px; }
+	.ninety-hero #story-iframe{ border-width: 3px; width: 178px; height: 100px; }
+	.rootpage-90daydiff .how-it-works .steps h4{ font-size: 16px; font-size: 1.6rem; }
+	#container #content.content-page .ninety-section h3{ font-size: 22px; font-size: 2.2rem; }
+	#container #content.content-page .petpro-section .do-cols h3{ font-size: 24px; font-size: 2.4rem; }
+	.petpro-section.first{ margin-top: -10px; }
+	.petpro-story{ margin-top: 0; }
+}
+@media screen and (max-width: 500px){
+	.petpro-section .make-money .flags img{ width: 100px; }
+	#container #content .petpro-section .make-money .flags p{ margin-left: 125px; }
+}
+/*iPhone4 landscape*/
+@media screen and (max-width:480px){
+	#container #header #logo{ width: 160px; }
+	body.condensed #container #header #logo{ margin-top: 30px; margin-bottom: 40px; }
+	#container #header ul.social{ text-align: center; width: 100%; }
+	#container #header ul.social li{ margin: 0 3px; }
+	body.condensed #container #header ul.social li{ margin: 0; }
+	div.pet-welcome{ min-width: 0; width: 150px; }
+	body.condensed div.pet-welcome{ top: 35px; }
+	body.condensed div.pet-welcome .text{ margin-top: 55px; }
+	div.pet-welcome div.pet-thumb.cols-2{ max-width: 28%; margin-left: 15px; }
+	div.pet-welcome div.pet-thumb.cols-3{ max-width: 16%; margin-left: 10px; }
+	#container #header p, #container #header a{ font-size: 10px; font-size: 1.0rem; }
+	#container #header div.pet-welcome div.text a{ display: block; }
+	div.slide-contents div.slider.mini-profile{ margin-top: -122px; height: 185px; }
+	div.slide-contents div.slider.mini-profile p{ width: 30%; }
+	div.slide-contents div.slider.mini-profile div.file-upload{ right: 2px; }
+	.flexslider .flex-control-paging{ display: none; }
+	div.slideshow div.slide-contents{ width: 95%; right: 2.5%; }
+	div.slide-contents div.slider.mini-profile{ top: 0; left: -2.5%; width: 105%; background: #fff; }
+	div.slide-contents div.slider.mini-profile input[type=text]{ border: 1px solid #603813; background: #F2EBDF; }
+	div.slide-contents div.slider.mini-profile label, div.slide-contents div.slider.mini-profile #mini-name, div.slide-contents div.slider.mini-profile #mini-age{ display: block; clear: both; float: right; }
+	div.slide-contents div.slider.mini-profile div.file-upload{ position: static; clear: both; float: right; }
+	div.slide-contents div.slider.mini-profile input.bone-button{ position: absolute; left: -45px; top: -45px; }
+	div.slide-welcome-contents{ top: 0; left: 0%; width: 94%; height: 115%; background: #fff; }
+	div.slider.mini-profile{}
+	#container #content .ui-tabs ul li .ui-tabs-anchor{ width: 98%; margin: 10px auto; }
+	#container #content .ui-tabs ul li .teampic{ margin-left: 0; }
+	.vetButtonBackground{ width: 370px; }
+	#story-iframe{ width: 300px; height: 170px; }
+	#container #content.content-page .story-intro p{ width: 55%; }
+	#container footer .footnav{ width: 320px; }
+	#container footer .footnav li{ width: 48%; }
+	#container footer .footnav li a{ padding-left: 0; }
+	#container footer .footnav li:nth-child(odd){ margin-left: 2%; }
+	#container footer .footnav li a{ font-size: 8px; font-size: 0.8rem; line-height: 15px; }
+	#container #content.content-page p.columnHeader{ font-size: 8px; line-height: 10px; }
+	.pet-welcome .pet-thumb.not-signed-in, .pet-welcome .profile-welcome{ display: none; }
+	#container #header div.pet-welcome .text p.mobile-login a{ display: block; }
+	div.pet-welcome .text .discover { display: none; }
+	div.pet-welcome .text .smaller { display: none; }
+	.revealFullRecommend .text{ color: #000; top: 70px; }
+	.pawclubnotice.eligible{ height: 65px; }
+	.pawclubnotice.eligible .text{ width: 65%; }
+	.pawclubnotice.ineligible{ height: 84px; }
+	.pawclubnotice.ineligible .text{ width: 69%; }
+	.divider-intro h2{ left: 60px!important; font-size: 12px; }
+	/*New Homepage*/
+	#top-feature-container .feature, #top-feature-container > div.feature+div.feature+div.feature{ background: none; margin-right: 0; padding-right: 0; width: 80%; float: none; margin: 25px auto; }
+	#home-testimonials{ margin: 40px 0 0 0; }
+	#home-testimonials #testimonials-images img{ display: none!important; }
+	#feature-container #main-feature{ margin: 20px 0 30px 0; }
+	.rootpage-90daydiff .ninety-cta{ margin-top: 40px; padding-top: 30px; }
+	.rootpage-90daydiff .ninety-hero{ height: 155px; }
+	.ninety-hero #story-iframe{ top: -25px; height: 85px; width: 150px; border-width: 1px; border-radius: 0; }
+}
+@media screen and (max-width:400px){
+	div.slide-contents div.slider.mini-profile{ margin-top: -100px; height: 167px; }
+	div.slide-contents div.slider.mini-profile h6{ top: 0; }
+	div.slide-contents div.slider.mini-profile p{ top: 32px; width: 38%; }
+	div.slide-contents div.slider.mini-profile form#mini-profile{ margin-top: 0; }
+	div.slide-contents div.slider.mini-profile div.file-upload{ width: 86px; }
+	div.slide-welcome-contents{ width: 93%; }
+	div.slide-welcome-contents h2{ padding-bottom: 4px; }
+	div.slide-welcome-contents a.big-call-to-action h5, div.slide-welcome-contents a.big-call-to-action h4{ padding-right: 20px; }
+	div.slide-welcome-contents a.big-call-to-action h4{ font-size: 13px; font-size: 1.3rem; }
+	div.icons-menu ul li h3{ font-size: 12px; font-size: 1.2rem; }
+	#container #content .ui-tabs.shoptabs ul.ui-tabs-nav{ width: 245px; }
+	#container #content.content-page .icons-menu h3{ font-size: 12px; font-size: 1.2rem; }
+	.vetButtonBackground{ width: 245px; }
+	#container #content.content-page .story-intro p{ width: 50%; }
+	div.story-intro img.with-love{ display: none; }
+	#nutrition-iframe{ width: 294px; height: 166px; }
+	.petprofileForm .field.dogbreed select{ margin-left: 0; }
+	div.tagline h1{ font-size: 11px; font-size: 1.1rem; }
+	.controls a{ font-size: 9px; font-size: 0.9rem; white-space: nowrap; }
+	.petgroup .foodLabelContainer{ background-size: contain; width: 250px; height: 78px; }
+	.petgroup .foodLabelContainer .foodLabelInput{ top: 26px; left: 25px; width: 200px; font-size: 15px; }
+	.foodLabelContainer .maxcharnotice{ top: 70px; left: 60px; }
+	.petgroup .approveLabel{ right: 30%; }
+	.pet-name{ font-size: 9px; font-size: 0.9rem; text-transform: none; }
+	#container #content.content-page .petgroup-container ul.grouplist li{ height: auto; width: 68px; }
+	#container #content.content-page .petgroup-container ul.grouplist li.tempHolder{ width: auto; }
+	#container #content.content-page .petgroup-container ul.grouplist li{ margin-right: 5px; }
+	#firestormOrderForm input.btnForward{ font-size: 14px!important; font-size: 1.4rem!important; }
+	.greenBorder{ background: #fff; }
+	#userLogin_form .field label, #userRegister_form .field label{ width: 110px; }
+	#userRegister_form .field #user_name{ width: 70px; }
+	.petgroup .grouplist.onlabel{ padding-left: 0; padding-right: 0; }
+	.pawclubnotice.eligible{ height: 85px; }
+	.pawclubnotice.eligible .text{ width: 60%; }
+	.rootpage-90daydiff .ninety-hero{ height: 110px; }
+	.ninety-hero #story-iframe{ top: -35px; }
+	.rootpage-90daydiff .yes-button, .rootpage-90daydiff .shop-button{ width: 290px; }
+}
+/*iPhone portrait*/
+@media screen and (max-width:320px){
+	#container #header ul.social li{ margin: 0 3px; }
+	div.slide-contents div.slider.mini-profile{ margin-top: -98px; height: 163px; }
+	div.slide-contents div.slider.mini-profile h6{ top: -10px; }
+	div.slide-contents div.slider.mini-profile p{ width: 40%; top: 28px; }
+	div.slide-contents div.slider.mini-profile input.bone-button{ left: -70px; }
+	div.slideshow div.slide-contents h2{ font-size: 12px; font-size: 1.2rem; line-height: 14px; padding-top: 8px; }
+	div.slide-welcome-contents{ width: 91%; }
+	#story-iframe{ width: 294px; height: 166px; }
+	#petpro-iframe{ width: 280px; height: 160px; }
+	/*New Homepage*/
+	#home-testimonials #testimonials-text{ width: 125px; }
+	#home-testimonials #testimonials-text h4 a{ font-size: 14px; font-size: 1.4rem; }
+	.ninety-hero #story-iframe{ top: -40px; height: 65px; width: 115px; }
+	.rootpage-90daydiff .how-it-works .steps h4{ font-size: 14px; font-size: 1.4rem; }
+	.rootpage-90daydiff .ninety-buttons{ margin-top: -75px; }
+	.rootpage-90daydiff .yes-button, .rootpage-90daydiff .shop-button{ width: 240px; }
+}

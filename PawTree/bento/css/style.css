@@ -1,0 +1,485 @@
+/* General */
+*:focus { outline: none; }
+body { background: #e3cb9f url(../img/background.jpg); }
+img{ width: auto; height: auto; max-width: 100%; }
+#container { width: 1200px; overflow: hidden; margin: 0 auto; position: relative; background: #fff; }
+#container #content { min-height: 400px; padding: 0 90px; position: relative; }
+body.home #container #content{ padding: 0; }
+
+#container #content .sidebarleft { background: url(../img/g-dot.png) repeat-y right top; padding-right: 30px; }
+#container #content .centerbar { padding: 0 10px; }
+#container #content .sidebarright { background: url(../img/g-dot.png) repeat-y 5px top; padding-left: 30px; text-align: center; }
+
+.row { position: relative; }
+.row:after { content: ""; display: table; clear: both; width: 100%; }
+.row .col12 { width: 100%; position: relative; }
+.row .col10 { width: 83%; position: relative; float: left; }
+.row .col9 { width: 75%; position: relative; float: left; }
+.row .col8 { width: 66%; position: relative; float: left; }
+.row .col7 { width: 59%; position: relative; float: left; }
+.row .col6 { width: 50%; position: relative; float: left;  }
+.row .col5 { width: 41%; position: relative; float: left;  }
+.row .col4 { width: 33%; position: relative; float: left;  }
+.row .col3 { width: 25%; position: relative; float: left;  }
+.row .col2 { width: 16%; position: relative; float: left; }
+.row .col1 { width: 8%; position: relative; float: left; }
+.row.even { background: #FFFFFF; }
+.row.odd { background: #F2EBDF; }
+
+.circle { border-radius: 50%; }
+.quotebox { padding: 10px 20px; margin: 10px 0; }
+.sidebar-image.quote{ width: 70%; margin: 40px auto; }
+.pet-thumb{ height: auto; width: auto; max-width: 76px; max-height: 76px; padding: 5px; background: url(../img/sm-circle.png) no-repeat 50% 50%; background-size: cover; margin: auto; display: inline-block; }
+.pet-thumb img{ max-width: 94%; margin: 3%; }
+img.product-image{ float: right; margin: 5px 30px; max-width: 460px; }
+img.big-product-image{ display: block; margin: 0 auto; }
+.pad20 { padding: 0 20px; }
+.pad40 { padding: 0 40px; }
+.vet-anchors{ display: block; padding-bottom: 110px; margin-top: -60px; }
+.sidebar-image.cat-newsletter img{ padding-top: 50px; }
+.clear-both{ clear: both; }
+.left { float: left; }
+
+/* Forms */
+fieldset { border: 1px solid #DDD; padding: 10px; }
+fieldset legend { padding: 10px; font-weight: bold; }
+form .error { background: #FFBABA !important; }
+form .field { clear: both; padding-bottom: 4px; }
+form label { width: 250px; display: block; float: left; }
+form label.error { margin: 4px 0; font-size: 11px; font-size: 1.1rem; }
+hr { border: 0; height: 10px; background: url(../img/g-dot.png) repeat-x; width: 70%; margin: 10px auto; }
+
+#userLogin_form .field label, #userRegister_form .field label, #upgradePetPro .field label { width: 125px; line-height: 24px; }
+#userRegister_form .field #user_name { width: 80px; }
+#userLogin_form .field .btnForward { float: right; margin-right: 100px; }
+#userRegister_form .field .btnForward { float: right; }
+
+/* Header */
+#container #header { padding-bottom: 20px; margin: 0 90px; position: relative; }
+#container #header #logo { margin: 20px 0 10px; width: 33%; float: left; }
+#container #header #logo img{ width: 303px; }
+
+/* Customer Menu */
+#container #header #customermenu { width: 62%; float: right; text-align: right; padding: 4px 0; background: url(../img/g-dot.png) repeat-x bottom right; min-height: 35px; }
+#container #header #customermenu div.links { float: right; margin: 8px 25px 0 0; }
+#container #header #customermenu #loginBox { display: none; position: absolute; top: 50px; right: 0; z-index: 20; background: #fbfbf5; border: 1px solid #dfd9c3; border-radius: 8px; }
+#container #header #customermenu #loginBox label { width: 100px; float: left; margin: 0 4px 0 0; line-height: 24px; }
+#container #header #customermenu div.links a.logout{ margin-left: 10px; }
+#container #header #customermenu div.links a.logout:after{ content: '\00BB'; padding-left: 5px; }
+
+/* Social Icons */
+#header ul.social{ display: block; float: right; }
+#header ul.social li{ display: inline-block; }
+#header ul.social li a{ display: inline-block; width: 27px; height: 28px; background: url(../img/ui.png) no-repeat; transition: all .2s ease; }
+#header ul.social li a.facebook{ background-position: -119px 0; }
+#header ul.social li a.facebook:hover{ background-position: -119px -28px; }
+#header ul.social li a.twitter{ background-position: -146px 0; }
+#header ul.social li a.twitter:hover{ background-position: -146px -28px; }
+#header ul.social li a.pinterest{ background-position: -198px 0;  }
+#header ul.social li a.pinterest:hover{ background-position: -198px -28px; }
+#header ul.social li a.instagram{ background-position: -251px 0; }
+#header ul.social li a.instagram:hover{ background-position: -251px -28px; }
+#header ul.social li a.google{ background-position: -225px 0; }
+#header ul.social li a.google:hover{ background-position: -225px -28px; }
+#header ul.social li a.blog{ background-position: -172px 0; }
+#header ul.social li a.blog:hover{ background-position: -172px -28px; }
+#header ul.social li a.youtube{ background-position: -278px 0; margin-left: 4px; }
+#header ul.social li a.youtube:hover{ background-position: -278px -28px; }
+#header ul.social li a.linkedin{ background-position: -306px 0; margin-left: 3px; }
+#header ul.social li a.linkedin:hover{ background-position: -306px -28px; }
+#header ul.social li a.snapchat{ background-position: -334px 0; }
+#header ul.social li a.snapchat:hover{ background-position: -334px -28px; }
+
+/* Header Pet Welcome */
+div.pet-welcome{ clear: right; float: right; margin-top: 2px; min-width: 276px; position: relative; height: 110px; }
+div.pet-welcome.loggedin .text { margin-top: 70px; }
+div.pet-welcome .pets-wrap{ position: absolute; top: 0; right: 0; overflow: hidden; height: 75px; width: 100%; min-width:574px; }
+#all-pets-button{ position: absolute; top: 0; right: 0; z-index: 600; }
+#all-pets-button #more-pets-count{ display: block; width: 58px; height: 58px; line-height: 55px; text-align: center; background: #8ebb13; color: #fff; border-radius: 50%; }
+#all-pets-button #more-pets-count .plus{ font-size: 25px; vertical-align: super; }
+#all-pets-button #more-pets-count .number{ font-size: 30px; }
+div.pet-welcome .pets{ position: absolute; z-index: 500; top: 0; right: 82px; }
+div.pet-welcome .pets.petnum-7, div.pet-welcome .pets.petnum-6, div.pet-welcome .pets.petnum-5, div.pet-welcome .pets.petnum-4, div.pet-welcome .pets.petnum-3, div.pet-welcome .pets.petnum-2, div.pet-welcome .pets.petnum-1, div.pet-welcome .pet-thumb.not-signed-in{ right: 0; }
+div.pet-welcome .pet-thumb.not-signed-in{ position: absolute; }
+div.pet-welcome .pets a.hidable{ display: none; }
+div.pet-welcome .pet-thumb{ width: 58px; height: 58px; margin-left: 10px; }
+div.pet-welcome .text{ clear: both; text-align: right; padding-top: 8px; line-height: 1.4; color: #534741; font-size: 20px; }
+div.pet-welcome .text .smaller { font-size: 80%; }
+div.pet-welcome .text p{ margin-bottom: 0; }
+#container #header div.pet-welcome .text p.mobile-login a{ display: none; font-size: 14px; font-size: 1.4rem; margin: 15px; background: #603813; float: right; padding: 1px 4px; border-radius: 5px; }
+#container #header div.pet-welcome .text p.mobile-login a:after{ content: " \00BB"; }
+
+/* Main Nav */
+#container #header .nav { clear: left; float: left; margin-top: 10px; }
+#container #header .nav > li { background: url(../img/paw_bullet.png) no-repeat left top; background-position: 0 4px; display: inline-block; margin: 0 0 0 25px; padding-left: 40px; position: relative; cursor: pointer; }
+#container #header .nav li:first-child { background: none; margin-left: 0; padding-left: 0; }
+#container #header .nav > li > a{ padding-bottom: 18px; }
+#container #header .nav > li:hover > a{ background: url(../img/nav-arrow.png) no-repeat center bottom; color: #3fa542; }
+#container #header .nav > li.active > a, #container #header .nav > li.active-parent > a{ background: url(../img/nav-arrow.png) no-repeat center bottom; color: #462f30; }
+#container #header .nav > li > ul{ position: absolute; padding: 15px 0; z-index: 9999; width: 1200px; display: none; cursor: pointer; }
+#container #header .nav > li:hover > ul{ display: block; }
+#container #header .nav > li > ul li{ display: inline-block; }
+#container #header .nav > li > ul li a{ color: #fff; padding: 8px 25px; background: url(../img/subnav-bg.png) repeat; background: rgba(70,48,49,.5); font-size: 15px; font-size: 1.5rem; display: block; }
+#container #header .nav > li > ul li a:hover{ color: #EABF40; }
+
+
+/* Signup Nav */
+#container #header .signupnav{ float: right; }
+#container #header .signupnav li{ display: inline-block; padding: 4px 8px; margin: 0 4px; background: #ebd7ad; border-radius: 4px; transition: all .35s ease; }
+#container #header .signupnav li a{ display: block; }
+#container #header .signupnav li:hover{ background: #eabf40; }
+#container #header .signupnav li.active a{ color: #BFA37C; }
+
+/* product nav */
+ul.productsnav { list-style: none; width: 210px; margin: auto !important; }
+ul.productsnav li { border-bottom: 1px solid #EBD7AD; padding: 10px 20px; text-align: center; list-style: none !important; margin: 0 !important;}
+ul.productsnav li a { color: #603813; font-size: 15px; font-size: 1.5rem; text-transform: uppercase; }
+ul.productsnav li a:hover { color: #99CA3F; }
+ul.productsnav li.active { background: url(../img/paw_bullet.png) right 10px no-repeat; }
+ul.productsnav li.active a { color: #3C9F50; }
+
+/* PetPro Rep Site */
+#container #header .petproHeader { clear: right; float: right; text-align: right; margin: 5px 0; }
+
+/* Footer */
+#container footer { width: 100%; margin: 10px 0 0 0; background: #e6e6e6; border-top: 40px solid #eabf40; padding: 5px 0; float: left; clear: both; }
+#container footer .footnav { display: block; width: 710px; margin: 20px auto; }
+#container footer .footnav li { display: inline-block; width: 235px; margin: 3px 0; }
+
+/* HOME PAGE */
+/* slider */
+.flexslider{ width: 100%; max-width: 1200px; border-bottom: 4px solid #8cc63f; }
+div.slide-contents{ position: absolute; top: 25%; right: 2%; width: 29%; }
+.flexslider .flex-control-nav{ bottom: 15px; }
+.flexslider .flex-control-paging li a{ background: #603813; background: rgba(96,56,19,0.6); width: 9px; height: 9px; }
+.flexslider .flex-control-paging li a.flex-active{ background: #BE1E2D; background: rgba(190,30,45,0.7); }
+/* slider mini-profile */
+div.slide-contents div.slider.mini-profile{ width: 325px; height: 325px; background: url(../img/slider-minipro-back.png) no-repeat 50% 50%; background-size: cover; text-align: center; color: #603813; margin-top: -60px; }
+div.slide-contents div.slider.mini-profile #mini-profile{ float: none; background: none; width: auto; margin: 0; }
+div.slide-contents div.slider.mini-profile h6{ padding-top: 55px; margin: 0; }
+div.slide-contents div.slider.mini-profile p{ font-size: 12px; font-size: 1.2rem; margin: 8px 60px; }
+div.slide-contents div.slider.mini-profile #mini-profile div.mini-field{ position: relative; max-width: 250px; margin: 4px auto; clear: both; width: 100%; }
+div.slide-contents div.slider.mini-profile #mini-profile div.mini-field:first-child{ margin-top: 18px; }
+div.slide-contents div.slider.mini-profile input:not(.bone-button), div.slide-contents div.slider.mini-profile label{ display: inline-block; border: none; border-radius: 4px; padding: 3px; font-size: 10px; font-size: 1.0rem; }
+div.slide-contents div.slider.mini-profile #mini-name, div.slide-contents div.slider.mini-profile #mini-age{ width: 118px; float: none; text-align: left; }
+div.slide-contents div.slider.mini-profile label{ float: left; width: 85px; text-align: right; font-size: 14px; font-size: 1.4rem; letter-spacing: 0; }
+div.slide-contents div.slider.mini-profile div.file-upload{ position: absolute; width: 124px; height: 22px; line-height: 22px; top: 4px; right: 17px; color: #fff; background: #998675; border-radius: 4px; z-index: 1; cursor: pointer; font-size: 11px; font-size: 1.1rem; text-align: left; text-indent: 4px; }
+div.slide-contents div.slider.mini-profile input.bone-button{ margin-top: 4px; width: 117px; height: 36px; background-position: 0 0; }
+div.slide-contents div.slider.mini-profile input.bone-button:hover{ background-position: 0 -36px; }
+div.slide-contents div.slider.mini-profile #imageUpload { left: 0; top: 68px; z-index: 1000; text-align: left; color: #000000; width: 360px; }
+div.slide-contents div.slider.mini-profile #imageUpload .btnForward { float: right; }
+div.slide-contents div.slider.mini-profile #imageUpload .step1 input { float: left; }
+div.slide-welcome-contents{ position: absolute; top: 13%; right: 3%; width: 44%; height: 62%; background: transparent url(../img/welcome-bg.png) no-repeat top left; background-size: contain; padding: 20px 30px; }
+.mobile-slider-contents{ display: none; background-color: #444; -webkit-transform: translateZ(0); }
+/* features area top */
+#top-feature-container{ width: 92%; margin: 20px auto; }
+#top-feature-container .feature{ width: 30%; float: left; margin-right: 2.5%; padding-right: 2.5%; background: transparent url(images/fading-dots.png) no-repeat right center; }
+#top-feature-container > div.feature+div.feature+div.feature{ margin-right: 0; padding-right: 0; background: none; }
+#top-feature-container .feature h5{ font-size: 18px; font-size: 1.8rem; text-align: center; }
+#top-feature-container .feature h5 span.arrow, #home-testimonials #testimonials-submit p span.arrow{ display: inline-block; width: 9px; height: 12px; background: transparent url(images/arrow.png) no-repeat left top; position: relative; }
+/* testimonials */
+#home-testimonials{ height: 130px; width: 100%; margin: 75px 0 50px 0; padding: 5px 0; background: #8cc63f; position: relative; }
+#home-testimonials #testimonials-text{ width: 240px; float: left; text-align: right; margin-right: 15px; }
+#home-testimonials #testimonials-text h4{ margin-top: 8px; }
+#home-testimonials #testimonials-text h4 a{ color: #fff; font-size: 23px; font-size: 2.3rem; -webkit-font-smoothing: antialiased; line-height: 1.2; }
+#home-testimonials #testimonials-images{ display: inline-block; max-height: 130px; float: left; overflow: hidden; position: absolute; width: 1200px; }
+#home-testimonials #testimonials-images img{ opacity: 0; width: auto; max-height: 100%; }
+#home-testimonials #testimonials-submit{ position: absolute; width: 215px; height: 215px; background: transparent url(images/newTestimonialbg.png) no-repeat center center; background-size: 100% 100%; top: -37px; right: 100px; -webkit-transform: translateZ(0); }
+#home-testimonials #testimonials-submit .inner{ width: 150px; margin: 0 auto; text-align: center; margin-top: 38px; }
+#home-testimonials #testimonials-submit p{ color: #603813; }
+#home-testimonials #testimonials-submit hr{ height: 1px; background: #fff; width: 120px; margin: 10px auto; }
+#home-testimonials #testimonials-submit p a{ color: #009245; font-size: 26px; }
+/* features area bottom */
+#feature-container{ float: left; clear: both; background: url(../img/g-dot.png) repeat-y 72% top; width: 90%; margin: 35px 5%; }
+#feature-container h5{ color: #3C9F50; }
+#feature-container h5 sup{ font-size: 12px; vertical-align: super; }
+#feature-container div.feature-left{ width: 72%; float: left; }
+#feature-container #main-feature{ width: 90%; padding-left: 3%; float: left; margin: 30px 0 65px 0; position: relative; -webkit-transform: translateZ(0); }
+#feature-container #main-feature h2{ font-family: clarendon_light, "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif; text-align: center; }
+#feature-container #main-feature #profile-cta{ width: 70%; float: left; position: relative; z-index: 5; }
+#feature-container #main-feature #mini-profile-wrapper{ width: 30%; float: left; position: relative; z-index: 5; margin-top: 35px; }
+#feature-container #main-feature img{ display: block; margin: 0 auto; }
+#feature-container #main-feature .text{ position: absolute; top: 12%; right: 0; width: 40%; text-align: center; }
+#feature-container #main-feature .text p{ line-height: 1.6; color: #603813; }
+#feature-container #main-feature .background{ background-color: #f4e9ce; position: absolute; top: 20%; left: 28%; width: 74%; height: 75%; z-index: 1; border-radius: 10px; }
+/* MINI PROFILE */
+#feature-container #main-feature #mini-profile-wrapper .mini-profile{ margin-left: 17px; padding-left: 17px; border-left: 1px solid #fff; text-align: center; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile h5{ line-height: 1.2; padding-bottom: 5px; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile label, #feature-container #main-feature #mini-profile-wrapper .mini-profile input{ max-width: 100%; float: none; margin-bottom: 5px; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile input{ border-radius: 5px; border: 1px solid #c7b299; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile label{ color: #3C9F50; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile label .desc{ display: block; font-size: 10px; font-style: italic; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .age label{ width: 42%; font-size: 12px; float: left; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .age input{ width: 42%; float: left; margin-left: 12px; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .image{ clear: both; }
+.mini-profile .imageUpload{ top: 44px; left: -65px; text-align: left; color: #000000;}
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .image label{ width: 45%; float: left; font-size: 12px; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .image .file-upload{ width: 70px; height: 24px; line-height: 24px; background: #8cc63f; float: left; color: #fff; font-size: 12px; border-radius: 5px; border: 1px solid #fff; margin-left: 12px; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .submit{ clear: both; padding-top: 12px; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .submit input{ border: none; border-radius: 0; color: #d7f7a6; font-size: 14px; background-position: 0 0; width: 118px; height: 36px; cursor: pointer; }
+#feature-container #main-feature #mini-profile-wrapper .mini-profile .submit input:hover{ background-position: 0 -36px; }
+.mini-profile .imageUpload .step1 input { float: left; }
+/* right features */
+#feature-container div.feature-right{ width: 25%; float: right; }
+#feature-container div.feature-right .feature{ width: 100%; clear: both; float: left; margin-top: 0; padding-top: 10px; }
+#feature-container div.feature-right .feature img{ display: block; clear: both; margin: 0 auto; padding: 35px 0 15px; }
+#feature-container div.feature-right .feature h6{ text-align: center; color: #603813; line-height: 1.2; -webkit-font-smoothing: antialiased; }
+#feature-container div.feature-right .feature p{ text-align: center; color: #000; padding: 0 5%; }
+/* icons menu */
+div.icons-menu { margin: 0 auto 20px auto; width: 50%; -webkit-transform: translateZ(0); }
+div.icons-menu ul{ width: 100%; }
+div.icons-menu ul li{ display: inline-block; width: 25%; float: left; }
+div.icons-menu ul li:hover{ opacity: 0.8; }
+div.icons-menu ul li h3{ text-align: center; color: #603813; }
+div.icons-menu ul li img{ display: block; margin: 15px auto; max-width: 35%; }
+div.icons-menu ul li p{ text-align: center; }
+/* END HOME PAGE */
+
+/* INTERIOR PAGES */
+.content-header { height: 140px; width: 1200px; margin: 0 0 10px -90px; color: #ffffff; background: #9aca3f url(../img/headers/about.jpg) no-repeat top left; }
+.content-header h1 { display: inline-block; padding: 50px 0 0 90px; text-transform: uppercase; font-weight: normal; }
+
+.rootpage-about .content-header { background-image: url(../img/headers/about.jpg); }
+.rootpage-learn .content-header { background-image: url(../img/headers/learn.jpg); }
+.rootpage-host .content-header { background-image: url(../img/headers/host.jpg); }
+.rootpage-join .content-header { background-image: url(../img/headers/join.jpg); }
+.rootpage-shop .content-header { background-image: url(../img/headers/shop.jpg); }
+
+/* vertical tabs */
+.vertical-tabs > ul { float: left; width: 17%; }
+#container #content .vertical-tabs.ui-tabs > ul { border-right: 1px solid #d4ccb0 !important; border-radius: 0; margin-right: -1px !important; }
+#container #content .vertical-tabs.ui-tabs > ul li { display: block; width: 96%; padding: 5px 2%; margin: 0; height: auto; }
+#container #content .vertical-tabs.ui-tabs > ul li .ui-tabs-anchor { width: auto; }
+.vertical-tabs .ui-tabs-panel { float: left; width: 78%; padding: 20px 2%; }
+.vertical-tabs .ui-state-default a { color: initial; }
+
+
+/* numbered bullets */
+.numberBullets { display: block; width: 68px; height: 68px; background: url(../img/123numbers.png) no-repeat; font-size: 0; margin: auto; }
+.numberBullets.number1 { background-position: 0 0; }
+.numberBullets.number2 { background-position: 0 -66px; }
+.numberBullets.number3 { background-position: 0 -133px; }
+.ui-tabs-active .numberBullets.number1 { background-position: -70px 0; }
+.ui-tabs-active .numberBullets.number2 { background-position: -70px -66px; }
+.ui-tabs-active .numberBullets.number3 { background-position: -70px -133px; }
+
+img.tour-madewithlove {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 110px;
+}
+
+img.tour-ourvision {
+  position: absolute;
+  bottom: -140px;
+  right: 0;
+  width: 130px;
+}
+
+/* Pet Profile */
+body.body-petprofile .content-header { margin-bottom: 50px; }
+body.body-petprofile h4 { color: #31B753; font-size: 2rem; font-size: 20px; margin: 20px 0; font-weight: 700; }
+body.body-petprofile h4 .hint { font-size: 11px; text-transform: uppercase; color: #B3B3B3; margin: 10px 0 -10px 0; }
+body.body-petprofile form .field {  }
+body.body-petprofile form .field.wherebuy { display: none; }
+body.body-petprofile form .field .small { font-size: 1.1rem; font-size: 11px; color: #B3B3B3; text-transform: uppercase; }
+
+body.body-petprofile .dogsizeOption { float: left; text-align: center; margin: 0 3px; }
+body.body-petprofile .dogsizeTitle { font-family: avant_garde_med; font-size: 14px; line-height: 1.4; }
+body.body-petprofile .dogsizeDescription { font-size: 11px; color: #B3B3B3; margin-top: 10px; }
+body.body-petprofile .dogsizeIcon { background: url('/bento/img/dogSizeSprite.png'); background-size: 540px; background-repeat: no-repeat; margin: 0 auto 10px auto; height: 112px; }
+body.body-petprofile .dogsizeIcon:hover { cursor: pointer; }
+body.body-petprofile .dogsizeIcon.dogsize-teacup { width: 38px; background-position: 0px 0px; }
+body.body-petprofile .dogsizeIcon.dogsize-teacup.selected { background-position: 0px -112px; }
+body.body-petprofile .dogsizeIcon.dogsize-toy { width: 57px; background-position: -38px 0px; }
+body.body-petprofile .dogsizeIcon.dogsize-toy.selected { background-position: -38px -112px; }
+body.body-petprofile .dogsizeIcon.dogsize-small { width: 81px; background-position: -97px 0px; }
+body.body-petprofile .dogsizeIcon.dogsize-small.selected { background-position: -97px -112px; }
+body.body-petprofile .dogsizeIcon.dogsize-medium { width: 105px; background-position: -181px 0px; }
+body.body-petprofile .dogsizeIcon.dogsize-medium.selected { background-position: -181px -112px; }
+body.body-petprofile .dogsizeIcon.dogsize-large { width: 123px; background-position: -288px 0px; }
+body.body-petprofile .dogsizeIcon.dogsize-large.selected { background-position: -288px -112px; }
+body.body-petprofile .dogsizeIcon.dogsize-xlarge { width: 126px; background-position: -413px 0px; }
+body.body-petprofile .dogsizeIcon.dogsize-xlarge.selected { background-position: -413px -112px; }
+
+body.body-petprofile .allergylist .checkbox { display: inline-block; width: 24%; font-family: avant_garde_med; font-size: 14px; margin: 5px 0; }
+body.body-petprofile .issuelist .checkbox { display: inline-block; width: 30%; font-family: avant_garde_med; font-size: 14px; margin: 5px 0; }
+
+#imageUpload { width: 360px; }
+#imageUpload, .imageUpload { display: none; background: #fbfbf5; border: 1px solid #dfd9c3; border-radius: 8px; padding: 4px; position: absolute; z-index: 1000; width: 360px; top: 220px; left: 170px; }
+#imageUpload .imageUpload label { width: 100px; float: left; }
+#imageUpload .step2, .imageUpload .step2 { display: none; }
+#imageUpload, .imageUpload .btnForward { float: right; }
+#imageUpload #progress, .imageUpload .progress { display: none; width: 32px; margin: auto; }
+#imageUpload #fullImage, .imageUpload #fullImage { max-height: 210px; width: auto; }
+#imageUpload #preview, .imageUpload #preview { display: none; position: relative; overflow: hidden; width: 132px; height: 132px; }
+.button { background: #bcb; padding: 2px 4px; text-align: center; display: inline-block; border: 1px solid #000; border-radius: 4px; margin: 0 4px 0 0; text-decoration: none; color: #000; cursor: pointer; }
+.row.profile-pet-profile { padding: 10px; }
+.row.profile-pet-profile .profile-pet-profile-details { margin-top: 24px; font-size: 12px; font-size: 1.2rem; }
+.fish-allergy .allergy-popup{ display: none; position: absolute; background: #F2EBDF; padding: 10px 20px; border-radius: 5px; border: 1px solid #EBD7AD; }
+.fish-allergy .allergy-popup .close{ display: block; position: absolute; top: 5px; right: 5px; color: #3C9F50; cursor: pointer; }
+.profile-pet-profile .cupsperday { position: relative; margin: 25px 10px 0 10px; height: 50px; width: 55px; }
+.profile-pet-profile .cupsperday img { width: 55px; position: absolute; top: 0; left: 0; }
+.profile-pet-profile .cupsperday .cups { color: #fff; font-size: 18px; position: absolute; top: 7px; left: 17px; letter-spacing: -2px; width: 26px; text-align: center; }
+.profile-pet-profile .cupsperday .cups sup { vertical-align: super; font-size: 65%; }
+.profile-pet-profile .cupsperday .cups sub { vertical-align: sub; font-size: 65%; }
+.profile-pet-profile .cupsperday .perday { position: absolute; left: 8px; top: 37px; font-size: 10px; }
+
+.messagebox { margin: 10px 0; border: 1px solid #a0a0a0; background: #e0e0e0; color: #000000; padding: 20px 10px 15px 60px; }
+.messagebox.info { background: #BDE5F8 url(../img/icon/info.png) no-repeat 10px 10px; }
+.messagebox.success { background: #DFF2BF url(../img/icon/success.png) no-repeat 10px 10px; }
+.messagebox.warning { background: #FEEFB3 url(../img/icon/warning.png) no-repeat 10px 10px; }
+.messagebox.error { background: #FFBABA url(../img/icon/error.png) no-repeat 10px 10px; }
+.profile_petbox { float: left; text-align: center; border: 1px solid #000; margin: 10px 10px 0 0; padding: 4px; position: relative; }
+.profile_petbox .delete { position: absolute; top: 2px; right: 2px; }
+
+.petgroup .foodLabelContainer { width: 320px; height: 100px; position: relative; background: url(../img/bonelabel.png) no-repeat; margin: auto; }
+.petgroup .foodLabelContainer .foodLabelInput { position: absolute;
+width: 290px;
+top: 35px;
+left: 15px;
+background: #754d29;
+border: 0;
+color: #fff;
+font-size: 20px;
+text-align: center;
+}
+.labelSuggestionsTitle { line-height: 1.6rem; font-size: 1.2rem; margin-bottom: 10px; }
+.foodLabelInput::-webkit-input-placeholder{ text-align: center; }
+.foodLabelInput:-moz-placeholder { text-align: center; }
+.foodLabelInput::-moz-placeholder { text-align: center; }
+.foodLabelInput:-ms-input-placeholder{ text-align: center; }
+.foodLabelContainer .maxcharnotice { position: absolute; top: 90px; left: 95px; }
+.decisionContainer { width: 311px; margin: auto; } 
+.decisionContainer p { font-size: 1.2rem; font-size: 12px; }
+.petgroup { padding: 10px; border-bottom: 1px solid #eabf40; }
+.petgroup .spacer { height: 80px; }
+.petgroup .grouplist { min-height: 115px; width: 311px; margin: auto !important; }
+.petgroup .grouplist.onlabel { height: 125px; background: url('../img/onlabelbg.png') no-repeat; margin: -30px auto 0 auto !important; padding: 25px 10px 0px 10px; overflow: hidden; background-size: 100% 100%; }
+.petgroup .grouplist li.sortable-placeholder { background-color: #deffe0; }
+.petgroup .grouplist li { padding: 4px; width: 72px; height: 108px; list-style: none !important; margin: 0 10px 0 10px !important; float: left; overflow: hidden; }
+.petgroup .grouplist li:hover { cursor: move; }
+.petgroup .grouplist li .pet-thumb{ width: 62px; height: 62px; }
+.petgroup .grouplist li .pet-name{ font-size: 12px; line-height: 13px; word-wrap: break-word; }
+.petgroup .grouplist .tempHolder { width: 180px; }
+.petgroup .labelSuggestions .suggestionItem { width: auto;
+width: 100%;
+float: left;
+margin: 2px 10px 0 0; }
+.petgroup .labelSuggestions .suggestionItem:hover { background: #e8d1a5; cursor: pointer; }
+.petgroup .approveLabelContainer { border-top: 2px solid #fff; padding: 5px 0; width: 311px; margin: auto; }
+.petgroup .approveLabelContainer .approveLabel { font-size: 20px; margin: 10px 0; }
+
+ul.errorMsgs {
+	background: #fdd;
+	border: 1px solid #f55;
+	padding: 4px 10px;
+}
+.orderItem .put-thumb-wrap{ display: inline-block; margin: 8px; text-align: center; word-wrap: break-word; width: 86px; height: 103px; position: relative; overflow: hidden; }
+.orderItem .put-thumb-wrap .pet-thumb{ width: 60px; height: 60px; position: absolute; top: 0; left: 8px; }
+#container #content.content-page .orderItem .put-thumb-wrap p{ position: absolute; top: 76px; width: 100%; text-align: center; margin: 0; padding: 0; font-size: 12px; line-height: 13px; }
+.orderItem .blind { display: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(../img/disable.png); z-index: 100; }
+
+.product-table{ width: 60%; }
+.product-table tr:nth-child(odd){ background-color: #F2EBDF; }
+.product-table td{ vertical-align: middle; padding: 2px 15px; }
+.shipping-table{ width: 60%; margin: 0 auto; }
+.shipping-table tr:nth-child(odd){ background-color: #F2EBDF; }
+.shipping-table td{ vertical-align: middle; padding: 5px 15px; }
+
+/* Vets Clinic */
+.vetButtonBackground { background-color: #fff; height: 115px; }
+.vetButtonBackground .srollWithPage{ width: 100%; }
+ul.vetclinicButtons { margin: 0 auto 30px auto !important; background-color: #fff; }
+ul.vetclinicButtons li { float: left; width: 116px; height: 75px; margin: 0 8px 0 0 !important; list-style: none !important; }
+ul.vetclinicButtons li a { display: inline-block; width: 117px; height: 75px; background: url(../img/vetclinicbuttons.png) no-repeat; opacity: 1; cursor: pointer; text-indent: -9999px; }
+ul.vetclinicButtons li a.disabled{ opacity: 0.4; cursor: not-allowed; }
+
+ul.vetclinicButtons li a.nutrition { background-position: 0px 0px; }
+ul.vetclinicButtons li a.nutrition:hover { background-position: 0px -76px; }
+ul.vetclinicButtons li a.nutrition.active { background-position: 0px -152px; }
+
+ul.vetclinicButtons li a.dermatology { background-position: -117px 0px; }
+ul.vetclinicButtons li a.dermatology:hover { background-position: -117px -76px; }
+ul.vetclinicButtons li a.dermatology.active { background-position: -117px -152px; }
+
+ul.vetclinicButtons li a.preventivecare { background-position: -233px 0px; }
+ul.vetclinicButtons li a.preventivecare:hover { background-position: -233px -76px; }
+ul.vetclinicButtons li a.preventivecare.active { background-position: -233px -152px; }
+
+ul.vetclinicButtons li a.gastrointestinal { background-position: -350px 0px; }
+ul.vetclinicButtons li a.gastrointestinal:hover { background-position: -350px -76px; }
+ul.vetclinicButtons li a.gastrointestinal.active { background-position: -350px -152px; }
+
+ul.vetclinicButtons li a.grooming { background-position: -467px 0px; }
+ul.vetclinicButtons li a.grooming:hover { background-position: -467px -76px; }
+ul.vetclinicButtons li a.grooming.active { background-position: -467px -152px; }
+
+ul.vetclinicButtons li a.behavior { background-position: -584px 0px; }
+ul.vetclinicButtons li a.behavior:hover { background-position: -584px -76px; }
+ul.vetclinicButtons li a.behavior.active { background-position: -584px -152px; }
+ul.vetsclinicparts { margin-top: 20px !important; }
+
+/* PetPro Tools */
+.shareContainer { margin: 0 0 5px 0; padding: 4px 10px; border: 1px solid #3c9f50; }
+.shareContainer.homepage { margin: 0 0 10px 0; background: #f0f9e8; }
+.shareContainer .shareName { font-size: 18px; font-weight: 700; line-height: 28px; }
+.shareContainer input { width: 90%; border: 1px solid #99CA3F; padding: 2px 4px; }
+.shareContainer .shareLinks { width: 300px; }
+
+/* petPro Upgrade */
+.enrollKit { position: relative; }
+.enrollKit .col3 .description { margin: 0 20px 0 0; }
+.enrollKit .description, .enrollKit .description ul li {
+	font-size: 10px; font-size: 1rem;
+	line-height: 15px; line-height: 1.5rem;
+}
+.enrollKit .title { font-size: 1.5rem; color: #3C9F50; padding: 10px 0 20px 0; }
+.enrollKit .image { text-align: center; }
+.enrollKit .price { text-align: center; font-size: 20px; font-size: 2rem; padding: 10px 0; margin: 20px 60px; }
+.enrollKit .price.preferred { background: #3C9F50; color: #ffffff; border-radius: 5px; }
+
+.content-page iframe{ display: block; margin: 0 auto; } 
+
+div.js-warning{ background-color: #FDD5CE; border: 1px solid #BE1E2D; width: 90%; margin: 15px auto; }
+div.js-warning img{ float: left; padding: 20px 30px; }
+div.js-warning h2, div.js-warning p{ color: #BE1E2D; }
+
+div.compare-mobile{ display: none; width: 90%; margin: 0 auto; }
+div.compare-mobile img{ display: block; margin: 0 auto; }
+div.compare-mobile a{ display: block; text-align: center; }
+#nutrition-iframe{ width: 640px; height: 360px; }
+#petpro-iframe{ width: 640px; height: 360px; }
+img.petpro-lifestyle{ max-width: 90%; float: right; }
+div.share-noshare div img, div.share-noshare div a{ float: left; display: block; clear: both; }
+div.share-noshare div+div img, div.share-noshare div+div a{ float: right }
+.host-img{ max-width: 90%; display: block; float: right; margin-bottom: 15px; }
+
+#container footer p a.terms-link{ color: #3C9F50; }
+#container footer p a.terms-link:hover{ text-decoration: underline; }
+
+div.alert-container{ position: absolute; left: 50%; }
+div.alert-popup{ background: #fff url(../img/paw_bullet.png) no-repeat 8px 15px; padding: 5px 25px; width: 250px; position: relative; left: -50%; text-align: center; border-radius: 5px; border: 1px solid #EBD7AD; box-shadow: 8px 8px 22px -6px #603813; }
+
+div.content-left-image img{ display: block; margin: 20px auto; }
+
+/* Guaranteed Analysis */
+#guaranteed-analysis > div{ margin-bottom: 50px; padding-top: 20px; }
+#guaranteed-analysis .head, #guaranteed-analysis .head-inner{ border: 1px solid #603813; border-right: 0; border-left: 0; }
+#guaranteed-analysis .head{ padding: 4px 0; margin-bottom: 10px; position: relative; }
+#guaranteed-analysis .head-inner{ border-width: 2px; padding-bottom: 10px; }
+#guaranteed-analysis .head .food-title{ text-align: center; position: relative; top: -27px; margin-bottom: -20px; }
+#guaranteed-analysis .head .food-title span{ background: #fff; padding: 0 10px; }
+#guaranteed-analysis h4{ font-size: 14px; font-size: 1.4rem; }
+#container #content.content-page #guaranteed-analysis li{ font-size: 12px; font-size: 1.2rem; margin-bottom: 6px; line-height: 1.2; padding-bottom: 0; }
+#container #content.content-page #guaranteed-analysis p{ font-size: 10px; font-size: 1.0rem; max-width: 95%; margin: 0 0 6px 0; line-height: 1.2; clear: both; }
+#guaranteed-analysis .section-title{ font-size: 12px; font-size: 1.2rem; font-weight: bolder; }
+#guaranteed-analysis .disclaimer{ clear: both; }
+#guaranteed-analysis p .right{ float: right; }
+#guaranteed-analysis table{ margin-top: 12px; width: 95%; }
+#guaranteed-analysis table, #guaranteed-analysis td, #guaranteed-analysis th{ border: 1px solid #c3d62d; }
+#guaranteed-analysis td, #guaranteed-analysis th{ font-size: 12px; vertical-align: middle; padding: 2px; }
+#guaranteed-analysis td+td, #guaranteed-analysis td+td+td, #guaranteed-analysis td+td+td+td, #guaranteed-analysis td+td+td+td+td{ text-align: center; }
+#guaranteed-analysis thead tr+tr th:first-child{ width: 60%; }
+#guaranteed-analysis table th{ background: #f4f7df; }

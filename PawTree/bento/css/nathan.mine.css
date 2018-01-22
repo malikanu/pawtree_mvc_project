@@ -1,0 +1,130 @@
+/** MOBILE FIRST **/
+
+/* user profile */
+body.context-user-actionprofile .petProfileContainer { max-width: 355px; margin: auto; height: 415px; position: relative; font-size: 14px; }
+body.context-user-actionprofile .petProfileContainer .petSection table tr th { font-size: 16px; font-weight: 700; border: none; padding: 2px 0; }
+body.context-user-actionprofile .petProfileContainer .petSection table tr td { border: none; padding: 2px 0; height: 24px; }
+body.context-user-actionprofile .petProfileContainer .petSection .petImageContainer .pet-image { width: 80%; margin: auto; display: block; }
+body.context-user-actionprofile .petProfileContainer .petSection .allergyList { font-size: 12px; padding-top: 10px; }
+body.context-user-actionprofile .petProfileContainer .petSection .issueList { font-size: 12px; }
+body.context-user-actionprofile .petProfileContainer .labelSection .editLabel { text-align: center; position: relative; margin-top: -20px; font-size: 12px; }
+body.context-user-actionprofile .petProfileContainer .sharesSection { text-align: center; }
+body.context-user-actionprofile .petProfileContainer .sharesSection .sharedPetContainer { width: 45px; height: 45px; margin: 0 10px 0 0; float: left; }
+body.context-user-actionprofile .petProfileContainer .toolsSection { text-align: center; margin-top: 20px; }
+body.context-user-actionprofile .petProfileContainer.newPetContainer .newPetLink { font-size: 20px; font-weight: 400; padding: 40px 0; text-transform: uppercase; } 
+body.context-user-actionprofile .feedingGuidelinesContainer { text-align: right; margin: 40px 0 60px 0; font-size: 14px; }
+body.context-user-actionprofile .fetchContainer { margin: 40px 0; }
+
+/* pet profile */
+body.context-petprofile .petprofileForm { max-width: 860px; margin: 30px auto 30px auto; }
+body.context-petprofile .petprofileForm h2 { font-size: 24px; color: #603813; text-transform: uppercase; margin-bottom: 30px; }
+body.context-petprofile .petprofileForm label { font-size: 16px; font-weight: 300; line-height: 1.2; }
+body.context-petprofile .petprofileForm label small { font-size: 10px; text-transform: uppercase; color: #979797; }
+body.context-petprofile .petprofileForm .form-group { margin-bottom: 30px; }
+body.context-petprofile .petprofileForm .form-control { font-size: 13px; border-radius: 0; box-shadow: none; border: 2px solid #9e9e9e; }
+body.context-petprofile .petprofileForm .pet-thumb.visible-xs { width: 100px; margin: 0 auto 30px auto; }
+body.context-petprofile .petprofileForm .allergyList .checkbox-inline { width: 48%; }
+body.context-petprofile .petprofileForm .issueList .checkbox-inline { width: 100%; }
+body.context-petprofile .petprofileForm .allergyList .checkbox-inline+.checkbox-inline, body.context-petprofile .petprofileForm .issueList .checkbox-inline+.checkbox-inline { margin-left: 0; }
+.labelContainer { text-align: center; min-height: 113px; margin: auto; max-width: 100%; background-position: center center; background-size: contain; background-repeat: no-repeat; }
+.labelContainer .labelText { display: inline-block; font-weight: 400; font-family: Open Sans; }
+.labelContainer .labelText input { background: #fff; border: 1px solid #736357; text-align: center; color: #808080; }
+.labelContainer-dog { background-image: url('../img/label-dog.png'); }
+.labelContainer-cat { background-image: url('../img/label-cat.png'); }
+#species-modal .speciesSelect { margin: 30px 0; }
+#species-modal .speciesSelect a { font-size: 22px; color: #603813; text-transform: uppercase; }
+#labelModal .labelContainer { min-height: 140px; }
+#labelModal .petsContainer { text-align: center; margin-top: -40px; }
+#labelModal .petsContainer .pet { display: inline-block; margin: 0 10px; width: 70px; max-width: 50%; }
+#labelModal .suggestionsContainer { text-align: center; margin: 30px auto; }
+
+
+.dogsizeOption { float: left; text-align: center; width: 33%; }
+.dogsizeIcon { background: url('/bento/img/dogSizeSprite.png'); background-size: 540px; background-repeat: no-repeat; margin: 0 auto 10px auto; height: 112px; }
+.dogsizeIcon:hover { cursor: pointer; }
+.dogsizeIcon.dogsize-teacup { width: 38px; background-position: 0px 0px; }
+.dogsizeIcon.dogsize-teacup.selected { background-position: 0px -112px; }
+.dogsizeIcon.dogsize-toy { width: 57px; background-position: -38px 0px; }
+.dogsizeIcon.dogsize-toy.selected { background-position: -38px -112px; }
+.dogsizeIcon.dogsize-small { width: 81px; background-position: -97px 0px; }
+.dogsizeIcon.dogsize-small.selected { background-position: -97px -112px; }
+.dogsizeIcon.dogsize-medium { width: 105px; background-position: -181px 0px; }
+.dogsizeIcon.dogsize-medium.selected { background-position: -181px -112px; }
+.dogsizeIcon.dogsize-large { width: 123px; background-position: -288px 0px; }
+.dogsizeIcon.dogsize-large.selected { background-position: -288px -112px; }
+.dogsizeIcon.dogsize-xlarge { width: 126px; background-position: -413px 0px; }
+.dogsizeIcon.dogsize-xlarge.selected { background-position: -413px -112px; }
+
+.catsizeOption { float: left; text-align: center; width: 50%; }
+.catsizeIcon { background: url('/bento/img/catSizeSprite.png'); background-size: 540px; background-repeat: no-repeat; margin: 0 auto 10px auto; height: 112px; }
+.catsizeIcon:hover { cursor: pointer; }
+.catsizeIcon.catsize-small { width: 81px; background-position: -97px 0px; }
+.catsizeIcon.catsize-small.selected { background-position: -97px -112px; }
+.catsizeIcon.catsize-medium { width: 105px; background-position: -181px 0px; }
+.catsizeIcon.catsize-medium.selected { background-position: -181px -112px; }
+.catsizeIcon.catsize-large { width: 123px; background-position: -288px 0px; }
+.catsizeIcon.catsize-large.selected { background-position: -288px -112px; }
+
+.profileButtons { text-align: right; margin: 40px 0; }
+
+/* recommender */
+body.context-petprofile-actionproducts .orderItem { max-width: 255px; height: 375px; margin: auto; }
+body.context-petprofile-actionproducts .orderItem .imageContainer { position: relative; min-height: 250px; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-image { position: absolute; bottom: 0; left: 17%; width: 66%; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-pets { position: absolute; left: 0; bottom: 0; width: 15%; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-pets .product-pet { width: 100%; margin: 0 0 10px 0; }
+body.context-petprofile-actionproducts .orderItem .product-title { text-align: center; }
+body.context-petprofile-actionproducts .orderItem .product-ppd { text-align: center; }
+body.context-petprofile-actionproducts .orderItem .product-summary { text-align: center; }
+body.context-petprofile-actionproducts .orderItem .product-actions { text-align: center; }
+
+/* footer */
+footer { padding: 20px 0; }
+footer .social-title { display: block; text-align: center; text-transform: uppercase; font-size: 16px; margin-bottom: 10px; }
+footer ul.social-links { max-width: 300px; margin: auto; }
+footer ul.social-links li { float: left; width: 25%; text-align: center; padding: 8px; }
+footer ul.social-links li a { color: #fff; }
+footer .footerNavContainer {}
+footer .footerNavContainer .footernav.footernav-left { width: 40%; float: left; border-right: 1px solid #979797; }
+footer .footerNavContainer .footernav.footernav-left ul { padding: 0 0 10px 0; }
+footer .footerNavContainer .footernav.footernav-left ul li { text-align: right; padding: 10px 20px 0 0; }
+footer .footerNavContainer .footernav.footernav-right { width: 60%; float: right; }
+footer .footerNavContainer .footernav.footernav-right ul li { text-align: left; padding: 10px 0 0 20px; }
+footer .footerNavContainer .footernav ul li { }
+footer .footerNavContainer .footernav ul li a { color: #fff; }
+footer .btn.btnbrown { margin: 20px auto; }
+footer .copyright { color: #979797; font-size: 8px; text-transform: uppercase; }
+footer .copyright a { color: #979797; }
+
+/** RESPONSIVE **/
+@media (min-width: 768px) {
+    
+    /* pet profile */
+    body.context-petprofile .petprofileForm .allergyList .checkbox-inline { width: 24%; }
+    body.context-petprofile .petprofileForm .issueList .checkbox-inline { width: 48%; }
+    .dogsizeOption { width: 16%; }
+    .catsizeOption { width: 32%; }
+    
+    /* footer */
+    footer .social-title { text-align: left; }
+    footer ul.social-links { margin: 0; }
+    footer ul.social-links li { text-align: left; padding: 8px 8px 8px 0; }
+    footer .btn.btnbrown:first-of-type { float: left; }
+    footer .btn.btnbrown:last-of-type { float: right; }
+    footer .copyright { color: #fff; font-size: 9px; text-transform: uppercase; }
+    footer .copyright a { color: #fff; }
+    
+}
+
+@media (min-width: 992px) {
+    
+    /* footer */
+    footer .btn.btnbrown { margin: 0 0 20px 0; float: right !important; clear: right; }
+    
+}
+
+@media (min-width: 1200px) {
+    
+    
+    
+}

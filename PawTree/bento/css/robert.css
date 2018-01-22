@@ -1,0 +1,115 @@
+﻿/*
+	NEW PETPRO PAGE
+*/
+.rust {
+    color: #b06533;
+}
+
+.btnblue_new {
+    background-color: #377bb5;
+    color: #fff;
+    padding: 0px 20px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 300;
+    min-width: 342px;
+}
+
+.differenceInLifeImage {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.differenceListItem {
+    font-size: 22px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.seeDifferenceSectionTitle {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.seeDifferenceSection .titleArea {
+    padding-top: 65px;
+}
+
+.makeMoneySection h3 {
+    color: #53473d;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.newAdjust {
+    padding: 0px !important;
+}
+/* become a petpro */
+#content.rootpage-become-a-petpro .makeDifferenceSectionNew {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+}
+
+    #content.rootpage-become-a-petpro .makeDifferenceSectionNew .differenceBlock {
+        height: 300px;
+        border-radius: 10px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+        #content.rootpage-become-a-petpro .makeDifferenceSectionNew .differenceBlock:after {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-width: 15px 115px 0 115px;
+            border-color: #f3e4c4 transparent transparent transparent;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
+
+        #content.rootpage-become-a-petpro .makeDifferenceSectionNew .differenceBlock .differenceBlockImage {
+            width: 80%;
+            float: none;
+            padding: 0;
+            margin: -190px auto 0 auto;
+        }
+
+        #content.rootpage-become-a-petpro .makeDifferenceSectionNew .differenceBlock .differenceBlockContent {
+            width: 80%;
+            float: none;
+            padding: 30px 0 0 0;
+            margin: auto;
+        }
+
+    #content.rootpage-become-a-petpro .makeDifferenceSectionNew h2 {
+        margin-bottom: 120px;
+        font-size: 30px;
+        line-height: 36px;
+        font-family: 'nunito';
+        font-weight: 500;
+    }
+
+
+.makeMoneySectionImage {
+}
+
+.makeMoneySectionText {
+    padding: 60px 40px;
+}
+
+.enrollmentSection {
+    padding: 40px;
+}
+
+    .enrollmentSection h2 {
+        color: #53473d;
+    }
+
+    .enrollmentSection h4 {
+        color: #53473d;
+    }

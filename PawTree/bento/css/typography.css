@@ -1,0 +1,26 @@
+/* Font Families */
+body, .nunito{ font-family: 'Nunito', sans-serif; font-weight: 300; }
+b, strong, .bold{ font-weight: 700; }
+nav, .fjalla{ font-family: 'Fjalla One', sans-serif; }
+.btn, .tinos{ font-family: 'Tinos', serif; font-weight: 700; letter-spacing: 1px; font-size: 16px; }
+
+/* Font Sizes */
+html, .base{ font-size: 14px; }
+@media (min-width: 768px){
+	html, .base{ font-size: 16px; }
+}
+body{ line-height: 1.35; }
+p, li{ margin-bottom: 12px; }
+p.small { font-size: 12px; }
+.pawbox-intro h2{ font-size: 68px; font-size: 4.25rem; }
+.pawbox-overview .h2{ font-size: 50px; font-size: 3.125rem; }
+.build-pawbox .products h2{ font-size: 44px; font-size: 2.75rem; }
+h2, .h2{ font-size: 36px; font-size: 2.25rem; }
+.start-pawbox .title, .pawbox-overview .h3, .why-pawtree h3{ font-size: 32px; font-size: 2rem; }
+.pawbox-intro h4, .start-pawbox #total-price, .my-pawbox #total-price{ font-size: 30px; font-size: 1.875rem; }
+h3, .utility a.shopping-cart, .h3{ font-size: 28px; font-size: 1.75rem; }
+.pawbox-overview h4{ font-size: 26px; font-size: 1.625rem; }
+h4, .h4{ font-size: 21px; font-size: 1.313rem; }
+h5, .h5{ font-size: 20px; font-size: 1.25rem; }
+h6, nav, .h6, .sub .category li, .faq-page h2{ font-size: 18px; font-size: 1.125rem; }
+.utility p, .utility li, .sub .promo p, .build-pawbox .pawbox-items .empty.item a.remove, .pawtree-story .listen p.green{ font-size: 14px; font-size: 0.875rem; }

@@ -1,0 +1,729 @@
+/** MOBILE FIRST **/
+
+body { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+button { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+.btn { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+#content .container { padding-bottom: 45px; }
+a:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+
+/* mobile nav */
+#main-nav-mobile, #dog-nav-mobile, #cat-nav-mobile, #about-nav-mobile, #stories-nav-mobile { position: fixed; left: 0; top: 0; width: 100%; max-height: 100%; overflow: scroll; z-index: 600; transform: translateX(100%); -webkit-transform: translateX(100%); }
+.main-nav-mobile .container { width: 100%; }
+.dognav, .catnav, .pawtreenav, .filternav, .storiesnav { padding: 0 15px; }
+.mobile-nav-header { padding: 0 15px; }
+.mobile-nav-header .close { float: left; font-family: "Times New Roman", Times, serif; font-weight: 700; font-size: 60px; color: #736357; opacity: 0.8; padding: 10px 0 0 10px; }
+.mobile-nav-header .close.pull-right { font-size: 30px; padding: 20px 0 10px 0; }
+.mobile-nav-body {  }
+#main-nav-mobile ul.account-links { clear: both; width: 100%; margin-top: 30px; }
+#main-nav-mobile ul.account-links li { float: left; width: 33%; padding: 0; border-right: 1px solid #603813; text-align: center; }
+#main-nav-mobile ul.account-links li a { color: #603813; font-weight: 300; }
+#main-nav-mobile ul.account-links li:last-of-type { border-right: 0; }
+#main-nav-mobile ul.account-links li ul.dropdown-menu { border-radius: 0; border: none; }
+#main-nav-mobile ul.account-links li ul.dropdown-menu li { float: none; width: 100%; }
+#main-nav-mobile ul.account-links li ul.dropdown-menu li a { color: #fff; }
+#main-nav-mobile ul.shoppage-links {  }
+#main-nav-mobile ul.shoppage-links li { font-size: 30px; text-transform: uppercase; margin: 30px 0; padding: 0 30px; }
+#main-nav-mobile ul.shoppage-links li i { color: #bfa792; font-size: 40px; }
+#main-nav-mobile ul.shoppage-links li a { color: #603813; display: inline-block; min-width: 140px; }
+#main-nav-mobile .ctalinks { text-align: center; text-transform: uppercase; font-size: 26px; }
+#main-nav-mobile .ctalinks a { display: inline-block; padding: 15px 0; }
+.mobile-nav-container h5 { text-align: center; font-weight: 700; }
+.mobile-nav-container ul { margin-top: 20px; }
+.mobile-nav-container ul li { margin-bottom: 20px; }
+.mobile-nav-container ul li a { color: #603813; font-size: 16px; }
+.mobile-nav-container .issue { padding-bottom: 20px; }
+.mobile-nav-container .btn { display: block; }
+.mobile-nav-container .promo { text-align: center; padding: 20px; }
+.flex-control-nav { display: none; }
+
+.mobile-nav-slidein { animation: mobile-slide-in 0.5s forwards; -webkit-animation: mobile-slide-in 0.5s forwards; }
+@keyframes mobile-slide-in { 100% { transform: translateX(0%); } }
+@-webkit-keyframes mobile-slide-in { 100% { -webkit-transform: translateX(0%); } }
+.mobile-nav-slideout { animation: mobile-slide-out 0.5s forwards; -webkit-animation: mobile-slide-out 0.5s forwards; }
+@keyframes mobile-slide-out { 100% { transform: translateX(100%); } }
+@-webkit-keyframes mobile-slide-out { 100% { -webkit-transform: translateX(100%); } }
+
+.cms-page-title { color: #603813; text-align: center; padding: 20px 0; }
+
+.carousel-control .sprite.right-arrow, .carousel-control .sprite.left-arrow { position: absolute; top: 50%; left: 50%; margin-top: -31px; margin-left: -10px; }
+
+/*video containers*/
+.video-tabs li { margin: 0; }
+.video-links { margin-top: -40px; display: flex; justify-content: center; }
+.video-links li { flex-grow: 1; flex-basis: 33%; max-width: 160px; }
+.video-placeholder { position: relative; }
+.video-placeholder .video-poster { width: 100%; height: 0; max-width: 100%; padding-top: 74.4%; background-size: cover; background-position: center center; }
+.video-placeholder .video-playbutton { position: absolute; top: 50%; left: calc(50% - 10px); transform: translateY(-50%); color: #fff; font-size: 40px; width: 80px; margin-left: -36px; border: 2px solid #ffffff; border-radius: 20px; padding: 10px; text-align: center; z-index: 10; }
+.video-placeholder .video-playbutton a { color: #fff; text-shadow: 0px 0px 10px #555; }
+.video-placeholder .text-overlay { position: absolute; bottom: 0; width: 100%; height: 100%; background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03000000', endColorstr='#000000',GradientType=0 ); z-index: 9; }
+.video-placeholder .text-overlay .content { max-width: 800px; margin: auto; position: absolute; left: 0; right: 0; bottom: 20px; }
+.video-placeholder .text-overlay h2{ font-size: 34px; line-height: 1; }
+.video-placeholder .text-overlay h4{ font-size: 14px; font-size: 1rem; display: none; }
+
+/* modal popups */
+.modal.in .modal-dialog { margin-top: 20px; }
+.modal .modal-header { border-bottom: none; padding: 0 15px; }
+.modal .modal-header .close { float: left; font-family: "Times New Roman", Times, serif; font-weight: 700; font-size: 60px; color: #736357; opacity: 0.8; padding: 10px 0 0 10px; }
+.modal .modal-header .close:hover { opacity: 1; }
+.modal .modal-body { margin-bottom: 20px; }
+.modal .modal-body ul { list-style: disc; margin-left: 20px; }
+.modal .modal-body h2 { margin: 0 0 20px 0; }
+
+.modal.video-modal .modal-dialog { width: 100%; margin: 0; }
+.modal.video-modal .modal-dialog .modal-content { background-color: #000; }
+.modal.video-modal .modal-header .close { font-size: 20px; color: #fff; }
+.modal.video-modal .modal-dialog .modal-body { padding-top: 10px; margin-bottom: 0; }
+
+#species-modal .speciesSelect { margin: 30px 0; }
+#species-modal .speciesSelect a { font-size: 22px; color: #603813; text-transform: uppercase; }
+
+#labelModal .labelContainer { min-height: 140px; }
+#labelModal .petsContainer { text-align: center; margin-top: -40px; }
+#labelModal .petsContainer .pet { display: inline-block; margin: 0 10px; width: 70px; max-width: 50%; }
+#labelModal .suggestionsContainer { text-align: center; margin: 30px auto; font-size: 12px; }
+#labelModal ul.nameSuggestionsList { margin: 0; padding: 0; }
+#labelModal ul.nameSuggestionsList li { list-style: none; width: 50%; float: left; }
+#labelModal ul.nameSuggestionsList li:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+#labelModal .labelDisclaimer { margin: 30px auto; max-width: 300px; }
+
+/* login and register */
+.user-login-register h2 { margin: 30px 0; }
+.user-login-register h2 small { font-size: 14px; }
+.user-login-register form { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #603813; }
+.user-login-register .form-buttons { margin: 20px 0; text-align: right; }
+.user-login-register .form-buttons .btn { margin-bottom: 10px; }
+
+/* featured testimonials */
+.featuredTestimonials .slide { padding: 20px 0 40px 0; }
+.featuredTestimonials .slide blockquote { max-width: 920px; margin: auto; }
+.featuredTestimonials .slide blockquote h3 { color: #3dad4b; text-align: center; font-size: 36px; font-weight: 500; margin-bottom: 0; line-height: 1; }
+.featuredTestimonials .slide blockquote p.date { font-size: 15px; font-weight: 300; color: #979797; margin-bottom: 20px; margin-top: 10px; }
+.featuredTestimonials .slide blockquote p { text-align: center; font-size: 16px; line-height: 1.4; font-weight: 300; }
+.featuredTestimonials .slide blockquote .footer { margin: 20px auto; text-align: center; }
+.featuredTestimonials .slide blockquote .footer p { font-weight: 500; margin: 0; }
+.featuredTestimonials .slide blockquote .footer .image { width: 100px; left; margin-right: 20px; display: inline-block; }
+.featuredTestimonials .slide blockquote .footer .content { display: inline-block; text-align: left; }
+.featuredTestimonials .slide .cta { margin: 30px 0 0 0; text-align: center; }
+
+.featuredTestimonials .slide .testimonial-slide { display: flex; flex-wrap: wrap; justify-content: center; }
+.featuredTestimonials .slide .testimonial-slide > .image { width: 100%;  }
+.featuredTestimonials .slide .testimonial-slide > .image img { max-width: 190px; margin: auto; }
+.featuredTestimonials .slide .testimonial-slide > .content { width: 100%; }
+.featuredTestimonials.flexslider .flex-direction-nav li a { top: 130px; }
+.featuredTestimonials.flexslider .flex-direction-nav .flex-prev { background-position: -65px 0; }
+.featuredTestimonials.flexslider .flex-direction-nav .flex-next { background-position: -106px 0; }
+.featuredTestimonials.flexslider .flex-control-nav { display: block; bottom: 0; }
+.petpro-testimonials .featuredTestimonials .slide .testimonial-slide > .image { margin-bottom: 20px; }
+
+/* join pawclub */
+#joinpawclubPage .joinpawclub-hero { margin: 0 -15px 0 -15px; padding: 50px 0; background: url('../img/joinpawclub-hero.jpg'); background-size: cover; background-position: center center; }
+#joinpawclubPage .joinpawclub-hero h2 { color: #fff; font-size: 40px; }
+#joinpawclubPage .joinpawclub-hero ul.checklist li { color: #fff; }
+#joinpawclubPage .joinpawclub-hero ul.checklist { max-width: 410px; margin: auto; padding-top: 20px; }
+#joinpawclubPage ul.checklist li:before { content: ""; display: inline-block; width: 43px; height: 38px; overflow: hidden; background: url(images/sprite.png) no-repeat center center; background-size: 500px 500px; vertical-align: middle; position: relative; background-position: 0 -107px; margin: -5px 5px 30px 5px; float: left; }
+#joinpawclubPage ul.pawlist li:before { content: ""; display: inline-block; width: 23px; height: 26px; overflow: hidden; background: url(images/sprite.png) no-repeat center center; background-size: 300px 300px; vertical-align: middle; position: relative; background-position: 0 -116px; margin: -5px 5px 30px 5px; float: left; }
+#joinpawclubPage .rewardingContainer { padding-top: 20px; padding-bottom: 20px; }
+#joinpawclubPage .freeshippingContainer { padding-top: 20px; padding-bottom: 20px; }
+#joinpawclubPage .freeshippingContainer .listContainer, #joinpawclubPage .rewardingContainer .pawlist, #joinpawclubPage .howjoinContainer ul { max-width: 440px; margin: auto; }
+#joinpawclubPage .freeshippingContainer h5 { font-weight: 700; }
+#joinpawclubPage .ctaContainer { padding-top: 30px; padding-bottom: 20px; }
+#joinpawclubPage .howjoinContainer { padding-top: 20px; }
+#joinpawclubPage .legalContainer { padding-top: 30px; padding-bottom: 50px; }
+#joinpawclubPage .legalContainer a.green { text-decoration: underline; }
+#joinpawclubPage .freeshipCaravan { max-width: 90%; margin: auto; padding: 15px 0; }
+
+/* homepage 2017*/
+.row.testimonials { margin: 60px auto 40px auto; }
+.row.testimonials h2 { font-weight: 500; text-align: center; color: #603813; font-size: 40px; line-height: 1.2; }
+.row.testimonials .cta, .row.petpro-testimonials .cta { text-align: center; text-align: center; display: flex; justify-content: center; flex-wrap: wrap; }
+.row.testimonials .cta a.btn, .row.petpro-testimonials .cta a.btn { display: flex; align-items: center; padding: 10px 0; width: 275px; line-height: 1.2; justify-content: center; margin: 10px 20px; }
+.pawtree-intro a.btn { display: flex; align-items: center; padding: 10px 0; line-height: 1.2; justify-content: center; margin: 10px 20px; }
+.btn { padding: 10px 20px; }
+body.home .row.petpro-testimonials { margin: 60px auto 40px auto; }
+body.home .row.petpro-testimonials h2 { font-weight: 500; text-align: center; color: #603813; font-size: 40px; line-height: 1.2; }
+.pawtree-intro { display: flex; margin: 40px auto; flex-wrap: wrap; justify-content: center; }
+.pawtree-intro h2 { font-size: 40px; font-weight: 500; line-height: 1.2; margin-bottom: 12px; }
+.pawtree-intro p { font-size: 18px; }
+.pawtree-intro .image { order: 1; width: 100%; text-align: center; }
+.pawtree-intro .content { order: 2; width: 100%; }
+.pawtree-intro .pawbox-reasons { margin: 30px auto; }
+.pawtree-intro .pawbox-reasons ul { list-style: none; margin-left: 0; padding-left: 2em; }
+.pawtree-intro .pawbox-reasons ul li:before { display: inline-block; content:"\f00c"; width: 2em; margin-left: -2em; font-family: 'FontAwesome'; color: #70b45e; }
+.take-a-look-video .video-placeholder .text-overlay .content { bottom: 56px; }
+
+/* become a petpro */
+#content.rootpage-become-a-petpro .makeDifferenceSection { padding: 30px 0 60px 0; }
+#content.rootpage-become-a-petpro .makeDifferenceSection h2 { font-size: 28px; line-height: 1.2; padding-bottom: 30px; }
+#content.rootpage-become-a-petpro .makeDifferenceSection h2.small { font-size: 16px; font-weight: 400; }
+#content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock { position: relative; min-height: 130px; }
+#content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock .differenceBlockImage { width: 30%; float: left; padding: 10px; }
+#content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock .differenceBlockContent { width: 70%; float: left; padding: 10px; }
+#content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock .differenceBlockContent h4 { text-transform: uppercase; color: #b16532; }
+#content.rootpage-become-a-petpro .seeDifferenceSection { text-align: center; padding-bottom: 40px; }
+#content.rootpage-become-a-petpro .seeDifferenceSection h4 {  }
+#content.rootpage-become-a-petpro .seeDifferenceSection .gradientOverlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: linear-gradient(0,white,transparent 40%); }
+#content.rootpage-become-a-petpro .seeDifferenceSection .titleArea { padding: 30px 0 20px 0; }
+#content.rootpage-become-a-petpro .seeDifferenceSection .contentArea  h4 { text-transform: uppercase; }
+#content.rootpage-become-a-petpro .makeMoneySection { padding: 30px 0; }
+#content.rootpage-become-a-petpro .makeMoneySection .titleArea { text-align: center; padding-bottom: 30px; }
+#content.rootpage-become-a-petpro .makeMoneySection .video-wrap { width: 95%; margin: auto; }
+#content.rootpage-become-a-petpro .makeMoneySection .video-wrap .video-container { border-radius: 20px; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea { padding: 30px 0; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .nav-tabs>li { width: 33.33%; text-align: center; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .nav-tabs>li:nth-child(1) { background: #f7ca3c; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .nav-tabs>li:nth-child(2) { background: #b16532; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .nav-tabs>li:nth-child(3) { background: #ff6530; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .nav-tabs>li>a { margin: 0; border: 0; color: #fff; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .nav-tabs>li.active>a { background: transparent; }
+#content.rootpage-become-a-petpro .makeMoneySection .contentArea .tab-content { padding: 20px; }
+#content.rootpage-become-a-petpro .makeMoneySection .ctaArea { text-align: center; }
+#content.rootpage-become-a-petpro .stepbox { margin: 30px 0; text-align: center; }
+#content.rootpage-become-a-petpro .stepbox h3 { font-size: 28px; text-transform: uppercase; }
+#content.rootpage-become-a-petpro .stepbox p { font-size: 18px; font-weight: 400; }
+#content.rootpage-become-a-petpro .petpro-promo { text-align: center; }
+#content.rootpage-become-a-petpro .petpro-promo img { max-width: 400px; }
+.enrollKit { text-align: center; }
+.enrollmentKits { text-align: center; }
+.enrollmentKits .panel-group .panel { border: 0; border-radius: 0; }
+.enrollmentKits .panel-group .panel+.panel { margin: 0; }
+.enrollmentKits .panel-default>.panel-heading { border: 0; border-radius: 0; color: #fff; }
+.enrollmentKits .panel-default:nth-child(1)>.panel-heading { background: #f7ca3c; }
+.enrollmentKits .panel-default:nth-child(2)>.panel-heading { background: #b16532; }
+.enrollmentKits .panel-default:nth-child(3)>.panel-heading { background: #ff6530; }
+.enrollmentKits .price { color: #00af41; font-size: 20px; font-weight: 700; }
+.enrollButton { margin: 20px 0; }
+form#enrollmentForm { margin: 30px auto;}
+form#enrollmentForm h3 { margin: 0 0 20px 0; text-transform: uppercase; }
+form#enrollmentForm label { font-size: 16px; font-weight: 300; line-height: 1.2; }
+form#enrollmentForm .form-group { margin-bottom: 30px; }
+form#enrollmentForm .form-control { font-size: 13px; border-radius: 0; box-shadow: none; border: 2px solid #9e9e9e; }
+form#enrollmentForm .legalCheckbox label { font-weight: 700; font-size: 14px; }
+form#enrollmentForm .checking { display: inline-block; padding: 0 10px; }
+.context-user-actionenrollment .utility .shopping-cart { display: none; }
+.page.page-become-a-petpro .utility .shopping-cart { display: none; }
+
+/* PetPro Page */
+body.context-page-actionpetpro #content .petpro-page { padding: 25px 0 50px 0; max-width: 900px; margin: auto; }
+body.context-page-actionpetpro #content .petpro-name { font-size: 18px; color: #b06436; font-weight: 700; text-align: center; margin-bottom: 40px; }
+body.context-page-actionpetpro #content .petpro-greeting { padding-top: 50px; }
+body.context-page-actionpetpro #content .petpro-contact-detail { padding: 25px 0; font-size: 18px; color: #000000; }
+body.context-page-actionpetpro #content .petpro-contact-detail a { color: #000000; }
+body.context-page-actionpetpro #content .petpro-contact-detail a .fa { color: #00af41; font-size: 24px; }
+body.context-page-actionpetpro #content .petpro-image { padding: 20px; box-sizing: border-box; width: 100%; margin: auto; max-width: 300px; display: block; }
+body.context-page-actionpetpro #content .petpro-action-links { padding: 10px 0; max-width: 600px; margin: auto; text-align: center; }
+body.context-page-actionpetpro #content .petpro-action-links .btn { margin-bottom: 20px; }
+body.context-page-actionpetpro #content .footerMessage { font-size: 18px; font-weight: 700; color: #00af41; text-align: center; padding: 20px 20px; }
+
+/* user profile */
+/*
+body.context-user-actionprofile .petProfileContainer { max-width: 355px; min-height: 510px; margin: auto; position: relative; font-size: 14px; }
+body.context-user-actionprofile .petProfileContainer .petSection table tr th { font-size: 16px; font-weight: 700; border: none; padding: 2px 0; }
+body.context-user-actionprofile .petProfileContainer .petSection table tr td { border: none; padding: 2px 0; height: 24px; }
+body.context-user-actionprofile .petProfileContainer .petSection .petImageContainer .pet-image { width: 80%; margin: auto; display: block; }
+body.context-user-actionprofile .petProfileContainer .petSection .allergyList { font-size: 12px; padding-top: 10px; }
+body.context-user-actionprofile .petProfileContainer .petSection .issueList { font-size: 12px; }
+*/
+body.context-user-actionprofile #content .container { max-width: 1200px; }
+body.context-user-actionprofile .feedingGuidelinesContainer { font-size: 14px; text-align: center; }
+body.context-user-actionprofile .feedingGuidelinesContainer .fa { font-size: 18px; }
+body.context-user-actionprofile .buttonContainer { text-align: center; max-width: 600px; margin: 0 auto 40px auto; }
+body.context-user-actionprofile .buttonContainer .btn { margin: 5px 20px; }
+body.context-user-actionprofile .petProfilesContainer { display: flex; justify-content: center; flex-wrap: wrap; }
+body.context-user-actionprofile .petProfileContainer { border: 1px solid #6c9e35; padding: 20px; margin: 60px 10px 50px 10px; max-width: 370px; position: relative; }
+body.context-user-actionprofile .petProfileContainer .petSection { position: relative; }
+body.context-user-actionprofile label { margin-bottom: 0; font-weight: 500; }
+body.context-user-actionprofile .petProfileContainer .petSection .pet-image { width: 80px; margin: -60px auto 0 auto; position: relative; }
+body.context-user-actionprofile .petProfileContainer .petSection .pet-name { text-align: center; font-weight: 700; font-size: 22px; color: #333333; margin: 10px auto; }
+body.context-user-actionprofile .petProfileContainer .petSection .pet-cupsperday { position: absolute; right: 0px; top: 50px; text-align: center; font-size: 11px; color: #5a4a42; }
+body.context-user-actionprofile .petProfileContainer .petSection .pet-cupsperday .thecup { width: 55px; height: 34px; color: #fff; background-image: url('../img/cupicon.png'); background-repeat: no-repeat; background-size: contain; padding: 7px 10px 0 15px; font-weight: 300; font-size: 16px; text-align: center; }
+body.context-user-actionprofile .petProfileContainer .issuesSection { line-height: 1.5; margin: 10px 0; }
+body.context-user-actionprofile .petProfileContainer .issuesSection .tooltip.bottom .tooltip-arrow { border-bottom-color: #85c441; }
+body.context-user-actionprofile .petProfileContainer .issuesSection .tooltip-inner { background-color: #85c441; }
+body.context-user-actionprofile .petProfileContainer .labelSection { line-height: 1.5; margin: 10px 0; }
+body.context-user-actionprofile .petProfileContainer .labelSection .labelContainer { width: 100%; max-width: 250px; }
+body.context-user-actionprofile .petProfileContainer .labelSection .labelContainer.labelContainer-dog { background-image: url('../img/label-dog-faded.png'); }
+body.context-user-actionprofile .petProfileContainer .labelSection .labelContainer.labelContainer-cat { background-image: url('../img/label-cat-faded.png'); }
+body.context-user-actionprofile .petProfileContainer .sharesSection .none { color: #b3b3b3; height: 40px; }
+body.context-user-actionprofile .petProfileContainer .sharesSection .petsContainer { margin: 10px 0; }
+body.context-user-actionprofile .petProfileContainer .sharesSection .sharedPet { max-width: 40px; margin: 0; float: left; }
+body.context-user-actionprofile .petProfileContainer .toolsSection { text-align: center; }
+body.context-user-actionprofile .petProfileContainer .toolsSection .btn { line-height: 1.2; padding: 20px; margin: 0; }
+
+body.context-user-actionprofile .petProfileContainer .labelSection .editLabel { text-align: center; position: relative; margin-top: -20px; font-size: 12px; }
+body.context-user-actionprofile .petProfileContainer .labelSection .editLabel:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+body.context-user-actionprofile .petProfileContainer .sharesSection { margin: 30px 0; }
+body.context-user-actionprofile .petProfileContainer .sharesSection .petsContainer .pet { width: 45px; height: 45px; margin: 0 10px 0 0; float: left; }
+body.context-user-actionprofile .petProfileContainer .toolsSection { text-align: center; margin: 25px auto; }
+body.context-user-actionprofile .petProfileContainer.newPetContainer .newPetLink { font-size: 20px; font-weight: 400; padding: 40px 0; text-transform: uppercase; }
+body.context-user-actionprofile .petProfileContainer.newPetContainer .newPetLink:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; font-size: 24px; color: #00af41; }
+
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile { border-color: #ff1d25; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .pet-details { opacity: 0.15; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .pet-cupsperday { opacity: 0.15; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .pet-name { opacity: 0.15; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .issuesSection { opacity: 0.15; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .sharesSection { opacity: 0.15; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .toolsSection { opacity: 0.15; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .incompleteNotice { position: absolute; top: 20%; z-index: 10; left: 0; right: 0; padding: 0 15px; margin: auto; }
+body.context-user-actionprofile .petProfileContainer.incomplete-petprofile .incompleteNotice p { font-weight: 700; font-size: 22px; text-align: center; }
+.btn.btnred { background: #ff1d25; color: #ffffff; line-height: 1.2; padding: 15px 15px 10px 15px; }
+
+body.context-user-actionprofile .fetchContainer { margin: 40px 0; }
+
+/* pet profile */
+body.context-petprofile .petprofileForm { max-width: 860px; margin: 30px auto 30px auto; }
+body.context-petprofile .petprofileForm h2 { font-size: 24px; color: #603813; text-transform: uppercase; margin-bottom: 30px; }
+body.context-petprofile .petprofileForm label { font-size: 16px; font-weight: 300; line-height: 1.2; }
+body.context-petprofile .petprofileForm label small { font-size: 10px; text-transform: uppercase; color: #979797; }
+body.context-petprofile .petprofileForm .view-weight-diagram { font-size: 12px; margin: 0 10px; }
+body.context-petprofile .petprofileForm .view-weight-diagram:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+body.context-petprofile .petprofileForm .form-group { margin-bottom: 30px; }
+body.context-petprofile .petprofileForm .form-control { font-size: 13px; border-radius: 0; box-shadow: none; border: 2px solid #9e9e9e; }
+body.context-petprofile .petprofileForm .pet-thumb.visible-xs { width: 100px; margin: 0 auto 30px auto; }
+body.context-petprofile .petprofileForm .allergyList .checkbox-inline { width: 48%; }
+body.context-petprofile .petprofileForm .issueList .checkbox-inline { width: 100%; }
+body.context-petprofile .petprofileForm .allergyList .checkbox-inline+.checkbox-inline, body.context-petprofile .petprofileForm .issueList .checkbox-inline+.checkbox-inline { margin-left: 0; }
+body.context-petprofile .petprofileForm #pp_dogbreed option[disabled] { display: none; }
+body.context-petprofile .petprofileForm #pp_catbreed option[disabled] { display: none; }
+.labelContainer { text-align: center; min-height: 113px; margin: auto; max-width: 100%; background-position: center center; background-size: contain; background-repeat: no-repeat; }
+.labelContainer .labelText { display: inline-block; font-weight: 400; font-family: Open Sans; }
+.labelContainer .labelText input { background: #fff; border: 1px solid #736357; text-align: center; color: #808080; }
+.labelContainer-dog { background-image: url('../img/label-dog.png'); }
+.labelContainer-cat { background-image: url('../img/label-cat.png'); }
+#pp_sharesfood-error { float: right; }
+
+.dogsizeOption { float: left; text-align: center; width: 33%; }
+.dogsizeIcon { background: url('/bento/img/dogSizeSprite.png'); background-size: 540px; background-repeat: no-repeat; margin: 0 auto 10px auto; height: 112px; }
+.dogsizeIcon:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+.dogsizeIcon.dogsize-teacup { width: 38px; background-position: 0px 0px; }
+.dogsizeIcon.dogsize-teacup.selected { background-position: 0px -112px; }
+.dogsizeIcon.dogsize-toy { width: 57px; background-position: -38px 0px; }
+.dogsizeIcon.dogsize-toy.selected { background-position: -38px -112px; }
+.dogsizeIcon.dogsize-small { width: 81px; background-position: -97px 0px; }
+.dogsizeIcon.dogsize-small.selected { background-position: -97px -112px; }
+.dogsizeIcon.dogsize-medium { width: 105px; background-position: -181px 0px; }
+.dogsizeIcon.dogsize-medium.selected { background-position: -181px -112px; }
+.dogsizeIcon.dogsize-large { width: 123px; background-position: -288px 0px; }
+.dogsizeIcon.dogsize-large.selected { background-position: -288px -112px; }
+.dogsizeIcon.dogsize-xlarge { width: 126px; background-position: -413px 0px; }
+.dogsizeIcon.dogsize-xlarge.selected { background-position: -413px -112px; }
+
+.catsizeOption { float: left; text-align: center; width: 50%; }
+.catsizeIcon { background: url('/bento/img/catSizeSprite.png'); background-size: 270px; background-repeat: no-repeat; margin: 0 auto 10px auto; height: 71px; }
+.catsizeIcon:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+.catsizeIcon.catsize-small { width: 65px; background-position: 0px -71px; }
+.catsizeIcon.catsize-small.selected { background-position: 0px 0px; }
+.catsizeIcon.catsize-medium { width: 87px; background-position: -66px -71px; }
+.catsizeIcon.catsize-medium.selected { background-position: -65px 0px; }
+.catsizeIcon.catsize-large { width: 116px; background-position: -153px -71px; }
+.catsizeIcon.catsize-large.selected { background-position: -153px 0px; }
+
+.profileButtons { text-align: center; margin: 40px 0; }
+
+/* recommender */
+body.context-petprofile-actionproducts .orderItem { margin: auto; max-width: 300px; }
+body.context-petprofile-actionproducts .orderItem .imageContainer { position: relative; min-height: 250px; max-width: 255px;  margin: auto; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-image { position: absolute; bottom: 0; left: 17%; width: 165px; height: 200px; text-align: center; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-image img { max-height: 100%; position: absolute; bottom: 0; left: 0; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-pets { position: absolute; left: 0; bottom: 0; width: 15%; }
+body.context-petprofile-actionproducts .orderItem .imageContainer .product-pets .product-pet { width: 100%; margin: 0 0 10px 0; }
+body.context-petprofile-actionproducts .orderItem .product-title { text-align: center; padding: 10px 0; }
+body.context-petprofile-actionproducts .orderItem .product-priceperday { text-align: center; font-size: 14px; font-weight: 400; text-transform: uppercase; }
+body.context-petprofile-actionproducts .orderItem .product-priceperday .product-ppd { font-size: 18px; }
+body.context-petprofile-actionproducts .orderItem .product-summary { text-align: center; font-size: 13px; }
+body.context-petprofile-actionproducts .orderItem .product-actions { text-align: center; padding: 10px 0; text-transform: uppercase; }
+body.context-petprofile-actionproducts .orderItem .product-action-add { text-align: center; padding: 10px 0; text-transform: uppercase; }
+body.context-petprofile-actionproducts .orderShipmentGroup .orderShipment .ezshipTruck { float: left; margin: 10px; color: #fff; background-image: url('../img/ezshipTruck.png'); background-size: 100%; width: 70px; height: 40px; padding: 4px 20px 0 0; text-align: center; line-height: 0.9; }
+body.context-petprofile-actionproducts .orderShipmentGroup .orderShipment .ezshipFrequency { float: left; margin-left: 20px; }
+body.context-petprofile-actionproducts .orderShipmentGroup .shipmentTotals { text-align: right; margin-top: 20px; }
+body.context-petprofile-actionproducts .orderShipmentGroup .shipmentTotals .shipmentSubtotal { font-size: 30px; font-weight: 400; }
+body.context-petprofile-actionproducts .guaranteeIcon { width: 100px; margin: auto; }
+body.context-petprofile-actionproducts .grand-total { font-size: 18px; text-align: center; text-transform: uppercase; }
+body.context-petprofile-actionproducts .grand-total .price { font-size: 32px; font-weight: 400; }
+body.context-petprofile-actionproducts .grand-total .freeShippingNotice { font-size: 16px; }
+body.context-petprofile-actionproducts .freeShippingQualify { font-size: 21px; font-weight: 400; text-align: center; margin: 40px 0; }
+body.context-petprofile-actionproducts .freeShippingQualify .qualifyQuestion { font-size: 32px; color: #00af41; }
+body.context-petprofile-actionproducts .freeShippingQualify.no .qualifyQuestion { color: #b16532; }
+body.context-petprofile-actionproducts form#mcomOrderForm { text-align: center; margin: 0 0 30px 0; }
+body.context-petprofile-actionproducts hr { width: 100%; }
+body.context-petprofile-actionproducts h2 { margin-top: 30px; }
+body.context-petprofile-actionproducts .qualifyIcon { display: inline-block; background-image: url(images/sprite.png); background-size: 300px 300px; }
+body.context-petprofile-actionproducts .freeShippingQualify.yes .qualifyIcon { width: 24px; height: 22px; background-position: 0 -65px; }
+body.context-petprofile-actionproducts .freeShippingQualify.no .qualifyIcon { width: 23px; height: 27px; background-position: 0 -88px; }
+.orderItem.deleted .product-title, .orderItem.deleted .product-priceperday, .orderItem.deleted .product-summary, .orderItem.deleted { color: #e9e9e9 !important; }
+.orderItem.deleted img { -webkit-filter: grayscale(100%); }
+
+/* recommender popups */
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-details { margin-bottom: 20px; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-details .product-image { text-align: center; margin: auto; width: 165px; height: 200px; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-details .product-image img { max-height: 100%; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-details .product-title { text-align: center; margin: 20px 0; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-details .product-price { text-align: center; font-size: 14px; text-transform: uppercase; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-details .product-price .product-price-dollars { font-weight: 400; font-size: 18px; margin-bottom: 20px; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-settings { max-width: 300px; margin: auto; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-settings .sizeSelector { float: left; width: 60%; margin: 10px 0; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-settings .qtySelector { float: right; width: 35%; margin: 10px 0; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-settings .ezshipSelector { margin-bottom: 30px; }
+body.context-petprofile-actionproducts .alternateModal .alternate-product-form .product-settings .formButtons { text-align: center; }
+
+/* testimonials */
+.testimonailsSection { margin: 20px auto 30px auto; }
+.testimonailsSection > .col-xs-12{ padding-left: 0; padding-right: 0; }
+.testimonailsSection .testimonialFilters {}
+.testimonailsSection .testimonial { padding: 20px 0; border-top: 1px solid #b3b3b3; }
+.testimonailsSection .testimonial.row{ margin-left: 0; margin-right: 0; }
+.testimonailsSection .testimonial .testimonial-image { margin: 20px auto; }
+.testimonailsSection .testimonial .testimonial-image img{ display: block; margin: 0 auto; }
+.testimonailsSection .testimonial .testimonial-title { color: #603813; font-size: 18px; line-height: 1.2; margin-bottom: 10px; }
+.testimonailsSection .testimonial .testimonial-title a { color: #603813; }
+.testimonailsSection .testimonial .testimonial-date { color: #b3b3b3; font-size: 12px; margin-bottom: 10px; }
+.testimonailsSection .testimonial .testimonial-message { margin-bottom: 10px; }
+.testimonailsSection .testimonial .testimonial-message .readmore { color: #00af41; text-transform: uppercase; }
+.testimonailsSection .testimonial .testimonial-petname { color: #333333; font-size: 16px; font-weight: 400; margin-bottom: 0; }
+.testimonailsSection .testimonial .testimonial-author {  }
+.testimonailsSection .testimonial .testimonial-tags li{ display: inline-block; margin: 0; padding-right: 5px; border-right: 1px solid #b3b3b3; font-size: 10px; color: #b3b3b3; text-transform: uppercase; }
+.testimonailsSection .testimonial .testimonial-tags li:last-child{ border-right: none; }
+.testimonailsSection .testimonial .testimonial-details { font-size: 80%; }
+.testimonailsSection .filterButtonContainer { padding: 20px 0; border-top: 1px solid #b3b3b3; }
+.testimonailsSection .filterButtonContainer.visible-xs .btn{ margin-top: 0; } 
+.testimonailsSection .filterButtonContainer .openFiltersButton { min-width: 0; }
+.testimonailsSection .searchTestimonialsContainer { padding: 10px 0; }
+.testimonailsSection .searchTestimonialsContainer .searchQuerySubmit:hover { cursor: url('/bento/img/pawcursor.png') 9 4, auto; }
+.testimonailsSection .writeTestimonialButtonContainer .btn { margin-top: 0; }
+.testimonailsSection .writeTestimonialButtonContainer { margin: 0 0 20px 0; text-align: center; }
+#testimonialFilters { background: #fff; position: fixed; left: 0; top: 0; width: 100%; max-height: 100%; overflow: scroll; z-index: 600; transform: translateX(100%); -webkit-transform: translateX(100%); }
+#testimonialFilters .filternav h3 { margin: 0; padding: 10px 0; border-top: 1px solid #c7b299; color: #c7b299; }
+#testimonialFilters .filternav h4 { padding: 15px 0 5px 0; color: #ff6530; border-top: 1px solid #c7b299; }
+#testimonialFilters ul.filterlist li { margin-left: 20px; }
+#testimonialFilters ul.filterlist li input { margin-left: -20px; }
+body.context-testimonial .promoContainer { position: relative; padding: 0 0 20px 0; }
+body.context-testimonial .promoContainer .uparrow { text-align: center; margin-bottom: -45px; }
+body.context-testimonial .promoContainer .promoImage { text-align: center; }
+body.context-testimonial .promoContainer .promoContent { text-align: center; }
+body.context-testimonial .promoContainer .promoContent a { color: #fabd17; text-decoration: underline; font-size: 14px; }
+body.context-testimonial a.viewall { line-height: 52px; display: block; text-align: center; }
+
+/* testimonial popup */
+#write-testimonial h3 { text-align: center; font-size: 32px; color: #603813; }
+#write-testimonial label { font-weight: 300; color: #ff6530; }
+#write-testimonial .select2 { display: block; }
+#write-testimonial .select2-container--default .select2-selection--multiple, #write-testimonial .select2-container--default .select2-selection--single{ border-color: #ccc; }
+#write-testimonial .select2-container--default .select2-selection--single{ height: 34px; }
+#write-testimonial .select2-container--default .select2-selection--single .select2-selection__arrow b{ margin-top: 0; }
+#write-testimonial textarea[name="testimonial"] { max-width: 100%; }
+
+#write-petpro-testimonial h3 { text-align: center; font-size: 32px; color: #603813; }
+#write-petpro-testimonial label { font-weight: 300; color: #ff6530; }
+#write-petpro-testimonial .select2 { display: block; }
+#write-petpro-testimonial .select2-container--default .select2-selection--multiple, #write-petpro-testimonial .select2-container--default .select2-selection--single{ border-color: #ccc; }
+#write-petpro-testimonial .select2-container--default .select2-selection--single{ height: 34px; }
+#write-petpro-testimonial .select2-container--default .select2-selection--single .select2-selection__arrow b{ margin-top: 0; }
+#write-petpro-testimonial textarea[name="testimonial"] { max-width: 100%; }
+/*#write-testimonial .select2-search__field::-webkit-input-placeholder {
+  font-size: 16px;
+}
+#write-testimonial .select2-search__field::-moz-placeholder {
+  font-size: 16px;
+}
+#write-testimonial .select2-search__field:-ms-input-placeholder {
+  font-size: 16px;
+}
+#write-testimonial .select2-search__field:-moz-placeholder {
+  font-size: 16px;
+}
+#write-testimonial .select2-selection__placeholder{}*/
+
+
+/* contact us */
+.contactUsContainer { margin: 30px auto 50px auto; }
+.contactUsContainer h3 { color: #603813; margin: 0; }
+.contactUsContainer h4 { color: #603813; padding: 0; margin: 10px 0; }
+.contactUsContainer #contactForm textarea.form-control { min-height: 150px; }
+.contactUsContainer #contactForm .buttonContainer { margin: 20px auto; text-align: center; }
+.contactUsContainer #contactForm label { font-weight: 300; }
+body.context-contact-actionsubmit #content { min-height: 500px; padding: 30px; }
+
+/* empty layout */
+body.layout-empty { margin-top: 0; }
+body.layout-empty .darkbrown .cms-page-title { color: #ffffff; padding: 10px 0; font-size: 30px; }
+
+/* PetPro - View User Profile */
+.errorIcon { width: 23px; height: 27px; display: inline-block; background-image: url('images/sprite.png'); background-size: 300px 300px; background-position: 0 -88px; }
+body.context-petprotools-actionviewuser { font-size: 16px; font-weight: 300; }
+body.context-petprotools-actionviewuser #content .container { max-width: 1200px; }
+body.context-petprotools-actionviewuser .accountInfoContainer { margin: 20px auto; }
+body.context-petprotools-actionviewuser .accountInfoContainer .contactInfo { margin: 15px 0; }
+body.context-petprotools-actionviewuser .accountInfoContainer .contactInfo a { color: #333333; }
+body.context-petprotools-actionviewuser .accountInfoContainer h4 { font-weight: 700; font-size: 16px; margin: 10px 0; padding: 0; }
+body.context-petprotools-actionviewuser .accountInfoContainer label { font-weight: 300; }
+body.context-petprotools-actionviewuser .compareOrdersContainer { margin-bottom: 40px; }
+body.context-petprotools-actionviewuser .compareOrdersContainer .btn { line-height: 1.2; padding: 15px 20px; width: 100%; }
+body.context-petprotools-actionviewuser .noezships { margin: 20px auto; color: #ed1c24; font-weight: 700; }
+body.context-petprotools-actionviewuser .noezships .errorIcon { display: inline-block; margin-bottom: -6px; }
+body.context-petprotools-actionviewuser h3 { font-size: 22px; margin-bottom: 0; color: #603813; }
+body.context-petprotools-actionviewuser .petProfileContainer { border: 1px solid #6c9e35; padding: 20px; margin-top: 60px; margin-bottom: 20px; }
+body.context-petprotools-actionviewuser .petProfileContainer .petSection { position: relative; }
+body.context-petprotools-actionviewuser label { margin-bottom: 0; font-weight: 500; }
+body.context-petprotools-actionviewuser .petProfileContainer .petSection .pet-image { width: 80px; margin: -60px auto 0 auto; position: relative; }
+body.context-petprotools-actionviewuser .petProfileContainer .petSection .pet-name { text-align: center; font-weight: 700; font-size: 22px; color: #333333; margin: 10px auto; }
+body.context-petprotools-actionviewuser .petProfileContainer .petSection .pet-cupsperday { position: absolute; right: 0px; top: 50px; text-align: center; font-size: 11px; color: #5a4a42; }
+body.context-petprotools-actionviewuser .petProfileContainer .petSection .pet-cupsperday .thecup { width: 70px; height: 43px; color: #fff; background-image: url('../img/cupicon.png'); background-repeat: no-repeat; background-size: contain; padding: 7px 10px 0 20px; font-weight: 300; font-size: 16px; text-align: center; }
+body.context-petprotools-actionviewuser .petProfileContainer .issuesSection { line-height: 1.5; margin: 10px 0; }
+body.context-petprotools-actionviewuser .petProfileContainer .issuesSection .tooltip.bottom .tooltip-arrow { border-bottom-color: #85c441; }
+body.context-petprotools-actionviewuser .petProfileContainer .issuesSection .tooltip-inner { background-color: #85c441; }
+body.context-petprotools-actionviewuser .petProfileContainer .labelSection { line-height: 1.5; margin: 10px 0; }
+body.context-petprotools-actionviewuser .petProfileContainer .sharesSection .none { color: #b3b3b3; height: 40px; }
+body.context-petprotools-actionviewuser .petProfileContainer .sharesSection .petsContainer { margin: 10px 0; }
+body.context-petprotools-actionviewuser .petProfileContainer .sharesSection .sharedPet { max-width: 40px; margin: 0; float: left; }
+body.context-petprotools-actionviewuser .petProfileContainer .toolsSection { text-align: center; }
+body.context-petprotools-actionviewuser .petProfileContainer .toolsSection .btn { line-height: 1.2; padding: 20px; margin: 0; }
+body.context-petprotools-actionviewuser .product { margin-bottom: 20px; }
+body.context-petprotools-actionviewuser .product .foodoptions { margin: 10px 0; color: #85c441; }
+body.context-petprotools-actionviewuser .product .foodoptions .tooltip-inner { white-space:pre-wrap; max-width: 300px; text-align: left; background-color: #85c441; }
+body.context-petprotools-actionviewuser .product .foodoptions .tooltip.bottom .tooltip-arrow { border-bottom-color: #85c441; }
+body.context-petprotools-actionviewuser .product .product-image { max-height: 120px; margin: auto; display: block; }
+body.context-petprotools-actionviewuser .product .product-title { font-size: 16px; color: #402A2E; margin-bottom: 10px; }
+body.context-petprotools-actionviewuser .product .product-priceperday { color: #333333; }
+body.context-petprotools-actionviewuser .product .product-qty-price { font-weight: 300; font-size: 12px; color: #999999; }
+body.context-petprotools-actionviewuser .product .product-pet-image { margin-bottom: 10px; }
+body.context-petprotools-actionviewuser .totalsArea { font-weight: 300; font-size: 16px; color: #333333; margin-bottom: 20px; }
+body.context-petprotools-actionviewuser .totalsArea .total-priceperday { font-size: 14px; text-transform: uppercase; margin-bottom: 20px; }
+body.context-petprotools-actionviewuser .totalsArea .total-subtotal { font-size: 16px; color: #603813; text-transform: uppercase; line-height: 1.2; }
+body.context-petprotools-actionviewuser .totalsArea .total-subtotal .price { font-size: 30px; }
+body.context-petprotools-actionviewuser .ezshipTruck { float: left; margin: 10px; color: #fff; background-image: url('../img/ezshipTruck.png'); background-size: 100%; width: 100px; height: 58px; padding: 4px 20px 0 0; text-align: center; line-height: 0.9; }
+body.context-petprotools-actionviewuser .shippingGroup-products hr { opacity: 0.3; }
+body.context-petprotools-actionviewuser .slidein-recommends .shippingGroup-products hr:first-of-type { display: none; }
+.slidein-recommends, .slidein-ezships, .slidein-compares { max-width: 740px; position: fixed; right: 0; top: 0; width: 100%; max-height: 100%; overflow: scroll; z-index: 600; transform: translateX(100%); -webkit-transform: translateX(100%); }
+.slidein-recommends.mobile-nav-slidein, .slidein-ezships.mobile-nav-slidein, .slidein-compares.mobile-nav-slidein { box-shadow: 1px 1px 10px #333333; }
+.slidein-recommends .background { border-top: 10px solid #85c441; }
+.slidein-ezships .background { border-top: 10px solid #ff6530; }
+.slidein-compares .background { border-top: 10px solid #c7b299; }
+body.context-petprotools-actionviewuser .slidein-ezships .totalsArea label { color: #BE955B; font-weight: 500; font-size: 18px; }
+body.context-petprotools-actionviewuser .slidein-ezships .ezship-title { font-weight: 700; color: #FF6530; font-size: 20px; }
+body.context-petprotools-actionviewuser .slidein-ezships .ezship-totals { font-weight: 700; font-size: 14px; margin-bottom: 20px; }
+body.context-petprotools-actionviewuser .slidein-ezships .ezshipTruck { margin-bottom: 20px; }
+body.context-petprotools-actionviewuser .slidein-compares .compare-recommends-title { color: #ffffff; background-color: #00af41; text-align: center; font-size: 10px; height: 45px; margin: 0 -10px; border-top-left-radius: 6px; border-top-right-radius: 6px; display: block; line-height: 1.1; padding: 5px; }
+body.context-petprotools-actionviewuser .slidein-compares .compare-ezships-title { color: #ffffff; background-color: #ff6530; text-align: center; font-size: 10px; height: 45px; margin: 0 -10px; border-top-left-radius: 6px; border-top-right-radius: 6px; display: block; line-height: 1.1; padding: 5px; }
+body.context-petprotools-actionviewuser .slidein-compares .comparechecks { text-align: center; font-size: 30px; }
+body.context-petprotools-actionviewuser .slidein-compares .comparechecks .checked { display: flex; justify-content: center; align-content: center; flex-direction: column; width: 100%; height: 100px; color: #00af41; }
+body.context-petprotools-actionviewuser .slidein-compares .comparechecks .unchecked { display: flex; justify-content: center; align-content: center; flex-direction: column; width: 100%; height: 100px; color: #c1272d; }
+body.context-petprotools-actionviewuser .slidein-compares .comparechecks > .col-xs-6:first-of-type { border-left: 1px solid #c7b299; border-right: 1px solid #c7b299; }
+body.context-petprotools-actionviewuser .slidein-compares .product { margin-bottom: 0; }
+body.context-petprotools-actionviewuser .slidein-compares .product-details { border-bottom: 1px solid #eee5d9; margin-bottom: -1px; }
+body.context-petprotools-actionviewuser .slidein-compares .product-title { height: 100px; display: flex; justify-content: center; align-content: center; flex-direction: column; margin: 0;}
+body.context-petprotools-actionviewuser .slidein-compares .product-image { max-height: 80px; padding: 10px 0; }
+body.context-petprotools-actionviewuser .slidein-compares .comparescontainer { padding: 10px 15px; }
+body.context-petprotools-actionviewuser .slidein-compares .comparechecks .recommendcolumn > span { border-bottom: 1px solid #b4e3c0; }
+body.context-petprotools-actionviewuser .slidein-compares .comparechecks .ezshipcolumn > span { border-bottom: 1px solid #fecdbb; }
+.mobile-nav-container h3.gold { color: #b99660; }
+
+
+@media (min-width: 768px) {
+    body.context-petprotools-actionviewuser .mobile-nav-header { display: block; }
+    body.context-petprotools-actionviewuser .compareOrdersContainer .noezships { margin-top: 80px; }
+    /*body.context-petprotools-actionviewuser .slidein-recommends .shippingGroup-products { border-left: 2px solid #c7b299; }*/
+    body.context-petprotools-actionviewuser .slidein-compares .comparescontainer { padding: 20px 40px; }
+    body.context-petprotools-actionviewuser .slidein-ezships .shippingGroup-products hr:first-of-type { display: none; }
+    body.context-petprotools-actionviewuser .slidein-compares .compare-recommends-title, body.context-petprotools-actionviewuser .slidein-compares .compare-ezships-title { font-size: 16px; }
+    body.context-petprotools-actionviewuser .totalsArea .total-priceperday { margin-top: 20px; margin-bottom: 10px; }
+    .slidein-recommends, .slidein-ezships, .slidein-compares { top: 60px; max-height: calc(100% - 60px); }
+    .video-placeholder .text-overlay .content { bottom: 40px; }
+    .legalContainer { max-width: 1000px; margin: 30px auto 0 auto; text-align: center; }
+    .modal .modal-weightdiagram { width: 672px; }
+}
+
+/* footer */
+footer { padding: 50px 20px; position: relative; }
+footer .petProShare { position: absolute; top: -40px; right: 15px; height: 40px; padding: 10px 5px 5px 15px; min-width: 100px; display: inline-block; border-top-left-radius: 5px; border-top-right-radius: 5px; font-size: 14px; text-transform: uppercase; font-weight: 300; background-color: #cfd548; }
+footer .petProShare ul { float: right; margin: -4px 0 0 5px }
+footer .petProShare ul li { float: left; padding: 0 10px; display: inline-block; margin: 0; font-size: 18px; }
+footer .petProShare ul li a,footer .petProShare ul li .clipboard  { color: #fff; }
+.context-petprofile-actionproducts footer .petProShare { display: none; }
+footer .social-title { display: block; text-align: center; text-transform: uppercase; font-size: 16px; margin-bottom: 10px; font-family: 'Tinos', serif; }
+footer ul.social-links { max-width: 300px; margin: auto;  }
+footer ul.social-links li { float: left; width: 25%; text-align: center; padding: 8px; font-size: 24px; }
+footer ul.social-links li a { color: #fff; }
+footer .footerNavContainer {}
+footer .footerNavContainer .footernav.footernav-left { width: 40%; float: left; border-right: 1px solid #979797; }
+footer .footerNavContainer .footernav.footernav-left ul { padding: 0 0 10px 0; }
+footer .footerNavContainer .footernav.footernav-left ul li { text-align: right; padding: 10px 20px 0 0; }
+footer .footerNavContainer .footernav.footernav-right { width: 60%; float: right; }
+footer .footerNavContainer .footernav.footernav-right ul li { text-align: left; padding: 10px 0 0 20px; }
+footer .footerNavContainer .footernav ul li { }
+footer .footerNavContainer .footernav ul li a { color: #fff; }
+footer .btn.btnfooter { margin: 20px auto; }
+footer .copyright { color: #979797; font-size: 8px; text-transform: uppercase; }
+footer .copyright a { color: #979797; }
+
+/** error page **/
+.context-error .errorLockup { max-width: 1100px; margin: auto; padding-bottom: 80px; }
+.context-error .errorText { position: relative; z-index: 6; text-align: center; color: #603813; padding: 0px 0px 10px 0px; }
+.context-error .errorText h1 { font-size: 3em; }
+.context-error .errorImage { position: relative; z-index: 5; }
+.context-error .errorMessage { padding: 50px 10px; }
+
+
+/** share links **/
+ul.sharelinks { margin: 10px 0; text-align: center; }
+ul.sharelinks li { padding: 0 4px; display: inline-block; font-size: 18px; color: #00af41; margin-left: -10px; }
+ul.sharelinks li a { color: #00af41; }
+
+/** RESPONSIVE **/
+@media(min-width: 400px) {
+    .video-placeholder .text-overlay{ display: block; }
+}
+
+@media (min-width: 560px) {
+    #joinpawclubPage .joinpawclub-hero { min-height: 300px; }
+}
+
+@media (min-width: 768px) {
+    
+    #labelModal ul.nameSuggestionsList li { width: 30%; }
+    #joinpawclubPage .joinpawclub-hero { min-height: 400px; }
+    #joinpawclubPage .joinpawclub-hero h2 { margin-top: 10%; }
+    #joinpawclubPage .freeshippingContainer, #joinpawclubPage .rewardingContainer, #joinpawclubPage .ctaContainer { padding-top: 50px; }
+    .cms-page-title { padding: 40px 0; }
+    /* pet profile */
+    body.context-petprofile .petprofileForm .allergyList .checkbox-inline { width: 24%; }
+    body.context-petprofile .petprofileForm .issueList .checkbox-inline { width: 48%; }
+    .dogsizeOption { width: 16%; }
+    .catsizeOption { width: 32%; }
+    
+    /* user profile */
+    body.context-user-actionprofile .feedingGuidelinesContainer { position: absolute; top: 45px; right: 20px; font-size: 14px; text-align: left; width: 200px; }
+    body.context-user-actionprofile .feedingGuidelinesContainer .fa { float: left; font-size: 32px; }
+    
+    /* user login/register */
+    .user-login-register { max-width: 800px; margin: 40px auto; }
+    .user-login-register form { border-bottom: none; }
+    .user-login-register .col-md-6:nth-child(2) { border-left: 1px solid #603813; }
+    
+    /* become a petpro */
+    #content.rootpage-become-a-petpro .makeDifferenceSection { padding-left: 100px; padding-right: 100px; }
+    #content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock { height: 300px; background: #f3e4c4; border-radius: 10px; padding-top: 100px; text-align: center; }
+    #content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock:after { content: ""; display: inline-block; width: 0; height: 0; border-style: solid; border-width: 15px 115px 0 115px; border-color: #f3e4c4 transparent transparent transparent; position: absolute; bottom: -15px; left: 0; }
+    #content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock .differenceBlockImage { width: 80%; float: none; padding: 0; margin: -190px auto 0 auto; }
+    #content.rootpage-become-a-petpro .makeDifferenceSection .differenceBlock .differenceBlockContent { width: 80%; float: none; padding: 30px 0 0 0; margin: auto; }
+    #content.rootpage-become-a-petpro .makeDifferenceSection h2 { margin-bottom: 90px; }
+    #content.rootpage-become-a-petpro .seeDifferenceSection { padding-bottom: 0; padding-right: 10px; }
+    #content.rootpage-become-a-petpro .seeDifferenceSection .gradientOverlay { background-image: linear-gradient(to left,white,white 5%,transparent 40%); height: 100.1%; }
+    #content.rootpage-become-a-petpro .seeDifferenceSection .titleArea { padding: 30px 20px 20px 20px; }
+    #content.rootpage-become-a-petpro .seeDifferenceSection .contentArea { padding: 0 20px; }
+    #content.rootpage-become-a-petpro .makeMoneySection { padding-left: 100px; padding-right: 100px; }
+    #content.rootpage-become-a-petpro .makeMoneySection .contentArea { padding: 0 20px; }
+    #content.rootpage-become-a-petpro .makeMoneySection .contentArea .flag { text-align: center; margin: 30px 0 10px 0; }
+    #content.rootpage-become-a-petpro .makeMoneySection .ctaArea { margin: 20px 0; }
+    #content.rootpage-become-a-petpro .stepbox { background: #f7ca3c; width: 250px; margin: 35px auto; padding: 4px 10px 1px 10px; border-radius: 10px; position: relative; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+    #content.rootpage-become-a-petpro .stepbox:after { content: ""; display: inline-block; width: 0; height: 0; border-style: solid; border-width: 15px 115px 0 115px; border-color: #f7ca3c transparent transparent transparent; position: absolute; bottom: -15px; left: 0; } 
+    #content.rootpage-become-a-petpro .stepbox h3 { color: #fff; }
+    .enrollmentKits .enrollmentHeader1 { border: 1px solid #fff; border-top-left-radius: 10px; background: #f3e4c4; margin: 0 -15px 0 -15px; padding: 10px 20px; height: 100%; }
+    .enrollmentKits .enrollmentHeader2 { border: 1px solid #fff; border-top-right-radius: 10px; background: #f3e4c4;margin: 0 -15px 0 -15px; padding: 10px 20px; height: 100%; }
+    .enrollmentKits { padding: 0 100px; }
+    .enrollmentKits .enrollmentProduct { background: #f7ecd6; border: 1px solid #fff; }
+    .enrollmentKits .enrollmentProduct .imageArea { height: 340px; overflow: hidden;  }
+    .enrollmentKits .enrollmentProduct .imageArea img { max-height: 100%; }
+    .enrollmentKits .enrollmentProduct .buttonArea { background: #fff; padding: 10px 0; }
+    .enrollmentKits .enrollmentProduct-basic .imageArea { padding-top: 120px; }
+    .enrollmentKits .enrollmentProduct-complete .imageArea { padding-top: 80px; }
+    .enrollmentKits .enrollmentProduct-ultimate .imageArea { padding-top: 30px; }
+    .enrollmentKits .enrollmentProduct-ultimate { background: #efdcb4; }
+    .enrollmentKits .enrollmentProduct .contentArea .whatsInIt { margin-left: -15px; margin-right: -15px; position: relative; }
+    .enrollmentKits .enrollmentProduct .contentArea .whatsInIt .whatsInIt-details { display: none; position: absolute; width: 100%; background: #bd955a; color: #fff; bottom: 29px; text-align: left; padding: 20px; font-size: 12px; }
+    .enrollmentKits .enrollmentProduct .contentArea .whatsInIt .whatsInIt-details ul { list-style: disc; margin-left: 15px; }
+    .enrollmentKits .enrollmentProduct .contentArea .whatsInIt .whatsInIt-details ul li { margin-bottom: 6px; }
+    .enrollmentKits .enrollmentProduct-basic .contentArea .whatsInIt .whatsInIt-link { background: #967567; }
+    .enrollmentKits .enrollmentProduct-complete .contentArea .whatsInIt .whatsInIt-link { background: #75564e; }
+    .enrollmentKits .enrollmentProduct-ultimate .contentArea .whatsInIt .whatsInIt-link { background: #402a2e; }
+    .enrollmentKits .enrollmentProduct .contentArea .whatsInIt .whatsInIt-link { color: #fff; height: 29px; padding: 4px 0; }
+    .enrollmentKits .enrollmentProduct .contentArea .whatsInIt .whatsInIt-link .opencloseIndicator { padding: 0 20px; color: #fff; }
+    #content.rootpage-become-a-petpro .enrollmentSignup { margin-top: 30px; }
+    
+    /* recommender */
+    body.context-petprofile-actionproducts .orderShipmentGroup .orderShipment { margin: 30px 0; }
+    body.context-petprofile-actionproducts .orderShipmentGroup .orderShipment .ezshipTruck { width: 88px; height: 51px; }
+    body.context-petprofile-actionproducts .orderShipmentGroup .shipmentTotals { text-align: center; }
+    body.context-petprofile-actionproducts .freeShippingQualify { margin: 0; }
+    body.context-petprofile-actionproducts .orderItem { height: 400px; }
+    
+    /* testimonials */
+    .testimonailsSection > .col-xs-12{ padding-left: 15px; padding-right: 15px; }
+    .testimonailsSection .testimonial.row{ margin-left: -15px; margin-right: -15px; }
+    .testimonailsSection .testimonial .testimonial-image { margin: 0 auto; text-align: right; }
+    .testimonailsSection .testimonial .testimonial-image img{ margin: auto; display: inline-block; }
+    #testimonialFilters { z-index: 10; position: relative; display: block; transform: none; -webkit-transform: none; }
+    body.context-testimonial .promoContainer { max-width: 241px; }
+    body.context-testimonial .promoContainer .promoImage { width: 330px; margin-left: -15px; }
+    .testimonailsSection .writeTestimonialButtonContainer { text-align: left; }
+    
+    
+    /* footer */
+    footer .social-title { text-align: left; }
+    footer .petProShare ul li { padding: 0 4px; }
+    footer ul.social-links { margin: 0; }
+    footer ul.social-links li { text-align: left; padding: 8px 8px 8px 0; }
+    footer .btn.btnfooter:first-of-type { float: left; }
+    footer .btn.btnfooter:last-of-type { float: right; }
+    footer .copyright { color: #fff; font-size: 9px; text-transform: uppercase; }
+    footer .copyright a { color: #fff; }
+    
+    /* error */
+    .context-error .errorText h1 { margin-top: 80px; }
+    .context-error .errorImage { padding-top: 20px; }
+    .context-error .errorImage img { max-width: 500px; float: right; }
+    
+}
+
+@media (min-width: 992px) {
+    
+    body.home .dual-cta .left-cta, body.home .dual-cta .right-cta { min-height: 640px; }
+    .modal.in .modal-dialog { margin-top: 130px; }
+    
+    #nav-wrap .main-nav > ul > li > #storiesnav { min-height: auto; }
+    #nav-wrap .main-nav .dropdown-menu .tan1.background.storiesnav { min-height: auto; }
+    #nav-wrap .main-nav .sub .storiesnav .row.inner { padding: 30px 5% 20px 5%; }
+    
+    /* homepage 2017*/
+    .row.testimonials h2 { font-size: 52px; }
+    .pawtree-intro { flex-wrap: nowrap; }
+    .pawtree-intro .image { order: 2; width: auto; }
+    .pawtree-intro .content { order: 1; max-width: 400px; }
+    
+    .featuredTestimonials .slide .testimonial-slide { max-width: 1000px; margin: auto; }
+    .featuredTestimonials .slide .testimonial-slide > .image { width: 42%; position: relative; }
+    .featuredTestimonials .slide .testimonial-slide > .image img { max-width: 300px;}
+    .featuredTestimonials .slide .testimonial-slide > .content { width: 58%; }
+    .featuredTestimonials .slide .testimonial-slide > .content blockquote h3 { text-align: left; }
+    .featuredTestimonials .slide .testimonial-slide > .content blockquote p { text-align: left; }
+    .featuredTestimonials .slide .testimonial-slide > .content blockquote .footer { width: 100%; text-align: left; }
+    
+    .video-placeholder .text-overlay { height: 50%; display: flex; }
+    .take-a-look-video .video-placeholder .text-overlay .content { position: relative; bottom: auto; }
+    .video-placeholder .text-overlay h2 { font-size: 52px; } 
+    .video-placeholder .text-overlay h4 { display: block; font-size: 18px; margin: 0; }
+    .video-placeholder .video-poster { padding-top: 46.6%; }
+    
+    /* footer */
+    body { cursor: auto; }
+    footer .btn.btnfooter { margin: 0 0 20px 0; float: right !important; clear: right; }
+    .testimonailsSection { max-width: 1160px; }
+    #joinpawclubPage .joinpawclub-hero { min-height: 520px; }
+    #joinpawclubPage .joinpawclub-hero h2 { font-size: 60px; }
+    #joinpawclubPage .freeshippingContainer, #joinpawclubPage .rewardingContainer { min-height: 505px; }
+    
+    .utility .welcomeMessage { margin-top: 0; }
+    .utility p { display: inline-block; }
+    .mobile-nav-header { display: none; }
+    .contactUsContainer #contactForm { max-width: 550px; }
+    .contactUsContainer #contactForm .buttonContainer button { float: right; }
+    
+    .context-error .errorImage img { max-width: 700px; }
+    
+}
+
+@media (min-width: 1200px) {
+    
+    #joinpawclubPage .joinpawclub-hero { min-height: 750px; }
+    .context-error .errorImage img { max-width: none; }
+    
+}
